@@ -20,7 +20,7 @@ import shlex
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-# sys.path.insert(0, os.path.abspath('.'))
+sys.path.insert(0, os.path.abspath('.'))
 
 # -- General configuration ------------------------------------------------
 
@@ -54,7 +54,8 @@ extensions = [
     # Extension for providing Icelandic to English translation of mathematical terms
     # on mouse-over. See README in hoverrole folder.
     'scrolldepth.scrolldepth',
-    'panoptoextension.panopto'
+    'panoptoextension.panopto',
+    'button'
 
 
 
@@ -96,15 +97,15 @@ master_doc = 'index'
 # General information about the project.
 # SET PROJECT INFO HERE
 project = 'Undirbúningur í stærðfræði'
-copyright = 'AUTHOR'
-author = 'AUTHOR'
+# copyright = 'AUTHOR'
+author = 'Raunvísindadeild'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
 # The short X.Y version.
-version = '2018'
+version = '2020'
 # The full version, including alpha/beta/rc tags.
 release = '2018'
 
@@ -228,10 +229,10 @@ html_static_path = ['_static']
 #html_show_sourcelink = True
 
 # If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
-html_show_sphinx = False
+html_show_sphinx = True
 
 # If true, "(C) Copyright ..." is shown in the HTML footer. Default is True.
-html_show_copyright = False
+html_show_copyright = True
 
 # If true, an OpenSearch description file will be output, and all pages will
 # contain a <link> tag referring to it.  The value of this option must be the

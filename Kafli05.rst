@@ -11,7 +11,7 @@ Mjög mikilvægt er að nemendur reyni að skilja þetta hugtak fullkomlega og g
 Látum :math:`X` og :math:`Y` vera mengi. *Vörpun* frá :math:`X` yfir í :math:`Y` er regla sem úthlutar sérhverju staki í :math:`X` nákvæmlega einu staki í :math:`Y`. Hefðin er að tákna slíka vörpun (reglu) með bókstaf.
 Ef :math:`f` er vörpun frá :math:`X` yfir í :math:`Y` og :math:`x \in X`, þá táknum við með :math:`f(x)` stakið í :math:`Y` sem vörpunin :math:`f` úthlutar stakinu :math:`x`.
 
-Mengið :math:`X` kallast :hover:`skilgreiningarmengi` (eða *formengi*) vörpunnarinnar og mengið :math:`Y` :hover:`bakmengi` (eða *myndmengi* eða *varpmengi*) hennar.
+Mengið :math:`X` kallast :hover:`skilgreiningarmengi` (eða *formengi*) vörpunnarinnar og mengið :math:`Y` :hover:`bakmengi` (eða *varpmengi*) hennar. Þau gildi innan :math:`Y` sem vörpunin tekur myndar að lokum :hover:`myndmengi` vörpunarinnar.
 
 Varpanir eru táknaðar með ýmsum hætti, til dæmis
 
@@ -22,7 +22,7 @@ Varpanir eru táknaðar með ýmsum hætti, til dæmis
 * :math:`X\to Y, \ x\mapsto f(x)`
 
 
-en sú fyrsta er mest notuð innan Háskóla Íslands.
+en sú fyrsta er mest notuð innan Háskóla Íslands og víðar.
 
 .. image:: ./myndir/foll/vorpun.svg
 	:width: 50%

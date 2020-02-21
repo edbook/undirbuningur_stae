@@ -32,6 +32,10 @@
   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/katex.min.css" type="text/css" />
   
+    <link rel="stylesheet" href="_static/button.css" type="text/css" />
+  
+    <link rel="stylesheet" href="_static/button.css" type="text/css" />
+  
 
   
 
@@ -162,7 +166,10 @@
         
           
           
-              <ul class="current">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="formali.html">Um námsefnið</a></li>
+</ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Kafli01.html">1. Algebra</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Kafli01.html#talnakerfi">1.1. Talnakerfi</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="Kafli01.html#natturulegu-tolurnar-mathbb-n">1.1.1. Náttúrulegu tölurnar  <span class="math">\(\mathbb{N}\)</span></a></li>
@@ -335,9 +342,10 @@
 <li class="toctree-l3"><a class="reference internal" href="Kafli07.html#skilgreining">7.1.1. Skilgreining</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli07.html#einingarhringurinn">7.2. Einingarhringurinn</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Kafli07.html#kosinus-og-sinus">7.2.1. Kósínus og sínus</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Kafli07.html#amma-illa">7.2.2. Amma illa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli07.html#kosinus-og-sinus">7.2. Kósínus og sínus</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Kafli07.html#eingingahringurinn">7.2.1. Eingingahringurinn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Kafli07.html#id1">7.2.2. Kósínus og sínus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Kafli07.html#amma-illa">7.2.3. Amma illa</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli07.html#ekkt-gildi-a-hornafollum">7.3. Þekkt gildi á hornaföllum</a></li>
@@ -346,7 +354,7 @@
 <li class="toctree-l2"><a class="reference internal" href="Kafli07.html#hornafallareglur">7.6. Hornafallareglur</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli07.html#tvofold-horn">7.7. Tvöföld horn</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli07.html#andhverfur-hornafallanna">7.8. Andhverfur hornafallanna</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Kafli07.html#id1">7.8.1. Skilgreining</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Kafli07.html#id2">7.8.1. Skilgreining</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="Kafli07.html#andhverfa-sinusar">7.8.1.1. Andhverfa sínusar</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Kafli07.html#andhverfa-kosinusar">7.8.1.2. Andhverfa kósínusar</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Kafli07.html#andhverfa-tangens">7.8.1.3. Andhverfa tangens</a></li>
@@ -535,7 +543,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Yfirlit</a> &raquo;</li>
       
-    <li>5. Föll</li>
+    <li><span class="section-number">5. </span>Föll</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -550,24 +558,23 @@
            <div itemprop="articleBody">
             
   <div class="section" id="foll">
-<h1>5. Föll<a class="headerlink" href="#foll" title="Varanlegur hlekkur á titilinn">¶</a></h1>
+<h1><span class="section-number">5. </span>Föll<a class="headerlink" href="#foll" title="Varanlegur hlekkur á titilinn">¶</a></h1>
 <div class="section" id="varpanir-og-foll">
-<h2>5.1. Varpanir og föll<a class="headerlink" href="#varpanir-og-foll" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<h2><span class="section-number">5.1. </span>Varpanir og föll<a class="headerlink" href="#varpanir-og-foll" title="Varanlegur hlekkur á titilinn">¶</a></h2>
 <p><a href="http://www.stae.is/os/leita/mapping" class="tooltip" target="_blank">Vörpun<span>en: <i>mapping</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> er eitt allra mikilvægasta hugtakið sem notað er í stærðfræði.
 Mjög mikilvægt er að nemendur reyni að skilja þetta hugtak fullkomlega og geti tileinkað sér notkun þess.
 Útskýringar á vörpunum eru því miður oftast frekar torskiljanlegar fyrir þá sem ekki eru vanir stærðfræði, en með sýnidæmum líkt og hér að neðan skýrast hlutirnir vonandi betur.</p>
 <p>Látum <span class="math">\(X\)</span> og <span class="math">\(Y\)</span> vera mengi. <em>Vörpun</em> frá <span class="math">\(X\)</span> yfir í <span class="math">\(Y\)</span> er regla sem úthlutar sérhverju staki í <span class="math">\(X\)</span> nákvæmlega einu staki í <span class="math">\(Y\)</span>. Hefðin er að tákna slíka vörpun (reglu) með bókstaf.
 Ef <span class="math">\(f\)</span> er vörpun frá <span class="math">\(X\)</span> yfir í <span class="math">\(Y\)</span> og <span class="math">\(x \in X\)</span>, þá táknum við með <span class="math">\(f(x)\)</span> stakið í <span class="math">\(Y\)</span> sem vörpunin <span class="math">\(f\)</span> úthlutar stakinu <span class="math">\(x\)</span>.</p>
-<p>Mengið <span class="math">\(X\)</span> kallast <a href="http://www.stae.is/os/leita/argument_domain" class="tooltip" target="_blank">skilgreiningarmengi<span>en: <i>argument domain</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> (eða <em>formengi</em>) vörpunnarinnar og mengið <span class="math">\(Y\)</span> <a href="http://www.stae.is/os/leita/codomain" class="tooltip" target="_blank">bakmengi<span>en: <i>codomain</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> (eða <em>myndmengi</em> eða <em>varpmengi</em>) hennar.</p>
+<p>Mengið <span class="math">\(X\)</span> kallast <a href="http://www.stae.is/os/leita/argument_domain" class="tooltip" target="_blank">skilgreiningarmengi<span>en: <i>argument domain</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> (eða <em>formengi</em>) vörpunnarinnar og mengið <span class="math">\(Y\)</span> <a href="http://www.stae.is/os/leita/codomain" class="tooltip" target="_blank">bakmengi<span>en: <i>codomain</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> (eða <em>varpmengi</em>) hennar. Þau gildi innan <span class="math">\(Y\)</span> sem vörpunin tekur myndar að lokum <a href="http://www.stae.is/os/leita/actual_range" class="tooltip" target="_blank">myndmengi<span>en: <i>actual range</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> vörpunarinnar.</p>
 <p>Varpanir eru táknaðar með ýmsum hætti, til dæmis</p>
 <ul class="simple">
 <li><p><span class="math">\(f: X\to Y\)</span></p></li>
 <li><p><span class="math">\(X \overset{f} \to Y\)</span></p></li>
 <li><p><span class="math">\(X\to Y, \ x\mapsto f(x)\)</span></p></li>
 </ul>
-<p>en sú fyrsta er mest notuð innan Háskóla Íslands.</p>
-<a class="reference internal image-reference" href="_images/vorpun.svg"><div align="center" class="align-center"><img alt="_images/vorpun.svg" src="_images/vorpun.svg" width="50%" /></div>
-</a>
+<p>en sú fyrsta er mest notuð innan Háskóla Íslands og víðar.</p>
+<a class="reference internal image-reference" href="_images/vorpun.svg"><img alt="_images/vorpun.svg" class="align-center" src="_images/vorpun.svg" width="50%" /></a>
 <div class="admonition note">
 <p class="admonition-title">Athugasemd</p>
 <dl class="simple">
@@ -614,7 +621,7 @@ Með öðrum orðum þá varpar fallið stakinu <span class="math">\(2 \in X\)</
 </div></blockquote>
 </div>
 <div class="section" id="daemi-um-vorpun-sem-er-ekki-fall">
-<h3>5.1.1. Dæmi um vörpun sem er ekki fall<a class="headerlink" href="#daemi-um-vorpun-sem-er-ekki-fall" title="Varanlegur hlekkur á titilinn">¶</a></h3>
+<h3><span class="section-number">5.1.1. </span>Dæmi um vörpun sem er ekki fall<a class="headerlink" href="#daemi-um-vorpun-sem-er-ekki-fall" title="Varanlegur hlekkur á titilinn">¶</a></h3>
 <p>Munum að fall er vörpun þar sem bakmengið er <span class="math">\(\mathbb{R}\)</span>, það er, fyrir fall <span class="math">\(f\)</span> er <span class="math">\(f(x)\)</span> alltaf rauntala. En varpanir geta átt við um eitthvað annað en tölur.</p>
 <p>Látum <span class="math">\(A\)</span> vera mengi allra íslenskra orða og <span class="math">\(B\)</span> vera mengi allra íslenskra bókstafa. Skilgreinum nú vörpun á <span class="math">\(A\)</span> sem úthlutar sérhverju orði í <span class="math">\(A\)</span> fyrsta bókstafnum í því. Köllum þessa vörpun <span class="math">\(h\)</span>.</p>
 <p>Þessi vörpun úthlutar orðinu ,,grís‘‘ bókstafnum ,,g‘‘ og þess vegna skrifum við <span class="math">\(h(\text{grís})=\text{g}\)</span>.
@@ -623,13 +630,13 @@ Með öðrum orðum þá varpar fallið stakinu <span class="math">\(2 \in X\)</
 </div>
 </div>
 <div class="section" id="graf-vorpunnar">
-<h2>5.2. Graf vörpunnar<a class="headerlink" href="#graf-vorpunnar" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<h2><span class="section-number">5.2. </span>Graf vörpunnar<a class="headerlink" href="#graf-vorpunnar" title="Varanlegur hlekkur á titilinn">¶</a></h2>
 <p><a href="http://www.stae.is/os/leita/graph" class="tooltip" target="_blank">Graf<span>en: <i>graph</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> vörpunnar er mengið</p>
 <div style="text-align: center;">
 <div class="math">
 \[\{(x,y) \in X \times Y;y=f(x)\}\]</div>
 </div>
-<p>Það er mengi allra <a href="http://www.stae.is/os/leita/ordered_pair" class="tooltip" target="_blank">tvennda<span>en: <i>ordered pair</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> <span class="math">\((x,y)\)</span> þannig að <span class="math">\(x \in X\)</span> og <span class="math">\(y \in Y\)</span> uppfyllir jöfnuna <span class="math">\(y=f(x)\)</span>.</p>
+<p>Það er mengi allra <a href="http://www.stae.is/os/leita/couple" class="tooltip" target="_blank">tvennda<span>en: <i>couple</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> <span class="math">\((x,y)\)</span> þannig að <span class="math">\(x \in X\)</span> og <span class="math">\(y \in Y\)</span> uppfyllir jöfnuna <span class="math">\(y=f(x)\)</span>.</p>
 <p>Það getur verið gagnlegt að teikna upp mynd af grafinu í hnitakerfi. Skoðum dæmi um það að teikna myndir af gröfum falla.</p>
 <div class="admonition tip">
 <p class="admonition-title">Dæmi</p>
@@ -643,9 +650,8 @@ Með öðrum orðum þá varpar fallið stakinu <span class="math">\(2 \in X\)</
 <p>Ef <span class="math">\(x=0\)</span> þá er <span class="math">\(y=g(0)=3 \cdot 0+2=2\)</span>. Við merkjum punktinn <span class="math">\((0,2)\)</span> á myndina.</p>
 <p>Ef <span class="math">\(x=2\)</span> þá er <span class="math">\(y=g(2)=3 \cdot 2 +2=8\)</span>. Við merkjum punktinn <span class="math">\((2,8)\)</span> á myndina.</p>
 <p>Ef <span class="math">\(x=-3\)</span> þá er <span class="math">\(y=g(-3)= 3 \cdot (-3)+2=-7\)</span>. Við merkjum punktinn <span class="math">\((-3,-7)\)</span> á myndina.</p>
-<p>Næst teiknum við feril sem fer í gegnum punktana, en þeir liggja allir á beinni línu. Við höfum áður séð að allir punktar í hnitakerfi sem uppfylla jöfnu á forminu <span class="math">\(y=hx+s\)</span> liggja á línu í plani. Grafið er því <a href="http://www.stae.is/os/leita/straight_line" class="tooltip" target="_blank">lína<span>en: <i>straight line</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> og teygir sig óendanlega langt í báðar áttir.</p>
-<div align="center" class="align-center"><img alt="_images/graf1.svg" src="_images/graf1.svg" /></div>
-</div></blockquote>
+<p>Næst teiknum við feril sem fer í gegnum punktana, en þeir liggja allir á beinni línu. Við höfum áður séð að allir punktar í hnitakerfi sem uppfylla jöfnu á forminu <span class="math">\(y=hx+s\)</span> liggja á línu í plani. Grafið er því <a href="http://www.stae.is/os/leita/row" class="tooltip" target="_blank">lína<span>en: <i>row</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> og teygir sig óendanlega langt í báðar áttir.</p>
+<img alt="_images/graf1.svg" class="align-center" src="_images/graf1.svg" /></div></blockquote>
 <p><strong>2.</strong> Skoðum fallið</p>
 <blockquote>
 <div><div style="text-align: center;">
@@ -659,27 +665,24 @@ Með öðrum orðum þá varpar fallið stakinu <span class="math">\(2 \in X\)</
 <p>Ef <span class="math">\(x=2\)</span> þá er <span class="math">\(y=f(2)= 2^2=4\)</span>. Við merkjum punktinn <span class="math">\((2,4)\)</span> á myndina.</p>
 <p>Á sama hátt fást punktarnir <span class="math">\((-2,4)\)</span>, <span class="math">\((3,9)\)</span> og <span class="math">\((-3,9)\)</span>.</p>
 <p>Teiknum nú feril sem fer í gegnum alla punktana. Þessi ferill kallast <a href="http://www.stae.is/os/leita/parabola" class="tooltip" target="_blank">fleygbogi<span>en: <i>parabola</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a>.</p>
-<div align="center" class="align-center"><img alt="_images/graf2.svg" src="_images/graf2.svg" /></div>
-<p>Öll gildin sem eru á þessum ferli, það er allir punktar á svörtu línunni, uppfylla skilyrðið <span class="math">\(y=x^2\)</span>.</p>
+<img alt="_images/graf2.svg" class="align-center" src="_images/graf2.svg" /><p>Öll gildin sem eru á þessum ferli, það er allir punktar á svörtu línunni, uppfylla skilyrðið <span class="math">\(y=x^2\)</span>.</p>
 </div></blockquote>
 </div>
 </div>
 <div class="section" id="jafnstae-og-oddstae-foll">
-<h2>5.3. Jafnstæð og oddstæð föll<a class="headerlink" href="#jafnstae-og-oddstae-foll" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<h2><span class="section-number">5.3. </span>Jafnstæð og oddstæð föll<a class="headerlink" href="#jafnstae-og-oddstae-foll" title="Varanlegur hlekkur á titilinn">¶</a></h2>
 <div class="section" id="skilgreining">
-<h3>5.3.1. Skilgreining<a class="headerlink" href="#skilgreining" title="Varanlegur hlekkur á titilinn">¶</a></h3>
+<h3><span class="section-number">5.3.1. </span>Skilgreining<a class="headerlink" href="#skilgreining" title="Varanlegur hlekkur á titilinn">¶</a></h3>
 <p>Látum <span class="math">\(f: \mathbb{R} \to \mathbb{R}\)</span> vera fall.</p>
 <p>Við segjum að <span class="math">\(f\)</span> sé <a href="http://www.stae.is/os/leita/even" class="tooltip" target="_blank">jafnstætt<span>en: <i>even</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> ef <span class="math">\(f(-x)=f(x)\)</span> fyrir öll <span class="math">\(x \in \mathbb{R}\)</span>.</p>
 <p>Við segjum að <span class="math">\(f\)</span> sé <a href="http://www.stae.is/os/leita/odd" class="tooltip" target="_blank">oddstætt<span>en: <i>odd</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> ef <span class="math">\(f(-x)=-f(x)\)</span> fyrir öll <span class="math">\(x \in \mathbb{R}\)</span>.</p>
 </div>
 <div class="section" id="myndraen-utskyring">
-<h3>5.3.2. Myndræn útskýring<a class="headerlink" href="#myndraen-utskyring" title="Varanlegur hlekkur á titilinn">¶</a></h3>
+<h3><span class="section-number">5.3.2. </span>Myndræn útskýring<a class="headerlink" href="#myndraen-utskyring" title="Varanlegur hlekkur á titilinn">¶</a></h3>
 <p>Skilgreiningin segir að fall sé jafnstætt ef graf þess er eins ef því er speglað um <span class="math">\(y\)</span>-ásinn.</p>
 <p>Eins þá er fall oddstætt ef graf þess er eins ef því er speglað um <span class="math">\(y\)</span>-ás og svo speglað um <span class="math">\(x\)</span>-ásinn.</p>
-<div align="center" class="align-center"><img alt="_images/jafnst.svg" src="_images/jafnst.svg" /></div>
-<p>Myndin að ofan sýnir jafnstætt fall.</p>
-<div align="center" class="align-center"><img alt="_images/oddst.svg" src="_images/oddst.svg" /></div>
-<p>Myndin að ofan sýnir oddstætt fall.</p>
+<img alt="_images/jafnst.svg" class="align-center" src="_images/jafnst.svg" /><p>Myndin að ofan sýnir jafnstætt fall.</p>
+<img alt="_images/oddst.svg" class="align-center" src="_images/oddst.svg" /><p>Myndin að ofan sýnir oddstætt fall.</p>
 <div class="admonition note">
 <p class="admonition-title">Athugasemd</p>
 <p>Ekki eru öll föll oddstæð eða jafnstæð. Föll geta verið hvorugt.</p>
@@ -705,24 +708,23 @@ Við sjáum þá að <span class="math">\(h(-2)\not=h(2)\)</span> og <span class
 </div>
 </div>
 <div class="section" id="einhalla-foll">
-<h2>5.4. Einhalla föll<a class="headerlink" href="#einhalla-foll" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<h2><span class="section-number">5.4. </span>Einhalla föll<a class="headerlink" href="#einhalla-foll" title="Varanlegur hlekkur á titilinn">¶</a></h2>
 <div class="section" id="id1">
-<h3>5.4.1. Skilgreining<a class="headerlink" href="#id1" title="Varanlegur hlekkur á titilinn">¶</a></h3>
+<h3><span class="section-number">5.4.1. </span>Skilgreining<a class="headerlink" href="#id1" title="Varanlegur hlekkur á titilinn">¶</a></h3>
 <p>Látum <span class="math">\(X\)</span> vera hlutmengi í rauntölunum og  <span class="math">\(\ f: X \to \mathbb{R}\)</span> vera fall.</p>
 <p>Ef um sérhver <span class="math">\(x_1,x_2 \in X\)</span> sem eru þannig að <span class="math">\(x_1&lt;x_2\)</span> gildir</p>
 <div style="text-align: center;">
 <div class="math">
 \[f(x_1) \leq f(x_2)\]</div>
 </div>
-<p>þá er <span class="math">\(f\)</span> sagt vera <a href="http://www.stae.is/os/leita/increasing" class="tooltip" target="_blank">vaxandi<span>en: <i>increasing</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> fall.</p>
+<p>þá er <span class="math">\(f\)</span> sagt vera <a href="http://www.stae.is/os/leita/ascending" class="tooltip" target="_blank">vaxandi<span>en: <i>ascending</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> fall.</p>
 <p>Ef um sérhver <span class="math">\(x_1,x_2 \in X\)</span> sem eru þannig að <span class="math">\(x_1&lt;x_2\)</span> gildir</p>
 <div style="text-align: center;">
 <div class="math">
 \[g(x_1) \geq g(x_2)\]</div>
 </div>
-<p>þá er <span class="math">\(g\)</span> sagt vera <a href="http://www.stae.is/os/leita/decreasing" class="tooltip" target="_blank">minnkandi<span>en: <i>decreasing</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> fall.</p>
-<a class="reference internal image-reference" href="_images/vaxmin.svg"><div align="center" class="align-center"><img alt="_images/vaxmin.svg" src="_images/vaxmin.svg" width="45%" /></div>
-</a>
+<p>þá er <span class="math">\(g\)</span> sagt vera <a href="http://www.stae.is/os/leita/antitone" class="tooltip" target="_blank">minnkandi<span>en: <i>antitone</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> fall.</p>
+<a class="reference internal image-reference" href="_images/vaxmin.svg"><img alt="_images/vaxmin.svg" class="align-center" src="_images/vaxmin.svg" width="45%" /></a>
 <p>Hér sjáum við dæmi um fall <span class="math">\(f\)</span> sem er vaxandi og fall <span class="math">\(g\)</span> sem er minnkandi.</p>
 <p>Ef ójöfnurnar fyrir fallgildin í skilgreiningunum væru strangar væri <span class="math">\(f\)</span> sagt vera <a href="http://www.stae.is/os/leita/strictly_increasing" class="tooltip" target="_blank">stranglega vaxandi<span>en: <i>strictly increasing</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> og <span class="math">\(g\)</span> sagt vera <a href="http://www.stae.is/os/leita/strictly_decreasing" class="tooltip" target="_blank">stranglega minnkandi<span>en: <i>strictly decreasing</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> fall.</p>
 <p>Fall sem er annaðhvort vaxandi eða minnkandi er sagt vera <a href="http://www.stae.is/os/leita/monotonic" class="tooltip" target="_blank">einhalla<span>en: <i>monotonic</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a>.</p>
@@ -745,12 +747,10 @@ Graf þess er bein lína með hallatölu <span class="math">\(0\)</span>.</p>
 Samkvæmt skilgreiningunni er vaxandi fall þannig að <span class="math">\(h(x_1) \geq h(x_2)\)</span> fyrir <span class="math">\(x_1&gt;x_2\)</span>, og minnkandi fall er þannig að <span class="math">\(h(x_1) \leq h(x_2)\)</span> fyrir <span class="math">\(x_1&lt;x_2\)</span>.
 Í þessu tilfelli gildir jafnaðarmerkið í öllum tilfellum og því getum við sagt að fallið sé bæði minnkandi og vaxandi.
 <span class="math">\(h\)</span> er hins vegar hvorki stranglega minnkandi eða stranglega vaxandi.</p>
-<div align="center" class="align-center"><img alt="_images/einhalla.svg" src="_images/einhalla.svg" /></div>
-</div></blockquote>
+<img alt="_images/einhalla.svg" class="align-center" src="_images/einhalla.svg" /></div></blockquote>
 <p><strong>2.</strong> Föll geta verið vaxandi/minnkandi á bili. Skoðum fallið <span class="math">\(f: \mathbb{R} \to \mathbb{R}, f(x)=x^2\)</span>. Þetta fall er stranglega vaxandi á bilinu <span class="math">\((0, \infty)\)</span>, en stranglega minnkandi á bilinu <span class="math">\((-\infty, 0)\)</span>.</p>
 <blockquote>
-<div><div align="center" class="align-center"><img alt="_images/einhalla2.svg" src="_images/einhalla2.svg" /></div>
-</div></blockquote>
+<div><img alt="_images/einhalla2.svg" class="align-center" src="_images/einhalla2.svg" /></div></blockquote>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Athugasemd</p>
@@ -759,7 +759,7 @@ Samkvæmt skilgreiningunni er vaxandi fall þannig að <span class="math">\(h(x_
 </div>
 </div>
 <div class="section" id="gaffalforskrift">
-<h2>5.5. Gaffalforskrift<a class="headerlink" href="#gaffalforskrift" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<h2><span class="section-number">5.5. </span>Gaffalforskrift<a class="headerlink" href="#gaffalforskrift" title="Varanlegur hlekkur á titilinn">¶</a></h2>
 <p>Sumum föllum er ekki endilega hægt að lýsa með einni jöfnu, t.d. þegar lýsa þarf lotubundnum föllum. Þá er fallinu oft lýst með mismunandi formúlum á mismunandi bilum. Skoðum fallið</p>
 <div style="text-align: center;">
 <div class="math">
@@ -775,10 +775,10 @@ x^2 \qquad x \geq 0\\
 </div>
 </div>
 <div class="section" id="lotubundin-foll">
-<h2>5.6. Lotubundin föll<a class="headerlink" href="#lotubundin-foll" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<h2><span class="section-number">5.6. </span>Lotubundin föll<a class="headerlink" href="#lotubundin-foll" title="Varanlegur hlekkur á titilinn">¶</a></h2>
 <p>Við segjum að fall sé <a href="http://www.stae.is/os/leita/periodic" class="tooltip" target="_blank">lotubundið<span>en: <i>periodic</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> ef það í vissum skilningi endurtekur sjálft sig aftur og aftur. Setjum fram formlega skilgreiningu:</p>
 <div class="section" id="id2">
-<h3>5.6.1. Skilgreining<a class="headerlink" href="#id2" title="Varanlegur hlekkur á titilinn">¶</a></h3>
+<h3><span class="section-number">5.6.1. </span>Skilgreining<a class="headerlink" href="#id2" title="Varanlegur hlekkur á titilinn">¶</a></h3>
 <p>Fall <span class="math">\(f: \mathbb{R} \to \mathbb{R}\)</span> er sagt vera lotubundið með lotu <span class="math">\(a\)</span> ef <span class="math">\(a \in \mathbb{R}\)</span> og <span class="math">\(f(x+a)=f(x)\)</span> fyrir öll <span class="math">\(x \in \mathbb{R}\)</span>.</p>
 <div class="admonition note">
 <p class="admonition-title">Athugasemd</p>
@@ -804,9 +804,9 @@ x^2 \qquad x \geq 0\\
 </div>
 </div>
 <div class="section" id="andhverfur-falla">
-<h2>5.7. Andhverfur falla<a class="headerlink" href="#andhverfur-falla" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<h2><span class="section-number">5.7. </span>Andhverfur falla<a class="headerlink" href="#andhverfur-falla" title="Varanlegur hlekkur á titilinn">¶</a></h2>
 <div class="section" id="id3">
-<h3>5.7.1. Skilgreining<a class="headerlink" href="#id3" title="Varanlegur hlekkur á titilinn">¶</a></h3>
+<h3><span class="section-number">5.7.1. </span>Skilgreining<a class="headerlink" href="#id3" title="Varanlegur hlekkur á titilinn">¶</a></h3>
 <p>Látum <span class="math">\(A\)</span> og <span class="math">\(B\)</span> vera mengi og <span class="math">\(f: A \to B\)</span> vera <a href="http://www.stae.is/os/leita/mapping" class="tooltip" target="_blank">vörpun<span>en: <i>mapping</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a>. Ef til er vörpun <span class="math">\(g: B \to A\)</span> þannig að</p>
 <div style="text-align: center;">
 <div class="math">
@@ -828,8 +828,7 @@ x^2 \qquad x \geq 0\\
 <div class="math">
 \[f^{-1}(f(a))=a \qquad \text{fyrir öll } a \in A\]</div>
 </div>
-<a class="reference internal image-reference" href="_images/andhverfa.svg"><div align="center" class="align-center"><img alt="_images/andhverfa.svg" src="_images/andhverfa.svg" width="70%" /></div>
-</a>
+<a class="reference internal image-reference" href="_images/andhverfa.svg"><img alt="_images/andhverfa.svg" class="align-center" src="_images/andhverfa.svg" width="70%" /></a>
 <p>Hér sjáum við einfalt dæmi um andhverfa vörpun, þar sem <span class="math">\(f\)</span> hefur <a href="http://www.stae.is/os/leita/argument_domain" class="tooltip" target="_blank">skilgreiningarmengi<span>en: <i>argument domain</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> <span class="math">\(A\)</span> og <a href="http://www.stae.is/os/leita/codomain" class="tooltip" target="_blank">bakmengi<span>en: <i>codomain</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> <span class="math">\(B\)</span>.</p>
 <div class="admonition note">
 <p class="admonition-title">Athugasemd</p>
@@ -956,11 +955,14 @@ Fáum</p>
 
   <div role="contentinfo">
     <p>
-    </p>
+         Edbook fellur undir <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons</a> höfundarréttarleyfi.
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img class="CC" alt="Creative Commons License" style="border-width:0" width="80px" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" align="right"/></a>
+  Efnið er sett upp í <a href="https://github.com/edbook">Edbook</a> en það kerfi samanstendur af <a href="http://sphinx-doc.org/">Sphinx</a> ásamt sérsniðnum viðbótum. <a href="https://github.com/snide/sphinx_rtd_theme">Þemað</a> kemur frá <a href="https://readthedocs.org">Read the Docs</a>.
+  Unnið með styrk úr <a href="http://sjodir.hi.is/kennslumalasjodur">Kennslumálasjóði Háskóla Íslands.</a>
+  </p>
   </div>
 
 </footer>
-
         </div>
       </div>
 

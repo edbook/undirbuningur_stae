@@ -32,6 +32,10 @@
   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/katex.min.css" type="text/css" />
   
+    <link rel="stylesheet" href="_static/button.css" type="text/css" />
+  
+    <link rel="stylesheet" href="_static/button.css" type="text/css" />
+  
 
   
 
@@ -162,7 +166,10 @@
         
           
           
-              <ul class="current">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="formali.html">Um námsefnið</a></li>
+</ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Kafli01.html">1. Algebra</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Kafli01.html#talnakerfi">1.1. Talnakerfi</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="Kafli01.html#natturulegu-tolurnar-mathbb-n">1.1.1. Náttúrulegu tölurnar  <span class="math">\(\mathbb{N}\)</span></a></li>
@@ -335,9 +342,10 @@
 <li class="toctree-l3"><a class="reference internal" href="Kafli07.html#skilgreining">7.1.1. Skilgreining</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="Kafli07.html#einingarhringurinn">7.2. Einingarhringurinn</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Kafli07.html#kosinus-og-sinus">7.2.1. Kósínus og sínus</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Kafli07.html#amma-illa">7.2.2. Amma illa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kafli07.html#kosinus-og-sinus">7.2. Kósínus og sínus</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Kafli07.html#eingingahringurinn">7.2.1. Eingingahringurinn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Kafli07.html#id1">7.2.2. Kósínus og sínus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Kafli07.html#amma-illa">7.2.3. Amma illa</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli07.html#ekkt-gildi-a-hornafollum">7.3. Þekkt gildi á hornaföllum</a></li>
@@ -346,7 +354,7 @@
 <li class="toctree-l2"><a class="reference internal" href="Kafli07.html#hornafallareglur">7.6. Hornafallareglur</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli07.html#tvofold-horn">7.7. Tvöföld horn</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Kafli07.html#andhverfur-hornafallanna">7.8. Andhverfur hornafallanna</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Kafli07.html#id1">7.8.1. Skilgreining</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Kafli07.html#id2">7.8.1. Skilgreining</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="Kafli07.html#andhverfa-sinusar">7.8.1.1. Andhverfa sínusar</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Kafli07.html#andhverfa-kosinusar">7.8.1.2. Andhverfa kósínusar</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Kafli07.html#andhverfa-tangens">7.8.1.3. Andhverfa tangens</a></li>
@@ -535,7 +543,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Yfirlit</a> &raquo;</li>
       
-    <li>11. Diffrun</li>
+    <li><span class="section-number">11. </span>Diffrun</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -550,9 +558,9 @@
            <div itemprop="articleBody">
             
   <div class="section" id="diffrun">
-<h1>11. Diffrun<a class="headerlink" href="#diffrun" title="Varanlegur hlekkur á titilinn">¶</a></h1>
+<h1><span class="section-number">11. </span>Diffrun<a class="headerlink" href="#diffrun" title="Varanlegur hlekkur á titilinn">¶</a></h1>
 <div class="section" id="skyringardaemi">
-<h2>11.1. Skýringardæmi<a class="headerlink" href="#skyringardaemi" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<h2><span class="section-number">11.1. </span>Skýringardæmi<a class="headerlink" href="#skyringardaemi" title="Varanlegur hlekkur á titilinn">¶</a></h2>
 <p>Áður en við skilgreinum <a class="tooltip" target="_blank">afleiðu<span><staelink style="line-height:4px; font-size:80%;">Ekki fannst þýðing á hugtakinu: <i>afleiða</i></staelink></span></a> falls skulum við taka dæmi til þess að reyna að útskýra hver hugmyndin er.</p>
 <p>Við skulum hugsa okkur bíl í spyrnukeppni á 500 metra braut.
 Áður en bíllinn fer af stað er sett í hann nákvæmt staðsetningartæki sem getur teiknað upp graf sem lýsir staðsetningu hans á brautinni miðað við tímann sem er liðinn frá upphafi spyrnunnar.</p>
@@ -562,8 +570,7 @@ Eftir keppnina er staðsetningartækið skoðað og það sýnir að staðsetnin
 <div class="math">
 \[s(t) = 5t^2\]</div>
 </div>
-<div align="center" class="align-center"><img alt="_images/bill.svg" src="_images/bill.svg" /></div>
-<p>þar sem <span class="math">\(t \in [0, 10]\)</span> táknar tímann frá upphafi spyrnunnar mældan í sekúndum og <span class="math">\(s(t)\)</span> er vegalengdin sem bíllinn var þá búinn að keyra mæld í metrum.</p>
+<img alt="_images/bill.svg" class="align-center" src="_images/bill.svg" /><p>þar sem <span class="math">\(t \in [0, 10]\)</span> táknar tímann frá upphafi spyrnunnar mældan í sekúndum og <span class="math">\(s(t)\)</span> er vegalengdin sem bíllinn var þá búinn að keyra mæld í metrum.</p>
 <p>Þessi formúla segir okkur til dæmis að eftir fjórar sekúndur var bíllinn búinn að keyra 80 metra því <span class="math">\(s(4) = 5 \cdot 4^2 = 80\)</span>; og eftir átta sekúndur var bíllinn búinn að keyra <span class="math">\(320\)</span> metra þar eð <span class="math">\(s(8) = 5\cdot 8^2 =320\)</span>.</p>
 <p>Eins og við má búast er <span class="math">\(s(0) = 0\)</span> sem þýðir að eftir núll sekúndur stóð bíllinn enn óhreyfður, og <span class="math">\(s(10) = 500\)</span>, í samræmi við að bíllinn hafi keyrt brautina sem var <span class="math">\(500\)</span> metrar á tíu sekúndum.</p>
 <p>Úr formúlunni er þó hægt að fá meiri upplýsingar heldur en bara staðsetningu bílsins.
@@ -583,8 +590,7 @@ Lengdin á þessu tímabili er fjórar sekúndur. Meðalhraði bílsins á tím
 <div class="math">
 \[\frac{230}{4} = 57.5 \text{ m/s}\]</div>
 </div>
-<div align="center" class="align-center"><img alt="_images/bill1.svg" src="_images/bill1.svg" /></div>
-<p>Hér er hallatala línunar á milli <span class="math">\((4, s(4) = 80)\)</span> og <span class="math">\((8, s(8) = 320)\)</span> jöfn <span class="math">\(57.5\)</span>.</p>
+<img alt="_images/bill1.svg" class="align-center" src="_images/bill1.svg" /><p>Hér er hallatala línunar á milli <span class="math">\((4, s(4) = 80)\)</span> og <span class="math">\((8, s(8) = 320)\)</span> jöfn <span class="math">\(57.5\)</span>.</p>
 </div></blockquote>
 <ul class="simple">
 <li><p>Skoðum næst meðalhraða bílsins frá fjórum upp í sex sekúndur.
@@ -596,8 +602,7 @@ Lengdin á tímabilinu er <span class="math">\(6 − 4 = 2\)</span> sekúndur. M
 <div class="math">
 \[\frac{100}{2} = 50 \text{ m/s}.\]</div>
 </div>
-<div align="center" class="align-center"><img alt="_images/bill2.svg" src="_images/bill2.svg" /></div>
-<p>Hér er hallatala línunnar á milli <span class="math">\((4, s(4) = 80)\)</span> og <span class="math">\((6, s(6) = 180)\)</span> jöfn <span class="math">\(50\)</span>.</p>
+<img alt="_images/bill2.svg" class="align-center" src="_images/bill2.svg" /><p>Hér er hallatala línunnar á milli <span class="math">\((4, s(4) = 80)\)</span> og <span class="math">\((6, s(6) = 180)\)</span> jöfn <span class="math">\(50\)</span>.</p>
 </div></blockquote>
 <ul class="simple">
 <li><p>Skoðum meðalhraða bílsins frá fjórum upp í fimm sekúndur. Hann er:</p></li>
@@ -607,8 +612,7 @@ Lengdin á tímabilinu er <span class="math">\(6 − 4 = 2\)</span> sekúndur. M
 <div class="math">
 \[\frac{5 \cdot 5^2 - 5 \cdot 4^2}{5 -4} = \frac{45}{1} = 45 \text{ m/s}.\]</div>
 </div>
-<div align="center" class="align-center"><img alt="_images/bill3.svg" src="_images/bill3.svg" /></div>
-<p>Hér er hallatala línunar á milli <span class="math">\((4, s(4) = 80)\)</span> og <span class="math">\((5, s(5) = 125)\)</span> jöfn <span class="math">\(45\)</span>.</p>
+<img alt="_images/bill3.svg" class="align-center" src="_images/bill3.svg" /><p>Hér er hallatala línunar á milli <span class="math">\((4, s(4) = 80)\)</span> og <span class="math">\((5, s(5) = 125)\)</span> jöfn <span class="math">\(45\)</span>.</p>
 </div></blockquote>
 <ul class="simple">
 <li><p>Meðalhraði bílsins frá fjórum upp í fjórar og hálfa sekúndu er:</p></li>
@@ -630,7 +634,7 @@ Lengdin á tímabilinu er <span class="math">\(6 − 4 = 2\)</span> sekúndur. M
 </div></blockquote>
 <p>Nú eruð þið kannski farin að átta ykkur á hvað er að fara að gerast.
 Með því að stytta tímabilið meira og meira þá verður meðalhraðinn nær og nær raunverulega hraðanum í tímanum <span class="math">\(t = 4\)</span>.</p>
-<p>Þetta er farið að líkjast því að taka <a href="http://www.stae.is/os/leita/limit" class="tooltip" target="_blank">markgildi<span>en: <i>limit</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a>.
+<p>Þetta er farið að líkjast því að taka <a class="tooltip" target="_blank">markgildi<span><staelink style="line-height:4px; font-size:80%;">Ekki fannst þýðing á hugtakinu: <i>markgildi</i></staelink></span></a>.
 Almennt gildir að meðalhraði bílsins frá fjórum sekúndum upp í <span class="math">\(t\)</span> sekúndur er:</p>
 <div style="text-align: center;">
 <div class="math">
@@ -680,8 +684,7 @@ Með öðrum orðum þá má lýsa hraða bílsins af tíma með fallinu sem gef
 <p>Af þessu má lesa að hraði bílsins á sekúndu fjögur er <span class="math">\(4\cdot 10=40\)</span> m/s og hraði bílsins á sekúndu átta er <span class="math">\(8\cdot 10=80\)</span> m/s.
 Munum að bíllinn byrjar kyrrstæður svo það kemur ekki á óvart að <span class="math">\(v(0)=0\)</span> sem má túlka sem svo að hraði bílsins á sekúndunni núll sé núll.</p>
 <blockquote>
-<div><div align="center" class="align-center"><img alt="_images/bill4.svg" src="_images/bill4.svg" /></div>
-</div></blockquote>
+<div><img alt="_images/bill4.svg" class="align-center" src="_images/bill4.svg" /></div></blockquote>
 <p>Hér sjáum við línu sem er með hallatöluna <span class="math">\(40\)</span> í punktinum <span class="math">\((4, s(4) = 80)\)</span> sem gefur okkur línuna <span class="math">\(y = 40x -80\)</span>.</p>
 <p>Aðferðin sem hér var notuð kallast  <a href="http://www.stae.is/os/leita/derivation" class="tooltip" target="_blank">diffrun<span>en: <i>derivation</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> (deildun).
 Þessi aðferð er ekki bundin við þetta einstaka fall, heldur má gera þetta almennt. Segjum að hraði bílsins hafi verið gefinn með einhverju öðru falli <span class="math">\(k(t)\)</span>.
@@ -692,7 +695,7 @@ Hraði bílsins í tímapunktinum <span class="math">\(t=t_0\)</span> verður þ
 </div>
 </div>
 <div class="section" id="skilgreining">
-<h2>11.2. Skilgreining<a class="headerlink" href="#skilgreining" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<h2><span class="section-number">11.2. </span>Skilgreining<a class="headerlink" href="#skilgreining" title="Varanlegur hlekkur á titilinn">¶</a></h2>
 <p>Gerum ráð fyrir að <span class="math">\(f:\;I\to \mathbb{R}\)</span> sé fall sem er skilgreint á bili <span class="math">\(I\)</span>.
 Látum <span class="math">\(a\in I\)</span>.
 Fallið <span class="math">\(f\)</span> er sagt vera <a href="http://www.stae.is/os/leita/differentiability" class="tooltip" target="_blank">diffranlegt<span>en: <i>differentiability</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> (deildanlegt) í punktinum <span class="math">\(a\)</span> ef að markgildið</p>
@@ -776,7 +779,7 @@ Takið eftir að</p>
 </div>
 </div>
 <div class="section" id="reiknireglur">
-<h2>11.3. Reiknireglur<a class="headerlink" href="#reiknireglur" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<h2><span class="section-number">11.3. </span>Reiknireglur<a class="headerlink" href="#reiknireglur" title="Varanlegur hlekkur á titilinn">¶</a></h2>
 <p>Gerum ráð fyrir að <span class="math">\(f,g\)</span> séu deildanleg föll á <span class="math">\(\mathbb{R}\)</span>.</p>
 <p>Látum <span class="math">\(a\in \mathbb{R}\)</span> vera fasta.</p>
 <p>Þá gildir:</p>
@@ -810,7 +813,7 @@ Takið eftir að</p>
 </div>
 </div>
 <div class="section" id="ekktar-afleiur">
-<h2>11.4. Þekktar afleiður<a class="headerlink" href="#ekktar-afleiur" title="Varanlegur hlekkur á titilinn">¶</a></h2>
+<h2><span class="section-number">11.4. </span>Þekktar afleiður<a class="headerlink" href="#ekktar-afleiur" title="Varanlegur hlekkur á titilinn">¶</a></h2>
 <ol class="arabic simple">
 <li><p>Ef <span class="math">\(a\)</span> er fasti og <span class="math">\(f(x)=a\)</span> þá er</p></li>
 </ol>
@@ -1012,11 +1015,14 @@ Notum okkur líka þekktu afleiðurnar <span class="math">\(f(x)=\cos(x)\)</span
 
   <div role="contentinfo">
     <p>
-    </p>
+         Edbook fellur undir <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons</a> höfundarréttarleyfi.
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img class="CC" alt="Creative Commons License" style="border-width:0" width="80px" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" align="right"/></a>
+  Efnið er sett upp í <a href="https://github.com/edbook">Edbook</a> en það kerfi samanstendur af <a href="http://sphinx-doc.org/">Sphinx</a> ásamt sérsniðnum viðbótum. <a href="https://github.com/snide/sphinx_rtd_theme">Þemað</a> kemur frá <a href="https://readthedocs.org">Read the Docs</a>.
+  Unnið með styrk úr <a href="http://sjodir.hi.is/kennslumalasjodur">Kennslumálasjóði Háskóla Íslands.</a>
+  </p>
   </div>
 
 </footer>
-
         </div>
       </div>
 

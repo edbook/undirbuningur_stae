@@ -79,12 +79,12 @@ ef
 þá er
 
 .. math::
-	|f(x)-b|<\epsilon.
+	0<|f(x)-b|<\epsilon.
 
 .. note::
   Í þessari skilgreiningu má ímynda sér að :math:`\epsilon` og :math:`\delta` séu rosalega litlar tölur.
 
-  Ójafnan :math:`|x-a|<\delta` þýðir þá að :math:`x` sé rosalega nálægt því að vera :math:`a` og ójafnan :math:`|f(x)-b|<\epsilon` þýðir að :math:`f(x)` er rosalega nálægt því að vera :math:`b`.
+  Ójafnan :math:`|x-a|<\delta` þýðir þá að :math:`x` sé rosalega nálægt því að vera :math:`a` og ójafnan :math:`0<|f(x)-b|<\epsilon` þýðir að :math:`f(x)` er rosalega nálægt því að vera :math:`b`.
 
   Athugum að :math:`a` og :math:`b` geta verið hvaða tölur sem er, jafnvel :math:`\pm \infty`.
 
