@@ -11,11 +11,11 @@ Einnig er til sambærileg yfirlit um eðlisfræði og efnafræði.
 
 .. button::
   :text: Undirbúningur í eðlisfræði
-  :link: http://edbook.hi.is/undirbuningur_edl/
+  :link: ../undirbuningur_edl/index.html
 
 .. button::
   :text: Undirbúningur í efnafræði
-  :link: http://edbook.hi.is/undirbuningur_efn/
+  :link: ../undirbuningur_efn/index.html
 
 .. toctree::
   formali

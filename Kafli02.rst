@@ -2,7 +2,7 @@ Jöfnur og ójöfnur
 =================
 
 .. panopto:: 8d8a65f8-66dd-4d9b-980d-475e439fc0bd
-    :width: 720
+    :width: 100%
     :height: 405
 
 --------------------------------------------------------------------
@@ -457,7 +457,7 @@ Til þess að þátta stærð á forminu :math:`ax^2+bx+c` getum við ávallt be
 	 .. math::
 		x_2=\frac{-1-\sqrt{5}}{2}
 
-Fáum því að 
+Fáum því að
 
 	 .. math::
 		x^2+x-1=\left(x-\frac{-1+\sqrt{5}}{2}\right)\left(x-\frac{-1-\sqrt{5}}{2}\right)
@@ -800,7 +800,7 @@ Summu- og margfeldistáknið
 --------------------------
 
 .. panopto:: 26b3143f-25f5-454e-a137-649ed1207c7a
-    :width: 720
+    :width: 100%
     :height: 405
 
 -------------------------------------------

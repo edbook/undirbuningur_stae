@@ -3,7 +3,7 @@ Mengi
 .. _s.Mengi:
 
 .. panopto:: f624b32e-178d-41cc-8ccb-a559712471d7
-    :width: 720
+    :width: 100%
     :height: 405
 
 --------------------
