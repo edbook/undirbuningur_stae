@@ -30,7 +30,9 @@
   
 
   
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/katex.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" type="text/css" />
+  
+    <link rel="stylesheet" href="_static/katex-math.css" type="text/css" />
   
     <link rel="stylesheet" href="_static/button.css" type="text/css" />
   
@@ -561,12 +563,12 @@
 <h1><span class="section-number">10. </span>Markgildi<a class="headerlink" href="#markgildi" title="Varanlegur hlekkur á titilinn">¶</a></h1>
 <div class="section" id="markgildi-falls">
 <h2><span class="section-number">10.1. </span>Markgildi falls<a class="headerlink" href="#markgildi-falls" title="Varanlegur hlekkur á titilinn">¶</a></h2>
-<p>Áður en að við skilgreinum <a class="tooltip" target="_blank">markgildi<span><staelink style="line-height:4px; font-size:80%;">Ekki fannst þýðing á hugtakinu: <i>markgildi</i></staelink></span></a> <a href="http://www.stae.is/os/leita/function" class="tooltip" target="_blank">falls<span>en: <i>function</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> formlega skulum við taka dæmi til að útskýra hver hugmyndin er.
+<p>Áður en að við skilgreinum <a href="http://www.stae.is/os/leita/limit" class="tooltip" target="_blank">markgildi<span>en: <i>limit</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> <a href="http://www.stae.is/os/leita/function" class="tooltip" target="_blank">falls<span>en: <i>function</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> formlega skulum við taka dæmi til að útskýra hver hugmyndin er.
 Skilgreinum fall:</p>
-<div style="text-align: center;">
 <div class="math">
-\[g:\;\mathbb{R}\setminus\{0\}\to \mathbb{R}, \qquad g(x)=\frac{\sin(x)}{x}.\]</div>
-</div>
+\[g:\;\mathbb{R}\setminus\{0\}\to \mathbb{R}, \qquad g(x)=\frac{\sin(x)}{x}.
+
+\]</div>
 <p>Tökum eftir að við látum fallið <span class="math">\(g\)</span> ekki vera skilgreint í punktinum <span class="math">\(x=0\)</span>  til að komast hjá því að deila með núlli.</p>
 <p>Það getur hins vegar verið áhugavert að skoða hvernig fallið hagar sér <strong>nálægt</strong> punktinum <span class="math">\(x=0\)</span>.
 Teiknum mynd af fallinu <span class="math">\(g\)</span>:</p>
@@ -575,58 +577,58 @@ Teiknum mynd af fallinu <span class="math">\(g\)</span>:</p>
 </div>
 <p>Við notum vasareikni til að reikna nokkur gildi á <span class="math">\(g\)</span> og merkjum inn í <a href="http://www.stae.is/os/leita/coordinate_system" class="tooltip" target="_blank">hnitakerfið<span>en: <i>coordinate system</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> punktana <span class="math">\((x,g(x))\)</span>.
 Athugum að fallið er <a href="http://www.stae.is/os/leita/even" class="tooltip" target="_blank">jafnstætt<span>en: <i>even</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> svo <span class="math">\(g(-x)=g(x)\)</span> fyrir öll <span class="math">\(x\)</span>.</p>
-<div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-    g(-1) &amp;=g(1) \approx 0,841470984 \\
-    g(-0,5) &amp;=g(0,5)\approx 0,958851077\\
-    g(-0,25) &amp;=g(0,25)\approx 0,989615837 \\
-    g(-0,1) &amp;=g(0,1)\approx 0,998334166 \\
-    g(-0,001) &amp;= g(0,001) \approx 0,9999833
-\end{aligned}\]</div>
-</div>
+    g(-1) &=g(1) \approx 0,841470984 \\
+    g(-0,5) &=g(0,5)\approx 0,958851077\\
+    g(-0,25) &=g(0,25)\approx 0,989615837 \\
+    g(-0,1) &=g(0,1)\approx 0,998334166 \\
+    g(-0,001) &= g(0,001) \approx 0,9999833
+\end{aligned}
+
+\]</div>
 <p>Takið sérstaklega eftir því að fallið virðist ekki fara upp eða niður í óendanleikann þegar við nálgumst gildið <span class="math">\(x=0\)</span>.
 Öllu heldur þá virðist fallið stefna á gildið <span class="math">\(1\)</span>!</p>
 <p>Við höfum séð að ef <span class="math">\(x_0\)</span> er tala sem er mjög nálægt núlli þá verður fallgildið <span class="math">\(g(x_0)\)</span> mjög nálægt því að verða <span class="math">\(1\)</span>.</p>
 <p>Munum að fallið <span class="math">\(g\)</span> er <strong>ekki skilgreint í núlli</strong>, hins vegar höfum við sér orðalag fyrir svona tilvik.
-Við segjum að <a class="tooltip" target="_blank">markgildi<span><staelink style="line-height:4px; font-size:80%;">Ekki fannst þýðing á hugtakinu: <i>markgildi</i></staelink></span></a> fallsins <span class="math">\(g\)</span> í núlli sé einn.
+Við segjum að <a href="http://www.stae.is/os/leita/limit" class="tooltip" target="_blank">markgildi<span>en: <i>limit</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> fallsins <span class="math">\(g\)</span> í núlli sé einn.
 Einnig má segja að <span class="math">\(g(x)\)</span> stefni á einn þegar <span class="math">\(x\)</span> stefnir á núll.
 Á táknmáli er skrifað</p>
-<div style="text-align: center;">
 <div class="math">
-\[\lim_{x\to 0}g(x)=1.\]</div>
-</div>
+\[\lim_{x\to 0}g(x)=1.
+
+\]</div>
 <p>Þetta er hægt að gera almennt.</p>
 <p>Látum nú <span class="math">\(a\)</span> vera stak í <a href="http://www.stae.is/os/leita/interval" class="tooltip" target="_blank">bilinu<span>en: <i>interval</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> <span class="math">\(I\)</span> í <span class="math">\(\mathbb{R}\)</span>.
 Látum <span class="math">\(f:\;I\setminus\{a\}\to \mathbb{R}\)</span> vera eitthvað fall og <span class="math">\(b\in \mathbb{R}\)</span> vera tölu.
 Við segjum að markgildi fallsins <span class="math">\(f\)</span> í punktinum <span class="math">\(x=a\)</span> sé <span class="math">\(b\)</span> ef fyrir allar tölur <span class="math">\(x_0\)</span> sem eru nálægt tölunni <span class="math">\(a\)</span> þá er talan <span class="math">\(f(x_0)\)</span> nálægt tölunni <span class="math">\(b\)</span>.
 Þá skrifum við</p>
-<div style="text-align: center;">
 <div class="math">
-\[\lim_{x\to a}f(x)=b.\]</div>
-</div>
+\[\lim_{x\to a}f(x)=b.
+
+\]</div>
 <p>Setjum fram skilgreininguna á markgildi.</p>
 <div class="section" id="skilgreining">
 <h3><span class="section-number">10.1.1. </span>Skilgreining<a class="headerlink" href="#skilgreining" title="Varanlegur hlekkur á titilinn">¶</a></h3>
 <p>Gerum ráð fyrir að <span class="math">\(I\subset \mathbb{R}\)</span> sé bil í <span class="math">\(\mathbb{R}\)</span> og að <span class="math">\(a\in I\)</span> sé punktur á bilinu sem er hvorugur endapunkta þess.</p>
 <p>Gerum ráð fyrir að <span class="math">\(f:\; I\setminus\{a\}\to \mathbb{R}\)</span> sé fall og að <span class="math">\(b\in \mathbb{R}\)</span> sé tala.</p>
 <p>Við segjum að markgildi fallsins <span class="math">\(f\)</span> í punktinum <span class="math">\(a\)</span> sé <span class="math">\(b\)</span> og ritum</p>
-<div style="text-align: center;">
 <div class="math">
-\[\lim_{x\to a}f(x)=b\]</div>
-</div>
+\[\lim_{x\to a}f(x)=b
+
+\]</div>
 <p>ef að eftirfarandi gildir:</p>
 <p>Fyrir sérhvert <span class="math">\(\epsilon&gt;0\)</span> er til <span class="math">\(\delta&gt;0\)</span> þannig að
 ef</p>
-<div style="text-align: center;">
 <div class="math">
-\[|x-a|&lt;\delta,\]</div>
-</div>
+\[|x-a|<\delta,
+
+\]</div>
 <p>þá er</p>
-<div style="text-align: center;">
 <div class="math">
-\[0&lt;|f(x)-b|&lt;\epsilon.\]</div>
-</div>
+\[0<|f(x)-b|<\epsilon.
+
+\]</div>
 <div class="admonition note">
 <p class="admonition-title">Athugasemd</p>
 <p>Í þessari skilgreiningu má ímynda sér að <span class="math">\(\epsilon\)</span> og <span class="math">\(\delta\)</span> séu rosalega litlar tölur.</p>
@@ -647,25 +649,25 @@ ef</p>
 <p>Þegar við skoðum bláa grafið vinstra megin við vandræðapunktinn tekur fallið snögga dýfu niður í <span class="math">\(-\infty\)</span> þegar það nálgast 1.
 Þetta köllum við að skoða <em>vinstra markgildi</em> og táknum með litlum mínus í hávísi.
 Í þessu tilviki myndum við skrifa:</p>
-<div style="text-align: center;">
 <div class="math">
-\[\lim_{x \to 1^{-}} \frac{x}{x-1} = -\infty\]</div>
-</div>
+\[\lim_{x \to 1^{-}} \frac{x}{x-1} = -\infty
+
+\]</div>
 <p>Hins vegar, þegar við eltum rauða ferilinn hægra megin við vandræðapunktinn stefnir fallið hratt upp í <span class="math">\(+\infty\)</span> þegar það nálgast 1.
 Þetta köllum við <em>hægra markgildi</em> og táknum með litlum plús í hávísi.
 Í þessu tilviki myndum við skrifa:</p>
-<div style="text-align: center;">
 <div class="math">
-\[\lim_{x \to 1^{+}} \frac{x}{x-1} = \infty\]</div>
-</div>
+\[\lim_{x \to 1^{+}} \frac{x}{x-1} = \infty
+
+\]</div>
 <div class="admonition note">
 <p class="admonition-title">Athugasemd</p>
 <p>Þegar hægra markgildi og vinstra markigildi falls í punkti er ekki það sama þá er <em>markgildið ekki til</em>.</p>
 <p>Markgildi <span class="math">\(f(x)\)</span> í punktinum <span class="math">\(x=a\)</span> er ekki til nema ef</p>
-<div style="text-align: center;">
 <div class="math">
-\[\lim_{x\to a^+} f(x) = \lim_{x\to a^-} f(x)\]</div>
-</div>
+\[\lim_{x\to a^+} f(x) = \lim_{x\to a^-} f(x)
+
+\]</div>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Aðvörun</p>
@@ -688,10 +690,10 @@ ef</p>
 og <span class="math">\(q(2)=2^3-2^2+1=5\not=0\)</span></p>
 <p>Hér er <span class="math">\(2\)</span> í skilgreiningarmenginu svo til þess að reikna markgildið er gildinu einfaldlega stungið inn.
 Markgildið er því:</p>
-<div style="text-align: center;">
 <div class="math">
-\[\lim_{x\to 2}\frac{x^3+2x^2}{x^3-x^2+1}=\frac{2^3+2\cdot 2^2}{2^3-2^2+1}=\frac{16}{5}\]</div>
-</div>
+\[\lim_{x\to 2}\frac{x^3+2x^2}{x^3-x^2+1}=\frac{2^3+2\cdot 2^2}{2^3-2^2+1}=\frac{16}{5}
+
+\]</div>
 </dd>
 <dt><strong>2.</strong></dt><dd><p><span class="math">\(\lim_{x\to 4}\frac{x^3-4x^2-4x+16}{x^2-16}\)</span> .</p>
 <p>Hér er <span class="math">\(q(x)=x^2-16\)</span> og <span class="math">\(p(x)=x^3-4x^2-4x+16\)</span> .</p>
@@ -700,16 +702,16 @@ Markgildið er því:</p>
 Við getum umritað <span class="math">\(p(x) = (x-2)(x+2)(x-4)\)</span> og <span class="math">\(q(x)=(x-4)(x+4)\)</span>
 og sjáum að <span class="math">\((x-4)\)</span> er sameiginlegur þáttur sem styttist út.</p>
 <p>Fáum því markgildið:</p>
-<div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
- \lim_{x\to 4}\frac{x^3-4x^2-4x+16}{x^2-16} &amp;= \lim_{x\to 4} \frac{(x-2)(x+2)(x-4)}{(x-4)(x+4)} \\
-       &amp;=\lim_{x\to 4}\frac{(x-2)(x+2)}{(x+4)}\\
- &amp;=\frac{(4-2)(4+2)}{4+4}\\
- &amp;=\frac{12}{8}\\
- &amp;=\frac{3}{2}
-\end{aligned}\]</div>
-</div>
+ \lim_{x\to 4}\frac{x^3-4x^2-4x+16}{x^2-16} &= \lim_{x\to 4} \frac{(x-2)(x+2)(x-4)}{(x-4)(x+4)} \\
+       &=\lim_{x\to 4}\frac{(x-2)(x+2)}{(x+4)}\\
+ &=\frac{(4-2)(4+2)}{4+4}\\
+ &=\frac{12}{8}\\
+ &=\frac{3}{2}
+\end{aligned}
+
+\]</div>
 </dd>
 <dt><strong>3.</strong></dt><dd><p>Látum <span class="math">\(f: \mathbb{R} \setminus \{1\} \to \mathbb{R} \qquad f(x)=x\)</span>.</p>
 <p>Sýnið að <span class="math">\(\lim_{x \to 1} f(x) = 1\)</span> .</p>
@@ -735,15 +737,15 @@ Sýna þarf að til sé <span class="math">\(\delta&gt;0\)</span> þannig að <s
 </dd>
 </dl>
 </div></blockquote>
-<div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-|f(x) - 2| &amp;= |\sqrt{x} - 2|,\\
-&amp; = \frac{|\sqrt{x} - 2||\sqrt{x} + 2|}{|\sqrt{x} + 2|},\\
-&amp; = \frac{|x - 4|}{|\sqrt{x} + 2|},\\
-&amp; \leqq \frac{|x-4|}{|2|} \leqq \frac{\delta}{2} = \epsilon.
-\end{aligned}\]</div>
-</div>
+|f(x) - 2| &= |\sqrt{x} - 2|,\\
+& = \frac{|\sqrt{x} - 2||\sqrt{x} + 2|}{|\sqrt{x} + 2|},\\
+& = \frac{|x - 4|}{|\sqrt{x} + 2|},\\
+& \leqq \frac{|x-4|}{|2|} \leqq \frac{\delta}{2} = \epsilon.
+\end{aligned}
+
+\]</div>
 </div>
 </div>
 </div>
@@ -760,48 +762,48 @@ Sýna þarf að til sé <span class="math">\(\delta&gt;0\)</span> þannig að <s
 <hr class="docutils" />
 <p>Skoðum markgildið <span class="math">\(\lim_{x \to \infty}\frac{1}{x^n}\)</span> fyrir öll <span class="math">\(n \in \mathbb{N}_+\)</span></p>
 <p>Byrjum á <span class="math">\(n=1\)</span>, þá er augljóst að</p>
-<div style="text-align: center;">
 <div class="math">
-\[\lim_{x \to \infty}\frac{1}{x} = 0\]</div>
-</div>
+\[\lim_{x \to \infty}\frac{1}{x} = 0
+
+\]</div>
 <p>því ef <span class="math">\(x\)</span> er stórt þá er <span class="math">\(\frac{1}{x}\)</span> lítið.
 Því er <span class="math">\(\frac{1}{x}\)</span> að minnka þegar <span class="math">\(x\)</span> er að stækka.</p>
 <p>Ef <span class="math">\(n=2\)</span> þá er líka augljóst að</p>
-<div style="text-align: center;">
 <div class="math">
-\[\lim_{x \to \infty}\frac{1}{x^2} = \lim_{x \to \infty}\left(\frac{1}{x}\right)^2 = 0\]</div>
-</div>
+\[\lim_{x \to \infty}\frac{1}{x^2} = \lim_{x \to \infty}\left(\frac{1}{x}\right)^2 = 0
+
+\]</div>
 <p>vegna þess að</p>
-<div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-x&amp;\leq x^2 \quad &amp; \forall x \geq 1\\
-\frac{1}{x^2} &amp;\leq \frac{1}{x} \quad &amp;\forall x \geq 1 \end{aligned}\]</div>
-</div>
+x&\leq x^2 \quad & \forall x \geq 1\\
+\frac{1}{x^2} &\leq \frac{1}{x} \quad &\forall x \geq 1 \end{aligned}
+
+\]</div>
 <p>Þegar við hækkum veldið á <span class="math">\(x\)</span> í nefnaranum þá minnkar <span class="math">\(\frac{1}{x}\)</span> hraðar, því <span class="math">\(x\)</span> er að stækka hraðar.</p>
 <p>Við sjáum því að <span class="math">\(\frac{1}{x^n}\)</span> stefnir á núll þegar <span class="math">\(x\)</span> stefnir á <span class="math">\(\infty\)</span> fyrir allar jákvæðar heiltölur tölur <span class="math">\(n\)</span>.</p>
-<div style="text-align: center;">
 <div class="math">
-\[\lim_{x \to \infty} \frac{1}{x^n} = 0 \qquad \forall n \in \mathbb{Z}_+\]</div>
-</div>
+\[\lim_{x \to \infty} \frac{1}{x^n} = 0 \qquad \forall n \in \mathbb{Z}_+
+
+\]</div>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/xminusn.svg"><img alt="_images/xminusn.svg" src="_images/xminusn.svg" width="40%" /></a>
 </div>
 <hr class="docutils" />
 <p>En hvað með markgildið <span class="math">\(\lim_{x\to 0^+} \frac{1}{x^n}\)</span> ?</p>
 <p>Þegar við nálgumst núll ofan frá erum við að deila með sífellt minni tölu. Þá fáum við sífellt stærri tölu út:</p>
-<div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-&amp;\frac{1}{2} &lt;\frac{1}{1}&lt;\frac{1}{0.5} &lt;\frac{1}{0.1} &lt;\frac{1}{0.001}\\
-&amp;0.5&lt;1&lt;2&lt;10 &lt; 1000
-\end{aligned}\]</div>
-</div>
+&\frac{1}{2} <\frac{1}{1}<\frac{1}{0.5} <\frac{1}{0.1} <\frac{1}{0.001}\\
+&0.5<1<2<10 < 1000
+\end{aligned}
+
+\]</div>
 <p>Því hlýtur</p>
-<div style="text-align: center;">
 <div class="math">
-\[\lim_{x\to 0^+} \frac{1}{x^n} = \infty\]</div>
-</div>
+\[\lim_{x\to 0^+} \frac{1}{x^n} = \infty
+
+\]</div>
 <hr class="docutils" />
 <p>Skoðum nokkur dæmi:</p>
 <div class="admonition tip">
@@ -812,10 +814,10 @@ x&amp;\leq x^2 \quad &amp; \forall x \geq 1\\
 <blockquote>
 <div><p>Þegar <span class="math">\(x\)</span> stefnir á núll þá stefnir <span class="math">\((2^x-1)^2\)</span> á núll (því <span class="math">\(2^0=1\)</span>) svo að
 <span class="math">\(\frac{1}{(2^x-1)^2}\)</span> stefnir annað hvort á plús eða mínus óendanlegt. Þar sem  <span class="math">\(\frac{1}{(2^x-1)^2}=\left(\frac{1}{2^x-1}\right)^2\)</span> er stæða í öðru veldi þá er hún alltaf jákvæð. Hún hlýtur því að stefna á plús óendanlegt, við skrifum</p>
-<div style="text-align: center;">
 <div class="math">
-\[\lim_{x\to 0}\frac{1}{(2^x-1)^2}=\infty.\]</div>
-</div>
+\[\lim_{x\to 0}\frac{1}{(2^x-1)^2}=\infty.
+
+\]</div>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/daemi2.svg"><img alt="_images/daemi2.svg" src="_images/daemi2.svg" width="40%" /></a>
 </div>
@@ -826,10 +828,10 @@ x&amp;\leq x^2 \quad &amp; \forall x \geq 1\\
 <div><p>Þegar <span class="math">\(x\)</span> stefnir á <span class="math">\(\pi/2\)</span> þá stefnir <span class="math">\(\cos(x)\)</span> á núll svo <span class="math">\(\frac{1}{\cos(x)}\)</span> stefnir á plús eða mínus óendanlegt.
 Þekkt er að <span class="math">\(\cos(x)\)</span> er jákvætt ef <span class="math">\(0&lt;x&lt;\pi/2\)</span>. Stæðan <span class="math">\(\frac{1}{\cos(x)}\)</span> er þess vegna jákvæð á sama bili og þess vegna stefnir hún á plús óendanlegt ef <span class="math">\(x\)</span> nálgast <span class="math">\(\pi/2\)</span> frá vinstri.
 Við skrifum</p>
-<div style="text-align: center;">
 <div class="math">
-\[\lim_{x\to \frac{\pi}{2}^{-}}\frac{1}{\cos(x)}=\infty.\]</div>
-</div>
+\[\lim_{x\to \frac{\pi}{2}^{-}}\frac{1}{\cos(x)}=\infty.
+
+\]</div>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/daemi3.svg"><img alt="_images/daemi3.svg" src="_images/daemi3.svg" width="100%" /></a>
 </div>
@@ -842,72 +844,72 @@ Við skrifum</p>
 <p>Þegar  markgildi eru reiknuð gilda reiknireglur sem ættu ekki að koma á óvart.</p>
 <p>Gerum ráð fyrir að <span class="math">\(f\)</span> og <span class="math">\(g\)</span> séu föll og að <span class="math">\(c\in \mathbb{R} \cup\{-\infty,\infty\}\)</span>
 Gerum ráð fyrir að bæði markgildin</p>
-<div style="text-align: center;">
 <div class="math">
-\[\lim_{x\to c}f(x)\qquad \text{og}\qquad \lim_{x\to c}g(x)\]</div>
-</div>
+\[\lim_{x\to c}f(x)\qquad \text{og}\qquad \lim_{x\to c}g(x)
+
+\]</div>
 <p>séu skilgreind og að hvorugt þeirra sé jafnt plús eða mínus óendanlegu.
 Gerum ráð fyrir að <span class="math">\(k\in\mathbb{R}\)</span> sé fasti.
 Þá gildir:</p>
-<div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-1. &amp; \qquad \lim_{x\to c}k=k \\
+1. & \qquad \lim_{x\to c}k=k \\
 \quad\\
-2. &amp; \qquad \lim_{x\to c} \left(kf(x) \right)=k \cdot \left(\lim_{x\to c}f(x)\right) \\
+2. & \qquad \lim_{x\to c} \left(kf(x) \right)=k \cdot \left(\lim_{x\to c}f(x)\right) \\
 \quad\\
-3. &amp; \qquad \lim_{x\to c} \left(f(x)+g(x)\right)=\lim_{x\to c}f(x)+\lim_{x\to c}g(x) \\
+3. & \qquad \lim_{x\to c} \left(f(x)+g(x)\right)=\lim_{x\to c}f(x)+\lim_{x\to c}g(x) \\
 \quad\\
-4. &amp; \qquad \lim_{x\to c} \left(f(x)-g(x)\right)=\lim_{x\to c}f(x)-\lim_{x\to c}g(x) \\
+4. & \qquad \lim_{x\to c} \left(f(x)-g(x)\right)=\lim_{x\to c}f(x)-\lim_{x\to c}g(x) \\
 \quad\\
-5. &amp; \qquad \lim_{x\to c} \left(f(x)\cdot g(x)\right)= \left( \lim_{x\to c}f(x) \right)\cdot \left(\lim_{x\to c}g(x) \right) \\
+5. & \qquad \lim_{x\to c} \left(f(x)\cdot g(x)\right)= \left( \lim_{x\to c}f(x) \right)\cdot \left(\lim_{x\to c}g(x) \right) \\
 \quad\\
-6. &amp; \qquad \lim_{x\to c} \left( \frac{f(x)}{g(x)} \right)=\frac{\lim_{x\to c}f(x)}{\lim_{x\to c}g(x)} \qquad \text{ef} \qquad \lim_{x\to c}g(x)\not=0
-\end{aligned}\]</div>
-</div>
+6. & \qquad \lim_{x\to c} \left( \frac{f(x)}{g(x)} \right)=\frac{\lim_{x\to c}f(x)}{\lim_{x\to c}g(x)} \qquad \text{ef} \qquad \lim_{x\to c}g(x)\not=0
+\end{aligned}
+
+\]</div>
 <div class="admonition tip">
 <p class="admonition-title">Dæmi</p>
 <p>Finnið eftirfarandi markgildið ef það er til.</p>
-<div style="text-align: center;">
 <div class="math">
-\[\lim_{x \to \infty} \frac{x^2 + 1}{2x^2 + 5x +1}\]</div>
-</div>
+\[\lim_{x \to \infty} \frac{x^2 + 1}{2x^2 + 5x +1}
+
+\]</div>
 <p>Við byrjum á því að deila með <span class="math">\(x^2\)</span> fyrir ofan og neðan strik. Við notum svo reiknireglurnar fyrir afganginn og þá staðreynd að <span class="math">\(\frac{1}{x^n}\)</span> stefnir á núll þegar <span class="math">\(x\)</span> stefnir á <span class="math">\(\infty\)</span> fyrir allar náttúrulegar tölur <span class="math">\(n\)</span>.</p>
-<div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
 \lim_{x \to \infty} \frac{x^2 + 1}{2x^2 + 5x +1}
-&amp;= \lim_{x \to \infty} \frac{1 + \frac{1}{x^2}}{2 + \frac{5}{x} + \frac{1}{x^2}} \\
-&amp;= \frac{\lim_{x \to \infty}( 1 + \frac{1}{x^2})}{\lim_{x \to \infty}( 2 + \frac{5}{x} + \frac{1}{x^2})} \\
-&amp;=\frac{\lim_{x \to \infty}1+\lim_{x \to \infty} \frac{1}{x^2}}{\lim_{x \to \infty}2+\lim_{x \to \infty} \frac{5}{x} +\lim_{x \to \infty} \frac{1}{x^2}} \\
-&amp;=\frac{1+0}{2+0+0}\\
-&amp;=\frac{1}{2}
-\end{aligned}\]</div>
-</div>
+&= \lim_{x \to \infty} \frac{1 + \frac{1}{x^2}}{2 + \frac{5}{x} + \frac{1}{x^2}} \\
+&= \frac{\lim_{x \to \infty}( 1 + \frac{1}{x^2})}{\lim_{x \to \infty}( 2 + \frac{5}{x} + \frac{1}{x^2})} \\
+&=\frac{\lim_{x \to \infty}1+\lim_{x \to \infty} \frac{1}{x^2}}{\lim_{x \to \infty}2+\lim_{x \to \infty} \frac{5}{x} +\lim_{x \to \infty} \frac{1}{x^2}} \\
+&=\frac{1+0}{2+0+0}\\
+&=\frac{1}{2}
+\end{aligned}
+
+\]</div>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Dæmi</p>
 <p>Finnið markgildið:</p>
 <blockquote>
-<div><div style="text-align: center;">
-<div class="math">
-\[\lim_{x\to \infty}\frac{(\sin(x))^2}{x}.\]</div>
-</div>
+<div><div class="math">
+\[\lim_{x\to \infty}\frac{(\sin(x))^2}{x}.
+
+\]</div>
 <p>Auðvelt er að sjá að fallið <span class="math">\(\frac{1}{x}\)</span> stefnir á núll þegar <span class="math">\(x\)</span> stefnir á óendanlegt.
 Þekkt er að <span class="math">\(|\sin(x)|\leq 1\)</span> fyrir öll <span class="math">\(x\)</span> og því fæst að <span class="math">\(0\leq (\sin(x))^2 \leq 1\)</span> fyrir öll <span class="math">\(x\)</span>.
 Þegar <span class="math">\(x\)</span> er stórt er því <span class="math">\(\frac{1}{x}\)</span> nálægt núlli og <span class="math">\((\sin(x))^2\)</span> er á milli núll og einn.
 En þá er auðvelt að sjá að</p>
-<div style="text-align: center;">
 <div class="math">
-\[\frac{(\sin(x))^2}{x}=(\sin(x))^2\frac{1}{x}\]</div>
-</div>
+\[\frac{(\sin(x))^2}{x}=(\sin(x))^2\frac{1}{x}
+
+\]</div>
 </div></blockquote>
 <p>er nálægt núlli svo að markgildið er núll. Hér notuðum við reiknireglu 5.</p>
 <p>Við skrifum:</p>
-<div style="text-align: center;">
 <div class="math">
-\[\lim_{x\to\infty}\frac{(\sin(x))^2}{x}=0.\]</div>
-</div>
+\[\lim_{x\to\infty}\frac{(\sin(x))^2}{x}=0.
+
+\]</div>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/daemi1.svg"><img alt="_images/daemi1.svg" src="_images/daemi1.svg" width="100%" /></a>
 </div>
@@ -916,20 +918,20 @@ En þá er auðvelt að sjá að</p>
 <div class="admonition tip">
 <p class="admonition-title">Dæmi</p>
 <p>Finnið markgildið:</p>
-<div style="text-align: center;">
 <div class="math">
-\[\lim_{x\to \infty} \frac{x}{2x+1}\]</div>
-</div>
+\[\lim_{x\to \infty} \frac{x}{2x+1}
+
+\]</div>
 <p>Þegar <span class="math">\(x\)</span> stefnir á stærri og stærri tölur byrjar <span class="math">\(1\)</span> að skipta minna máli því hann er mikið minni í samanburði við það sem <span class="math">\(x\)</span> stefnir á. Þá erum við komin með einfaldara markgildi til að skoða:</p>
-<div style="text-align: center;">
 <div class="math">
-\[\lim_{x\to \infty} \frac{x}{2x}\]</div>
-</div>
+\[\lim_{x\to \infty} \frac{x}{2x}
+
+\]</div>
 <p>Hér getum við stytt út <span class="math">\(x\)</span>-in og fáum að</p>
-<div style="text-align: center;">
 <div class="math">
-\[\lim_{x\to \infty} \frac{1}{2} = \frac{1}{2}\]</div>
-</div>
+\[\lim_{x\to \infty} \frac{1}{2} = \frac{1}{2}
+
+\]</div>
 <img alt="_images/tutor.svg" class="align-center" src="_images/tutor.svg" /></div>
 </div>
 <div class="section" id="samfelld-foll">
@@ -977,34 +979,34 @@ Ef að fall <span class="math">\(f\)</span> er ósamfellt þá segjum við að �
 <p>Segjum til um hvort föllin eru samfelld eða ekki.</p>
 <p><strong>1.</strong></p>
 <blockquote>
-<div><div style="text-align: center;">
-<div class="math">
-\[f(x)=|x|+\cos(x^3)\]</div>
-</div>
+<div><div class="math">
+\[f(x)=|x|+\cos(x^3)
+
+\]</div>
 <p>Fallið <span class="math">\(f\)</span> er samsett úr föllunum <span class="math">\(|x|\)</span>, <span class="math">\(\cos(x)\)</span> og <span class="math">\(x^3\)</span> sem eru öll samfelld föll. Þess vegna er <span class="math">\(f\)</span> samfellt.</p>
 </div></blockquote>
 <p><strong>2.</strong></p>
 <blockquote>
-<div><div style="text-align: center;">
-<div class="math">
-\[\begin{aligned}g(x) =
+<div><div class="math">
+\[g(x) =
 \begin{cases}
-        \hfill -1    \hfill &amp; \text{ ef } x\leq 0,\\
-        \hfill  1 \hfill &amp; \text{ ef } x&gt;0.\\
-\end{cases}\end{aligned}\]</div>
-</div>
+        \hfill -1    \hfill & \text{ ef } x\leq 0,\\
+        \hfill  1 \hfill & \text{ ef } x>0.\\
+\end{cases}
+
+\]</div>
 <p>Í punktinum <span class="math">\(x=0\)</span> tekur fallið <span class="math">\(g\)</span> stökk frá því að vera jafnt mínus einum í það að vera jafnt einum. Fallið er þess vegna ósamfellt í þeim punkti.</p>
 </div></blockquote>
 <p><strong>3.</strong></p>
 <blockquote>
-<div><div style="text-align: center;">
-<div class="math">
-\[\begin{aligned}h(x) =
+<div><div class="math">
+\[h(x) =
 \begin{cases}
-        \hfill \sin(x)    \hfill &amp; \text{ ef } x\leq 0,\\
-        \hfill  x^2 \hfill &amp; \text{ ef } x&gt;0.\\
-\end{cases}\end{aligned}\]</div>
-</div>
+        \hfill \sin(x)    \hfill & \text{ ef } x\leq 0,\\
+        \hfill  x^2 \hfill & \text{ ef } x>0.\\
+\end{cases}
+
+\]</div>
 <p>Föllin <span class="math">\(\sin(x)\)</span> og <span class="math">\(x^2\)</span> eru bæði samfelld. Fallið <span class="math">\(h\)</span> er því samfellt í öllum punktum nema kannski núllpunktinum.
 Nú er þekkt að <span class="math">\(0^2=0\)</span> og <span class="math">\(\sin(0)=0\)</span>.
 Fallið <span class="math">\(h\)</span> stefnir þá á töluna núll í <span class="math">\(x=0\)</span> hvort sem að við nálgumst punktinn hægra eða vinstra megin frá. Fallið <span class="math">\(h\)</span> er þvi samfellt í núllpunktinum, og við höfum þá rökstutt að það er samfellt allstaðar.</p>
@@ -1065,9 +1067,9 @@ Fallið <span class="math">\(h\)</span> stefnir þá á töluna núll í <span c
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
       <script type="text/javascript" src="_static/language_data.js"></script>
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/katex.min.js"></script>
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/contrib/auto-render.min.js"></script>
-      <script type="text/javascript" src="_static/rendermath.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script>
+      <script type="text/javascript" src="_static/katex_autorenderer.js"></script>
 
   
 

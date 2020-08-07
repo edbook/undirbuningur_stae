@@ -744,9 +744,6 @@ Veldareglurnar gilda einnig fyrir ræða veldisvísa. Athugum að þriðja velda
 Einnig er
 
 .. math::
-  \sout{14}
-
-.. math::
 	a^{\frac{1}{q}}=\sqrt[q]{a}
 
 fyrir allar heiltölur :math:`q`.

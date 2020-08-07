@@ -30,7 +30,9 @@
   
 
   
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/katex.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" type="text/css" />
+  
+    <link rel="stylesheet" href="_static/katex-math.css" type="text/css" />
   
     <link rel="stylesheet" href="_static/button.css" type="text/css" />
   
@@ -559,11 +561,11 @@
             
   <div class="section" id="mengi">
 <h1><span class="section-number">4. </span>Mengi<a class="headerlink" href="#mengi" title="Varanlegur hlekkur á titilinn">¶</a></h1>
-<figure><iframe src='https://rec.hi.is/Panopto/Pages/Embed.aspx?id=f624b32e-178d-41cc-8ccb-a559712471d7' width=100% height=405 style=padding: 0px; border: 1px solid #464646; frameborder='0'></iframe></figure><hr class="docutils" />
+<figure><iframe src='https://hi.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=f624b32e-178d-41cc-8ccb-a559712471d7' width=100% height=405 style=padding: 0px; border: 1px solid #464646; frameborder='0'></iframe></figure><hr class="docutils" />
 <div class="section" id="grunnhugtok">
 <h2><span class="section-number">4.1. </span>Grunnhugtök<a class="headerlink" href="#grunnhugtok" title="Varanlegur hlekkur á titilinn">¶</a></h2>
 <p><a href="http://www.stae.is/os/leita/set" class="tooltip" target="_blank">Mengi<span>en: <i>set</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> er safn aðgreindra hluta eða hugtaka sem saman mynda eina heild. Hlutirnir eða
-hugtökin sem mynda mengið nefnast <em>stök</em> þess. Ef <span class="math">\(x\)</span> er <a href="http://www.stae.is/os/leita/coefficient" class="tooltip" target="_blank">stak<span>en: <i>coefficient</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> í menginu <span class="math">\(A\)</span>, þá skrifum við
+hugtökin sem mynda mengið nefnast <em>stök</em> þess. Ef <span class="math">\(x\)</span> er <a href="http://www.stae.is/os/leita/element" class="tooltip" target="_blank">stak<span>en: <i>element</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> í menginu <span class="math">\(A\)</span>, þá skrifum við
 <span class="math">\(x \in A\)</span>. Ef <span class="math">\(x\)</span> er ekki stak í menginu <span class="math">\(A\)</span> þá skrifum við <span class="math">\(x \notin A\)</span>.</p>
 <a class="reference internal image-reference" href="_images/mengiA.svg"><img alt="_images/mengiA.svg" class="align-center" src="_images/mengiA.svg" width="60%" /></a>
 <p>Hér dæmi um mengi <span class="math">\(A\)</span> þar sem <span class="math">\(x_1 \in A\)</span> en <span class="math">\(x_2 \notin A\)</span>.</p>
@@ -603,10 +605,10 @@ Við segjum að stak <span class="math">\(x\)</span> sé í menginu ef og aðein
 <div class="section" id="skilgreining">
 <h3><span class="section-number">4.2.1. </span>Skilgreining<a class="headerlink" href="#skilgreining" title="Varanlegur hlekkur á titilinn">¶</a></h3>
 <p>Hægt er að setja fram mengi með opinni yrðingu <span class="math">\(p(x)\)</span>, þannig að mengið samanstandi af öllum stökum  <span class="math">\(x\)</span> þannig að <span class="math">\(p(x)\)</span> sé sönn yrðing.</p>
-<div style="text-align: center;">
 <div class="math">
-\[A = \{x \in C \ | \ p(x)\}\]</div>
-</div>
+\[A = \{x \in C \ | \ p(x)\}
+
+\]</div>
 <p>Sjáum að mengið <span class="math">\(A\)</span> er hlutmengi í <span class="math">\(C\)</span> .</p>
 <p>Þetta verður best skýrt með dæmum.</p>
 <div class="admonition tip">
@@ -627,12 +629,12 @@ Við segjum að stak <span class="math">\(x\)</span> sé í menginu ef og aðein
 <div class="section" id="agerir-a-mengjum">
 <h2><span class="section-number">4.3. </span>Aðgerðir á mengjum<a class="headerlink" href="#agerir-a-mengjum" title="Varanlegur hlekkur á titilinn">¶</a></h2>
 <p>Ef <span class="math">\(A\)</span> og <span class="math">\(B\)</span> eru mengi þá táknum við mengi allra staka sem eru í <span class="math">\(A\)</span> eða í <span class="math">\(B\)</span> með
-<span class="math">\(A\cup B\)</span>. Þetta mengi köllum við <a href="http://www.stae.is/os/leita/join" class="tooltip" target="_blank">sammengi<span>en: <i>join</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> <span class="math">\(A\)</span> og <span class="math">\(B\)</span>.
+<span class="math">\(A\cup B\)</span>. Þetta mengi köllum við <a href="http://www.stae.is/os/leita/union" class="tooltip" target="_blank">sammengi<span>en: <i>union</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> <span class="math">\(A\)</span> og <span class="math">\(B\)</span>.
 Formlega skilgreiningin er:</p>
-<div style="text-align: center;">
 <div class="math">
-\[A\cup B = \{x| x \in A \text{ eða } x \in B\}.\]</div>
-</div>
+\[A\cup B = \{x| x \in A \text{ eða } x \in B\}.
+
+\]</div>
 <div class="admonition note">
 <p class="admonition-title">Athugasemd</p>
 <p>Í stærðfræðilegu samhengi hefur samtengingin „eða“ merkinguna „og/eða“.</p>
@@ -640,23 +642,23 @@ Formlega skilgreiningin er:</p>
 <p>Mengi allra staka sem eru bæði í <span class="math">\(A\)</span> og <span class="math">\(B\)</span> er táknað með <span class="math">\(A \cap B\)</span>. Þetta mengi er kallað
 <a href="http://www.stae.is/os/leita/intersection" class="tooltip" target="_blank">sniðmengi<span>en: <i>intersection</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> <span class="math">\(A\)</span> og <span class="math">\(B\)</span>.
 Formlega skilgreiningin er:</p>
-<div style="text-align: center;">
 <div class="math">
-\[A\cap B = \{x| x \in A \text{ og } x \in B\}.\]</div>
-</div>
+\[A\cap B = \{x| x \in A \text{ og } x \in B\}.
+
+\]</div>
 <div class="admonition warning">
 <p class="admonition-title">Aðvörun</p>
-<p>Við segjum að <span class="math">\(A\)</span> og <span class="math">\(B\)</span> séu <a href="http://www.stae.is/os/leita/mutually_disjoint" class="tooltip" target="_blank">sundurlæg<span>en: <i>mutually disjoint</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> ef sniðmengið er tómamengið, þ.e. ef mengin hafa ekkert sameiginlegt stak.</p>
+<p>Við segjum að <span class="math">\(A\)</span> og <span class="math">\(B\)</span> séu <a href="http://www.stae.is/os/leita/mutually_exclusive" class="tooltip" target="_blank">sundurlæg<span>en: <i>mutually exclusive</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> ef sniðmengið er tómamengið, þ.e. ef mengin hafa ekkert sameiginlegt stak.</p>
 </div>
 <p>Mengi allra staka sem eru í <span class="math">\(A\)</span> en ekki í <span class="math">\(B\)</span> er kallað mismunur (eða <a href="http://www.stae.is/os/leita/difference" class="tooltip" target="_blank">mengjamismunur<span>en: <i>difference</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a>) <span class="math">\(A\)</span> og
 <span class="math">\(B\)</span>. Hann er táknaður með <span class="math">\(A\backslash B\)</span>.
 Formlega skilgreiningin er:</p>
-<div style="text-align: center;">
 <div class="math">
-\[A\backslash B = \{x| x \in A \text{ og }x \notin B\}.\]</div>
-</div>
+\[A\backslash B = \{x| x \in A \text{ og }x \notin B\}.
+
+\]</div>
 <a class="reference internal image-reference" href="_images/snidmengi.svg"><img alt="_images/snidmengi.svg" class="align-center" src="_images/snidmengi.svg" width="100%" /></a>
-<p>Hér er dæmi um tvö mengi <span class="math">\(A\)</span> og <span class="math">\(B\)</span> sem hafa sniðmengi, m.ö.o eru ekki <a href="http://www.stae.is/os/leita/mutually_disjoint" class="tooltip" target="_blank">sundurlæg<span>en: <i>mutually disjoint</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a>. <span class="math">\(A \cap B\)</span> er merkt þar sem hringirnir skarast og <span class="math">\(A\backslash B\)</span> er merkt með þykkum ramma.</p>
+<p>Hér er dæmi um tvö mengi <span class="math">\(A\)</span> og <span class="math">\(B\)</span> sem hafa sniðmengi, m.ö.o eru ekki <a href="http://www.stae.is/os/leita/mutually_exclusive" class="tooltip" target="_blank">sundurlæg<span>en: <i>mutually exclusive</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a>. <span class="math">\(A \cap B\)</span> er merkt þar sem hringirnir skarast og <span class="math">\(A\backslash B\)</span> er merkt með þykkum ramma.</p>
 <div class="admonition tip">
 <p class="admonition-title">Dæmi</p>
 <p>Látum <span class="math">\(A=\{x\in\mathbb{N}|x\text{ er slétt tala}\},B=\{x\in\mathbb{N}|x\text{ er oddatala}\}\)</span> og <span class="math">\(C=\{2,3,5,6,8\}\)</span></p>
@@ -670,10 +672,10 @@ Formlega skilgreiningin er:</p>
 <h3><span class="section-number">4.3.1. </span>Faldmengi<a class="headerlink" href="#faldmengi" title="Varanlegur hlekkur á titilinn">¶</a></h3>
 <p><a href="http://www.stae.is/os/leita/cartesian_product" class="tooltip" target="_blank">Faldmengi<span>en: <i>cartesian product</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> eða margfeldismengi <span class="math">\(A\times B\)</span> tveggja mengja <span class="math">\(A\)</span> og <span class="math">\(B\)</span> er skilgreint sem mengi allra
 para <span class="math">\((a,b)\)</span> af stökum þ.a. <span class="math">\(a \in A\)</span> og <span class="math">\(b \in B\)</span>. Með yrðingum er þetta skrifað:</p>
-<div style="text-align: center;">
 <div class="math">
-\[A\times B = \{(a,b)| a \in A \text{ og } b \in B\}.\]</div>
-</div>
+\[A\times B = \{(a,b)| a \in A \text{ og } b \in B\}.
+
+\]</div>
 <div class="admonition tip">
 <p class="admonition-title">Dæmi</p>
 <p>Látum <span class="math">\(A=\{2,3,6\}\)</span></p>
@@ -696,14 +698,14 @@ para <span class="math">\((a,b)\)</span> af stökum þ.a. <span class="math">\(a
 <div class="section" id="meira-um-agerir-a-mengjum">
 <h2><span class="section-number">4.4. </span>Meira um aðgerðir á mengjum<a class="headerlink" href="#meira-um-agerir-a-mengjum" title="Varanlegur hlekkur á titilinn">¶</a></h2>
 <p>Auðvelt er að sannfæra sig um eftirfarandi reiknireglur á mengjum:</p>
-<div style="text-align: center;">
 <div class="math">
-\[\left(A\cup B\right)\cup C=A\cup\left(B\cup C\right)\]</div>
-</div>
-<div style="text-align: center;">
+\[\left(A\cup B\right)\cup C=A\cup\left(B\cup C\right)
+
+\]</div>
 <div class="math">
-\[\left(A\cap B\right)\cap C=A\cap\left(B\cap C\right)\]</div>
-</div>
+\[\left(A\cap B\right)\cap C=A\cap\left(B\cap C\right)
+
+\]</div>
 <p>Þessi regla segir að það skipti ekki máli í hvaða röð maður tekur sammengi og sniðmengi.
 Því má skrifa <span class="math">\(A\cup B\cup C\)</span> eða <span class="math">\(A\cap B\cap C\)</span> og sleppa öllum svigum.</p>
 <div class="admonition warning">
@@ -733,80 +735,80 @@ para <span class="math">\((a,b)\)</span> af stökum þ.a. <span class="math">\(a
 <hr class="docutils" />
 <p>Nú skulum við skilgreina sam- og sniðmengi fleiri en tveggja mengja.
 Látum <span class="math">\(n \in \mathbb{N_+}\)</span> og <span class="math">\(A_1,A_2,\dots,A_n\)</span> vera mengi. Látum <span class="math">\(I = \{1, \dots, n \}\)</span>. Skilgreinum:</p>
-<div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-&amp; \bigcup_{i=1}^n A_i=\{x|x\in A_i \text{ fyrir eitthvað } i = 1, \dots, n \}, \\
+& \bigcup_{i=1}^n A_i=\{x|x\in A_i \text{ fyrir eitthvað } i = 1, \dots, n \}, \\
 \quad\\
-&amp; \bigcap_{i=1}^n A_i=\{x|x\in A_i \text{ fyrir öll }  i = 1, \dots, n\}.
-\end{aligned}\]</div>
-</div>
+& \bigcap_{i=1}^n A_i=\{x|x\in A_i \text{ fyrir öll }  i = 1, \dots, n\}.
+\end{aligned}
+
+\]</div>
 <p>Í raun er <span class="math">\(\bigcup_{i=1}^n A_i\)</span> bara önnur leið til að skrifa</p>
-<div style="text-align: center;">
 <div class="math">
-\[A_1\cup A_2\cup A_3\cup...\cup A_n\]</div>
-</div>
+\[A_1\cup A_2\cup A_3\cup...\cup A_n
+
+\]</div>
 <p>og <span class="math">\(\bigcap_{i=1}^n A_i\)</span> er bara önnur leið til að skrifa</p>
-<div style="text-align: center;">
 <div class="math">
-\[A_1\cap A_2\cap A_3\cap...\cap A_n\]</div>
-</div>
+\[A_1\cap A_2\cap A_3\cap...\cap A_n
+
+\]</div>
 <div class="admonition note">
 <p class="admonition-title">Athugasemd</p>
 <p>Hér nýtum við okkur reikniregluna að <span class="math">\(\left(A\cup B\right)\cup C=A\cup\left(B\cup C\right)\)</span>, og hliðstæðu hennar fyrir sniðmengi, aftur og aftur.</p>
 </div>
 <p>Inn á milli kemur fyrir að stærðfræðingur vilji taka sammengi óendanlegra margra mengja. Segjum að við höfum eitthvað safn af mengjum (eða mengi af mengjum) þannig að búið sé að merkja öll mengin með einhverjum <a href="http://www.stae.is/os/leita/index" class="tooltip" target="_blank">vísi<span>en: <i>index</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> úr einhverju <a href="http://www.stae.is/os/leita/index_set" class="tooltip" target="_blank">vísamengi<span>en: <i>index set</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> <span class="math">\(I\)</span>. Það er, öll mengin í safninu má tákna með <span class="math">\(A_i\)</span> með <span class="math">\(i\in I\)</span>, þar sem <span class="math">\(I \neq \emptyset\)</span>. Þá er sammengi allra þessara mengja táknað með <span class="math">\(\bigcup_{i\in I}A_i\)</span>.</p>
 <p>Með yrðingum er þetta skilgreint:</p>
-<div style="text-align: center;">
 <div class="math">
-\[\bigcup_{i\in I}A_i=\{x|x\in A_i \text{ fyrir eitthvað } i\in I \}\]</div>
-</div>
+\[\bigcup_{i\in I}A_i=\{x|x\in A_i \text{ fyrir eitthvað } i\in I \}
+
+\]</div>
 <p>Eins eru sniðmengin skilgreind:</p>
-<div style="text-align: center;">
 <div class="math">
-\[\bigcap_{i\in I}A_i=\{x|x\in A_i \text{ fyrir öll } i\in I \}\]</div>
-</div>
+\[\bigcap_{i\in I}A_i=\{x|x\in A_i \text{ fyrir öll } i\in I \}
+
+\]</div>
 <p>Tökum nokkur dæmi um þetta.</p>
 <div class="admonition tip">
 <p class="admonition-title">Dæmi</p>
 <p><strong>1.</strong> Látum <span class="math">\(\mathbb{P}\)</span> tákna mengi allra frumtalna.</p>
 <blockquote>
 <div><p>Fyrir sérhvert <span class="math">\(p\in\mathbb{P}\)</span> skulum við láta <span class="math">\(A_p\)</span> vera mengi allra náttúrulegra talna sem <span class="math">\(p\)</span> gengur upp í. Með yrðingum skrifum við:</p>
-<div style="text-align: center;">
 <div class="math">
-\[A_p=\{n\in\mathbb{N}|p\text{ gengur upp í }n \}\]</div>
-</div>
+\[A_p=\{n\in\mathbb{N}|p\text{ gengur upp í }n \}
+
+\]</div>
 <p>Hér er vísismengið <span class="math">\(\mathbb{P}\)</span> og</p>
-<div style="text-align: center;">
 <div class="math">
-\[\bigcup_{p\in\mathbb{P}}A_p=\mathbb{N}\setminus\{1\}\]</div>
-</div>
+\[\bigcup_{p\in\mathbb{P}}A_p=\mathbb{N}\setminus\{1\}
+
+\]</div>
 <p>Það er af því að sérhver tala í <span class="math">\(\mathbb{N}\)</span> sem er stærri en <span class="math">\(1\)</span> er deilanleg með einhverri frumtölu, og því er til <span class="math">\(p\)</span> þannig að talan sé í <span class="math">\(A_p\)</span>.</p>
 </div></blockquote>
 <p><strong>2.</strong> Fyrir sérhvert <span class="math">\(n\in \mathbb{Z}\)</span> skulum við láta <span class="math">\(B_n\)</span> vera mengi allra almennra brota sem hafa <span class="math">\(n\)</span> sem teljara þegar þau eru fullstytt. Með yrðingum skilgreinum við þetta mengi:</p>
 <blockquote>
-<div><div style="text-align: center;">
-<div class="math">
-\[B_n=\{r\in\mathbb{Q}|\,\, \text{Ef }r=\dfrac{a}{b}\text{ og } \dfrac{a}{b}\text{ er fullstytt brot þá er }a=n \}\]</div>
-</div>
+<div><div class="math">
+\[B_n=\{r\in\mathbb{Q}|\,\, \text{Ef }r=\dfrac{a}{b}\text{ og } \dfrac{a}{b}\text{ er fullstytt brot þá er }a=n \}
+
+\]</div>
 <p>Hér er <span class="math">\(\mathbb{Z}\)</span> vísismengið og:</p>
-<div style="text-align: center;">
 <div class="math">
-\[\bigcup_{n\in\mathbb{Z}}B_n=\mathbb{Q}\]</div>
-</div>
+\[\bigcup_{n\in\mathbb{Z}}B_n=\mathbb{Q}
+
+\]</div>
 <p>Af því að sérhvert almennt brot er í einhverju af mengjunum <span class="math">\(A_n\)</span>.</p>
 </div></blockquote>
 <p><strong>3.</strong> Látum <span class="math">\(T\)</span> vera mengið sem hefur sem stök öll tré í heiminum. Ef <span class="math">\(t\in T\)</span> er eitthvað tré látum við mengið <span class="math">\(L_t\)</span> vera mengi allra laufblaða á trénu <span class="math">\(t\)</span>. Með yrðingum skrifum við:</p>
 <blockquote>
-<div><div style="text-align: center;">
-<div class="math">
-\[L_t=\{l\text{ er laufblað}|\, l\text{ er á trénu }t \}\]</div>
-</div>
+<div><div class="math">
+\[L_t=\{l\text{ er laufblað}|\, l\text{ er á trénu }t \}
+
+\]</div>
 <p>Hér er <span class="math">\(T\)</span> vísismengið og</p>
-<div style="text-align: center;">
 <div class="math">
-\[\bigcup_{t\in T}L_t=\{l\text{ er laufblað}|\, l\text{ er á einhverju tréi } \}\]</div>
-</div>
+\[\bigcup_{t\in T}L_t=\{l\text{ er laufblað}|\, l\text{ er á einhverju tréi } \}
+
+\]</div>
 </div></blockquote>
 </div>
 </div>
@@ -915,9 +917,9 @@ Látum <span class="math">\(a\)</span> vera rauntölu. Skilgreinum</p>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
       <script type="text/javascript" src="_static/language_data.js"></script>
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/katex.min.js"></script>
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/contrib/auto-render.min.js"></script>
-      <script type="text/javascript" src="_static/rendermath.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script>
+      <script type="text/javascript" src="_static/katex_autorenderer.js"></script>
 
   
 

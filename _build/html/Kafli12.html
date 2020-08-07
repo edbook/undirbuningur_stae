@@ -30,7 +30,9 @@
   
 
   
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/katex.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" type="text/css" />
+  
+    <link rel="stylesheet" href="_static/katex-math.css" type="text/css" />
   
     <link rel="stylesheet" href="_static/button.css" type="text/css" />
   
@@ -568,51 +570,51 @@ Að því loknu er sýnt fram á að ef setningin gildir um eitthvert ótilteki�
 <a class="reference internal image-reference" href="_images/threpun.svg"><img alt="_images/threpun.svg" src="_images/threpun.svg" width="70%" /></a>
 </div>
 <p>Hér er til dæmis reglan um að summa allra heiltalna frá einum upp í <span class="math">\(n\)</span> er:</p>
-<div style="text-align: center;">
 <div class="math">
-\[\sum_{i=1}^n = \frac{n(n+1)}{2}\]</div>
-</div>
+\[\sum_{i=1}^n = \frac{n(n+1)}{2}
+
+\]</div>
 <p>Við ætlum að sýna fram á að þessi formúla gildi um allar jákvæðar heiltölur <span class="math">\(n=1,2,3, \dots\)</span> .
 Sjáum til dæmis að hún gildir fyrir <span class="math">\(n=4\)</span> því</p>
-<div style="text-align: center;">
 <div class="math">
-\[\sum_{i=1}^4 = 1+2+3+4 = 10\]</div>
-</div>
+\[\sum_{i=1}^4 = 1+2+3+4 = 10
+
+\]</div>
 <p>og</p>
-<div style="text-align: center;">
 <div class="math">
-\[\frac{4\cdot(4+1)}{2} = \frac{20}{2} = 10\]</div>
-</div>
+\[\frac{4\cdot(4+1)}{2} = \frac{20}{2} = 10
+
+\]</div>
 <p>Sönnum setninguna með þrepun:</p>
 <p><strong>Grunntilvik:</strong></p>
 <p>Prófum að setja <span class="math">\(n=1\)</span> í setninguna:</p>
-<div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-  \sum_{i=1}^n &amp;= \frac{n(n+1)}{2}\\
-  \sum_{i=1}^1 &amp;= \frac{1(1+1)}{2}\\
-  1&amp;=\frac{1\cdot2}{2}=1
-\end{aligned}\]</div>
-</div>
+  \sum_{i=1}^n &= \frac{n(n+1)}{2}\\
+  \sum_{i=1}^1 &= \frac{1(1+1)}{2}\\
+  1&=\frac{1\cdot2}{2}=1
+\end{aligned}
+
+\]</div>
 <p>Formúlan virkar því til þess að reikna summu allra talna frá einum upp í einn.</p>
 <p><strong>Þrepun:</strong></p>
 <p>Gerum núna ráð fyrir að formúlan virki fyrir eitthvert <span class="math">\(n\)</span> , þ.e. að</p>
-<div style="text-align: center;">
 <div class="math">
-\[\sum_{i=1}^n = \frac{n(n+1)}{2}\]</div>
-</div>
+\[\sum_{i=1}^n = \frac{n(n+1)}{2}
+
+\]</div>
 <p>sé sönn staðhæfing.</p>
 <p>Þá ætlum við að sýna að hún gildi líka fyrir næsta skref <span class="math">\(n+1\)</span> .</p>
-<div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-  \sum_{i=1}^{n+1} &amp;= \sum_{i=1}^n + (n+1) \\
-  &amp;= \frac{n(n+1)}{2} + (n+1) \\
-  &amp;= \frac{n(n+1)}{2} + \frac{2(n+1)}{2} \\
-  &amp;=\frac{n(n+1)+2(n+1)}{2}\\
-  &amp;= \frac{(n+1)(n+2)}{2} \\
-\end{aligned}\]</div>
-</div>
+  \sum_{i=1}^{n+1} &= \sum_{i=1}^n + (n+1) \\
+  &= \frac{n(n+1)}{2} + (n+1) \\
+  &= \frac{n(n+1)}{2} + \frac{2(n+1)}{2} \\
+  &=\frac{n(n+1)+2(n+1)}{2}\\
+  &= \frac{(n+1)(n+2)}{2} \\
+\end{aligned}
+
+\]</div>
 <p>Í síðustu línunni birtist formúlan eins og hún væri ef <span class="math">\(n+1\)</span> væri sett inn í formúluna og því gildir formúlan líka fyrir <span class="math">\(n+1\)</span> .</p>
 <p>Því getum við ályktað að setningin gildi um öll <span class="math">\(n\)</span> .</p>
 </div>
@@ -845,83 +847,79 @@ Sjáum til dæmis að hún gildir fyrir <span class="math">\(n=4\)</span> því<
 <h3><span class="section-number">12.3.1. </span>Algebra<a class="headerlink" href="#algebra" title="Varanlegur hlekkur á titilinn">¶</a></h3>
 <div class="section" id="einfaldar-reiknireglur">
 <h4><span class="section-number">12.3.1.1. </span>Einfaldar reiknireglur<a class="headerlink" href="#einfaldar-reiknireglur" title="Varanlegur hlekkur á titilinn">¶</a></h4>
-<div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-    &amp;(a+b)+c=a+(b+c)   \qquad &amp;\textit{ (tengiregla samlagningar)}\\
+    &(a+b)+c=a+(b+c)   \qquad &\textit{ (tengiregla samlagningar)}\\
 \qquad \\
-    &amp;(ab)c=a(bc)  \qquad &amp;\textit{ (tengiregla margföldunar)}\\
+    &(ab)c=a(bc)  \qquad &\textit{ (tengiregla margföldunar)}\\
 \qquad \\
-    &amp;a+b=b+a  \qquad &amp;\textit{ (víxlregla samlagningar)} \\
+    &a+b=b+a  \qquad &\textit{ (víxlregla samlagningar)} \\
 \qquad \\
-    &amp;ab=ba  \qquad &amp;\textit{ (víxlregla margföldunar)}\\
+    &ab=ba  \qquad &\textit{ (víxlregla margföldunar)}\\
 \qquad \\
-    &amp;a(b+c)=ab+ac  \qquad &amp;\textit{ (dreifiregla)}\\
+    &a(b+c)=ab+ac  \qquad &\textit{ (dreifiregla)}\\
 \qquad \\
-    &amp;1 \cdot a=a  \qquad &amp;\textit{ (1 er margföldunarhlutleysa)}\\
+    &1 \cdot a=a  \qquad &\textit{ (1 er margföldunarhlutleysa)}\\
 \qquad \\
-    &amp;a+0=a  \qquad &amp;\textit{ (0 er samlagningarhlutleysa)}\\
+    &a+0=a  \qquad &\textit{ (0 er samlagningarhlutleysa)}\\
 \qquad \\
-    &amp;0 \cdot a=0   \qquad &amp;\textit{ (margföldun með núlli gefur núll)}\\
-    \end{aligned}\]</div>
-</div>
+    &0 \cdot a=0   \qquad &\textit{ (margföldun með núlli gefur núll)}\\
+    \end{aligned}
+
+\]</div>
 </div>
 <div class="section" id="brotareiknireglur">
 <h4><span class="section-number">12.3.1.2. </span>Brotareiknireglur<a class="headerlink" href="#brotareiknireglur" title="Varanlegur hlekkur á titilinn">¶</a></h4>
-<div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-&amp; \frac{p}{q}+\frac{r}{s}=\frac{ps}{qs}+\frac{qr}{qs}=\frac{ps+qr}{qs} \\
+& \frac{p}{q}+\frac{r}{s}=\frac{ps}{qs}+\frac{qr}{qs}=\frac{ps+qr}{qs} \\
 \qquad \\
-&amp;\frac{p}{q}-\frac{r}{s}=\frac{ps-qr}{qs} \\
+&\frac{p}{q}-\frac{r}{s}=\frac{ps-qr}{qs} \\
 \qquad \\
-&amp; \frac{p}{q} \cdot \frac{r}{s}=\frac{pr}{qs} \\
+& \frac{p}{q} \cdot \frac{r}{s}=\frac{pr}{qs} \\
 \qquad \\
-&amp;\frac{p/q}{r/s} =\frac{ps}{qr} \\
-\end{aligned}\]</div>
-</div>
+&\frac{p/q}{r/s} =\frac{ps}{qr} \\
+\end{aligned}
+
+\]</div>
 </div>
 <div class="section" id="veldareiknireglur">
 <h4><span class="section-number">12.3.1.3. </span>Veldareiknireglur<a class="headerlink" href="#veldareiknireglur" title="Varanlegur hlekkur á titilinn">¶</a></h4>
-<div style="text-align: center;">
 <div class="math">
-\[\begin{aligned}    \begin{aligned}
-&amp;a^0=1\\
+\[    \begin{aligned}
+&a^0=1\\
 \qquad \\
-&amp;a^n=a \cdot a \cdot \dots \cdot a \\
+&a^n=a \cdot a \cdot \dots \cdot a \\
 \qquad \\
-    &amp;a^{-n}=\frac{1}{a^n} \\
+    &a^{-n}=\frac{1}{a^n} \\
 \qquad \\
-&amp;a^n\cdot a^m=a^{n+m}\\
+&a^n\cdot a^m=a^{n+m}\\
 \qquad \\
-    &amp;\dfrac {a^n}{a^m}=a^{n-m}\\
+    &\dfrac {a^n}{a^m}=a^{n-m}\\
 \qquad \\
-    &amp;a^n\cdot b^n=(ab)^n\\
+    &a^n\cdot b^n=(ab)^n\\
 \qquad \\
-    &amp;(a^n)^m=a^{nm}
+    &(a^n)^m=a^{nm}
 \qquad \\
-(-1)^n &amp;= 1 \qquad \text{þegar } n \text{ er slétt tala} \\
+(-1)^n &= 1 \qquad \text{þegar } n \text{ er slétt tala} \\
 \qquad \\
-    (-1)^n &amp;= -1 \qquad \text{þegar } n \text{ er oddatala} \\
-    \end{aligned}\end{aligned}\]</div>
-</div>
+    (-1)^n &= -1 \qquad \text{þegar } n \text{ er oddatala} \\
+    \end{aligned}\]</div>
 </div>
 <div class="section" id="reiknireglur-fyrir-raetur">
 <h4><span class="section-number">12.3.1.4. </span>Reiknireglur fyrir rætur<a class="headerlink" href="#reiknireglur-fyrir-raetur" title="Varanlegur hlekkur á titilinn">¶</a></h4>
-<div style="text-align: center;">
 <div class="math">
-\[\begin{aligned}      \begin{aligned}
-        \sqrt[q]{ab} &amp;=\sqrt[q]{a}\cdot \sqrt[q]{b} \\
-  &amp; \qquad \\
-  \sqrt[q]{\dfrac ab}&amp; =\dfrac{\sqrt[q]{a}}{\sqrt[q] {b}}\\
-  &amp; \qquad \\
-  \sqrt[q]{a^p}&amp; =(\sqrt[q]{a})^p\\
-  &amp; \qquad \\
-  \sqrt[sq]{a^{sp}} &amp;={\sqrt[q]{a^p}}\\
-  &amp; \qquad \\
-  \sqrt[sq]{ a} &amp;=\sqrt[s]{\sqrt[q]{a}}\\
-\end{aligned}\end{aligned}\]</div>
-</div>
+\[      \begin{aligned}
+        \sqrt[q]{ab} &=\sqrt[q]{a}\cdot \sqrt[q]{b} \\
+  & \qquad \\
+  \sqrt[q]{\dfrac ab}& =\dfrac{\sqrt[q]{a}}{\sqrt[q] {b}}\\
+  & \qquad \\
+  \sqrt[q]{a^p}& =(\sqrt[q]{a})^p\\
+  & \qquad \\
+  \sqrt[sq]{a^{sp}} &={\sqrt[q]{a^p}}\\
+  & \qquad \\
+  \sqrt[sq]{ a} &=\sqrt[s]{\sqrt[q]{a}}\\
+\end{aligned}\]</div>
 </div>
 </div>
 <div class="section" id="jofnur-og-ojofnur">
@@ -933,69 +931,69 @@ Sjáum til dæmis að hún gildir fyrir <span class="math">\(n=4\)</span> því<
 <li><p>Ef <span class="math">\(d = b^2-4ac&lt;0\)</span> þá hefur jafnan enga rauntölulausn.</p></li>
 <li><p>Ef <span class="math">\(d  = b^2-4ac=0\)</span> þá hefur jafnan eina lausn:</p></li>
 </ol>
-<div style="text-align: center;">
 <div class="math">
-\[x=\frac{-b}{2a}\]</div>
-</div>
+\[x=\frac{-b}{2a}
+
+\]</div>
 <ol class="arabic simple" start="3">
 <li><p>Ef <span class="math">\(d = b^2-4ac&gt;0\)</span> þá hefur jafnan tvær lausnir:</p></li>
 </ol>
-<div style="text-align: center;">
 <div class="math">
-\[x_1=\frac{-b+\sqrt{b^2-4ac}}{2a} \qquad \text{og} \qquad x_2=\frac{-b-\sqrt{b^2-4ac}}{2a}\]</div>
-</div>
+\[x_1=\frac{-b+\sqrt{b^2-4ac}}{2a} \qquad \text{og} \qquad x_2=\frac{-b-\sqrt{b^2-4ac}}{2a}
+
+\]</div>
 <p>eða</p>
-<div style="text-align: center;">
 <div class="math">
-\[x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\]</div>
-</div>
+\[x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}
+
+\]</div>
 </div>
 <div class="section" id="reiknireglur-fyrir-tolugildi">
 <h4><span class="section-number">12.3.2.2. </span>Reiknireglur fyrir tölugildi<a class="headerlink" href="#reiknireglur-fyrir-tolugildi" title="Varanlegur hlekkur á titilinn">¶</a></h4>
 <p>Látum <span class="math">\(a\)</span> og <span class="math">\(b\)</span> vera rauntölur. Þá gildir eftirfarandi:</p>
-<div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-    &amp; a \leq |a|  \qquad  &amp;\text{(tölugildi getur aðeins stækkað tölu)}\\
+    & a \leq |a|  \qquad  &\text{(tölugildi getur aðeins stækkað tölu)}\\
 \qquad \\
-    &amp; |a|=|-a|  \qquad  &amp;\text{(tölugildi eru óháð formerki)}\\
+    & |a|=|-a|  \qquad  &\text{(tölugildi eru óháð formerki)}\\
 \qquad \\
-    &amp; |a|\cdot|b|=|ab| \qquad  &amp;\text{(tölugildi varðveitir margföldun)}\\
+    & |a|\cdot|b|=|ab| \qquad  &\text{(tölugildi varðveitir margföldun)}\\
 \qquad \\
-    &amp; |a|^2=a^2 \qquad   &amp;\text{(önnur veldi eyða tölugildi)}\\
-    \end{aligned}\]</div>
-</div>
+    & |a|^2=a^2 \qquad   &\text{(önnur veldi eyða tölugildi)}\\
+    \end{aligned}
+
+\]</div>
 </div>
 <div class="section" id="regla-pyagorasar">
 <h4><span class="section-number">12.3.2.3. </span>Regla Pýþagórasar<a class="headerlink" href="#regla-pyagorasar" title="Varanlegur hlekkur á titilinn">¶</a></h4>
-<div style="text-align: center;">
 <div class="math">
-\[a^2+b^2=c^2\]</div>
-</div>
+\[a^2+b^2=c^2
+
+\]</div>
 </div>
 <div class="section" id="fjarlaeg-milli-punkta">
 <h4><span class="section-number">12.3.2.4. </span>Fjarlægð milli punkta<a class="headerlink" href="#fjarlaeg-milli-punkta" title="Varanlegur hlekkur á titilinn">¶</a></h4>
 <p>Fjarlægðin milli punktanna <span class="math">\(P_1=(x_1,y_1)\)</span> og <span class="math">\(P_2=(x_2,y_2)\)</span> í hnitakerfinu er</p>
-<div style="text-align: center;">
 <div class="math">
-\[\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}\]</div>
-</div>
+\[\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}
+
+\]</div>
 </div>
 <div class="section" id="hallatala-linu">
 <h4><span class="section-number">12.3.2.5. </span>Hallatala línu<a class="headerlink" href="#hallatala-linu" title="Varanlegur hlekkur á titilinn">¶</a></h4>
 <p>Ef við höfum tvo punkta <span class="math">\((x_1,y_1)\)</span> og <span class="math">\((x_2,y_2)\)</span> fæst með formúlunni</p>
-<div style="text-align: center;">
 <div class="math">
-\[h=\frac{y_2-y_1}{x_2-x_1}\]</div>
-</div>
+\[h=\frac{y_2-y_1}{x_2-x_1}
+
+\]</div>
 </div>
 <div class="section" id="mipunktsregla">
 <h4><span class="section-number">12.3.2.6. </span>Miðpunktsregla<a class="headerlink" href="#mipunktsregla" title="Varanlegur hlekkur á titilinn">¶</a></h4>
 <p>Reikna má miðpunkt striksins á milli <span class="math">\(A(x_1, x_2)\)</span> og <span class="math">\(B(x_2,y_2)\)</span> með:</p>
-<div style="text-align: center;">
 <div class="math">
-\[M = \left( \frac{x_1+x_2}{2} , \frac{y_1+y_2}{2} \right)\]</div>
-</div>
+\[M = \left( \frac{x_1+x_2}{2} , \frac{y_1+y_2}{2} \right)
+
+\]</div>
 </div>
 <div class="section" id="flatarmal">
 <h4><span class="section-number">12.3.2.7. </span>Flatarmál<a class="headerlink" href="#flatarmal" title="Varanlegur hlekkur á titilinn">¶</a></h4>
@@ -1051,58 +1049,57 @@ Sjáum til dæmis að hún gildir fyrir <span class="math">\(n=4\)</span> því<
 </div>
 <div class="section" id="stofnbrotaliun">
 <h4><span class="section-number">12.3.3.3. </span>Stofnbrotaliðun<a class="headerlink" href="#stofnbrotaliun" title="Varanlegur hlekkur á titilinn">¶</a></h4>
-<div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-&amp;\frac{ax+b}{(x-\alpha)(x-\beta)} = \frac{A}{(x-\alpha)}+ \frac{B}{(x-\beta)} \\
-&amp;\qquad \text{þar sem} \\
-&amp; \alpha \neq \beta, \quad A= \frac{a\alpha + b}{\alpha - \beta} \quad \text{og} \quad B= \frac{a\beta + b}{\beta - \alpha}
-\end{aligned}\]</div>
-</div>
+&\frac{ax+b}{(x-\alpha)(x-\beta)} = \frac{A}{(x-\alpha)}+ \frac{B}{(x-\beta)} \\
+&\qquad \text{þar sem} \\
+& \alpha \neq \beta, \quad A= \frac{a\alpha + b}{\alpha - \beta} \quad \text{og} \quad B= \frac{a\beta + b}{\beta - \alpha}
+\end{aligned}
+
+\]</div>
 </div>
 </div>
 <div class="section" id="margliur">
 <h3><span class="section-number">12.3.4. </span>Margliður<a class="headerlink" href="#margliur" title="Varanlegur hlekkur á titilinn">¶</a></h3>
 <div class="section" id="nokkrar-lianir">
 <h4><span class="section-number">12.3.4.1. </span>Nokkrar liðanir<a class="headerlink" href="#nokkrar-lianir" title="Varanlegur hlekkur á titilinn">¶</a></h4>
-<div style="text-align: center;">
 <div class="math">
-\[(a + b)^0 = 1\]</div>
-</div>
-<div style="text-align: center;">
+\[(a + b)^0 = 1
+
+\]</div>
 <div class="math">
-\[(a + b)^1 = a + b\]</div>
-</div>
-<div style="text-align: center;">
+\[(a + b)^1 = a + b
+
+\]</div>
 <div class="math">
-\[(a + b)^2 = a^2 + 2ab + b^2\]</div>
-</div>
-<div style="text-align: center;">
+\[(a + b)^2 = a^2 + 2ab + b^2
+
+\]</div>
 <div class="math">
-\[(a + b)^3 = a^3 + 3a^2 b + 3a b^2 + b^3\]</div>
-</div>
-<div style="text-align: center;">
+\[(a + b)^3 = a^3 + 3a^2 b + 3a b^2 + b^3
+
+\]</div>
 <div class="math">
-\[(a + b)^4 = a^4 + 4 a^3 b + 6a^2 b^2 + 4ab^3 + b^4\]</div>
-</div>
-<div style="text-align: center;">
+\[(a + b)^4 = a^4 + 4 a^3 b + 6a^2 b^2 + 4ab^3 + b^4
+
+\]</div>
 <div class="math">
-\[(a + b)^5 = a^5 + 5a^4 b + 10a^3b^2 + 10a^2 b^3 + 5 ab^4 +b^5\]</div>
-</div>
+\[(a + b)^5 = a^5 + 5a^4 b + 10a^3b^2 + 10a^2 b^3 + 5 ab^4 +b^5
+
+\]</div>
 </div>
 </div>
 <div class="section" id="hornafoll">
 <h3><span class="section-number">12.3.5. </span>Hornaföll<a class="headerlink" href="#hornafoll" title="Varanlegur hlekkur á titilinn">¶</a></h3>
 <div class="section" id="graur-og-bogaeiningar">
 <h4><span class="section-number">12.3.5.1. </span>Gráður og bogaeiningar<a class="headerlink" href="#graur-og-bogaeiningar" title="Varanlegur hlekkur á titilinn">¶</a></h4>
-<div style="text-align: center;">
 <div class="math">
-\[x \text{Rad} = \left(x \cdot \frac{360}{2 \pi}\right)° \qquad og \qquad  x°=\left( x \cdot \frac{2 \pi}{360}\right) \text{Rad}\]</div>
-</div>
+\[x \text{Rad} = \left(x \cdot \frac{360}{2 \pi}\right)° \qquad og \qquad  x°=\left( x \cdot \frac{2 \pi}{360}\right) \text{Rad}
+
+\]</div>
 </div>
 <div class="section" id="hliar-rihyrnings">
 <h4><span class="section-number">12.3.5.2. </span>Hliðar þríhyrnings<a class="headerlink" href="#hliar-rihyrnings" title="Varanlegur hlekkur á titilinn">¶</a></h4>
-<div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
 \sin(\alpha) = \frac{b}{c} \\
@@ -1111,181 +1108,182 @@ Sjáum til dæmis að hún gildir fyrir <span class="math">\(n=4\)</span> því<
 \qquad \\
 \tan(\alpha) = \frac{b}{a} \\
 \qquad \\
-\end{aligned}\]</div>
-</div>
+\end{aligned}
+
+\]</div>
 <a class="reference internal image-reference" href="_images/sohcahtoa2.svg"><img alt="_images/sohcahtoa2.svg" class="align-center" src="_images/sohcahtoa2.svg" width="40%" /></a>
 </div>
 <div class="section" id="grunnreglan">
 <h4><span class="section-number">12.3.5.3. </span>Grunnreglan<a class="headerlink" href="#grunnreglan" title="Varanlegur hlekkur á titilinn">¶</a></h4>
-<div style="text-align: center;">
 <div class="math">
-\[\sin^2(x) + \cos^2(x) = 1\]</div>
-</div>
+\[\sin^2(x) + \cos^2(x) = 1
+
+\]</div>
 </div>
 <div class="section" id="hlirunarreglur">
 <h4><span class="section-number">12.3.5.4. </span>Hliðrunarreglur<a class="headerlink" href="#hlirunarreglur" title="Varanlegur hlekkur á titilinn">¶</a></h4>
-<div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-    &amp; \qquad \cos(-\theta)=\cos \theta\\
+    & \qquad \cos(-\theta)=\cos \theta\\
     \qquad \\
-&amp; \qquad \sin(-\theta)=-\sin\theta\\
+& \qquad \sin(-\theta)=-\sin\theta\\
     \qquad \\
-&amp; \qquad \cos(\pi-\theta)=-\cos \theta\\
+& \qquad \cos(\pi-\theta)=-\cos \theta\\
     \qquad \\
-&amp; \qquad \sin(\pi-\theta)=\sin \theta\\
+& \qquad \sin(\pi-\theta)=\sin \theta\\
     \qquad \\
-&amp; \qquad \cos(\theta+\pi)=-\cos \theta\\
+& \qquad \cos(\theta+\pi)=-\cos \theta\\
     \qquad \\
-    &amp; \qquad \sin(\theta+\pi)=-\sin \theta\\
+    & \qquad \sin(\theta+\pi)=-\sin \theta\\
     \qquad \\
-    &amp; \qquad \cos\left(\frac{\pi}{2}-\theta\right)=\sin\theta\\
+    & \qquad \cos\left(\frac{\pi}{2}-\theta\right)=\sin\theta\\
     \qquad \\
-    &amp; \qquad \sin\left(\frac{\pi}{2}-\theta\right)=\cos\theta
-    \end{aligned}\]</div>
-</div>
+    & \qquad \sin\left(\frac{\pi}{2}-\theta\right)=\cos\theta
+    \end{aligned}
+
+\]</div>
 </div>
 <div class="section" id="summuformulur">
 <h4><span class="section-number">12.3.5.5. </span>Summuformúlur<a class="headerlink" href="#summuformulur" title="Varanlegur hlekkur á titilinn">¶</a></h4>
 <p><strong>1.</strong></p>
-<div style="text-align: center;">
 <div class="math">
-\[\sin( u + v ) = \sin(u)  \cos(v) + \cos(u) \sin(v)\]</div>
-</div>
+\[\sin( u + v ) = \sin(u)  \cos(v) + \cos(u) \sin(v)
+
+\]</div>
 <p><strong>2.</strong></p>
-<div style="text-align: center;">
 <div class="math">
-\[\sin( u - v ) = \sin(u) \cos(v) - \cos(u) \sin(v)\]</div>
-</div>
+\[\sin( u - v ) = \sin(u) \cos(v) - \cos(u) \sin(v)
+
+\]</div>
 <p><strong>3.</strong></p>
-<div style="text-align: center;">
 <div class="math">
-\[\cos( u + v ) = \cos(u)  \cos(v) - \sin(u)  \sin(v)\]</div>
-</div>
+\[\cos( u + v ) = \cos(u)  \cos(v) - \sin(u)  \sin(v)
+
+\]</div>
 <p><strong>4.</strong></p>
-<div style="text-align: center;">
 <div class="math">
-\[\cos( u - v ) = \cos(u)  \cos(v) + \sin(u)  \sin(v)\]</div>
-</div>
+\[\cos( u - v ) = \cos(u)  \cos(v) + \sin(u)  \sin(v)
+
+\]</div>
 <p><strong>5.</strong></p>
-<div style="text-align: center;">
 <div class="math">
-\[\tan(u-v) = \frac{\tan(u) - \tan(v)}{1 + \tan(u)  \tan(v)}\]</div>
-</div>
+\[\tan(u-v) = \frac{\tan(u) - \tan(v)}{1 + \tan(u)  \tan(v)}
+
+\]</div>
 <p><strong>6.</strong></p>
-<div style="text-align: center;">
 <div class="math">
-\[\tan(u+v) = \frac{\tan(u) + \tan(v)}{1 - \tan(u)  \tan(v)}\]</div>
-</div>
+\[\tan(u+v) = \frac{\tan(u) + \tan(v)}{1 - \tan(u)  \tan(v)}
+
+\]</div>
 </div>
 <div class="section" id="tvofoldunarformulur">
 <h4><span class="section-number">12.3.5.6. </span>Tvöföldunarformúlur<a class="headerlink" href="#tvofoldunarformulur" title="Varanlegur hlekkur á titilinn">¶</a></h4>
 <p><strong>1.</strong></p>
-<div style="text-align: center;">
 <div class="math">
-\[\sin(2u) = 2\sin(u)\cos(u)\]</div>
-</div>
+\[\sin(2u) = 2\sin(u)\cos(u)
+
+\]</div>
 <p><strong>2.</strong></p>
-<div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-\cos(2x)&amp;= \cos^2(x)-\sin^2(x) \\
-&amp;= 2\cos^2(x)-1 \\
-&amp;= 1-2 \sin^2(x)
-\end{aligned}\]</div>
-</div>
+\cos(2x)&= \cos^2(x)-\sin^2(x) \\
+&= 2\cos^2(x)-1 \\
+&= 1-2 \sin^2(x)
+\end{aligned}
+
+\]</div>
 <p><strong>3.</strong></p>
-<div style="text-align: center;">
 <div class="math">
-\[\tan(2u) = \frac{2\tan(u)}{1-\tan^2(u)}\]</div>
-</div>
+\[\tan(2u) = \frac{2\tan(u)}{1-\tan^2(u)}
+
+\]</div>
 </div>
 <div class="section" id="helmingunarformulur">
 <h4><span class="section-number">12.3.5.7. </span>Helmingunarformúlur<a class="headerlink" href="#helmingunarformulur" title="Varanlegur hlekkur á titilinn">¶</a></h4>
 <p><strong>1.</strong></p>
-<div style="text-align: center;">
 <div class="math">
-\[\sin^2(u) = \frac{1- \cos(2u)}{2} \qquad \text{eða} \qquad \sin\left(\frac{u}{2}\right) = \pm \sqrt{\frac{1- \cos(u)}{2} }\]</div>
-</div>
+\[\sin^2(u) = \frac{1- \cos(2u)}{2} \qquad \text{eða} \qquad \sin\left(\frac{u}{2}\right) = \pm \sqrt{\frac{1- \cos(u)}{2} }
+
+\]</div>
 <p><strong>2.</strong></p>
-<div style="text-align: center;">
 <div class="math">
-\[\cos^2(u) = \frac{1+ \cos(2u)}{2} \qquad \text{eða} \qquad \cos\left(\frac{u}{2}\right) = \pm \sqrt{\frac{1+ \cos(u)}{2} }\]</div>
-</div>
+\[\cos^2(u) = \frac{1+ \cos(2u)}{2} \qquad \text{eða} \qquad \cos\left(\frac{u}{2}\right) = \pm \sqrt{\frac{1+ \cos(u)}{2} }
+
+\]</div>
 <p><strong>3.</strong></p>
-<div style="text-align: center;">
 <div class="math">
-\[\tan^2(u) = \frac{1- \cos(2u)}{1+\cos(2u)} \qquad \text{eða} \qquad \tan\left(\frac{u}{2}\right) = \pm \sqrt{\frac{1- \cos(u)}{1+\cos(u)} }\]</div>
-</div>
+\[\tan^2(u) = \frac{1- \cos(2u)}{1+\cos(2u)} \qquad \text{eða} \qquad \tan\left(\frac{u}{2}\right) = \pm \sqrt{\frac{1- \cos(u)}{1+\cos(u)} }
+
+\]</div>
 </div>
 <div class="section" id="summu-og-margfeldisformulur">
 <h4><span class="section-number">12.3.5.8. </span>Summu- og margfeldisformúlur<a class="headerlink" href="#summu-og-margfeldisformulur" title="Varanlegur hlekkur á titilinn">¶</a></h4>
 <p><strong>Margfeldisritháttur í summurithátt</strong></p>
 <blockquote>
 <div><p><strong>1.</strong></p>
-<div style="text-align: center;">
 <div class="math">
-\[\sin(u)\sin(v) = \frac{1}{2}\left(\cos(u-v) - \cos(u+v)\right)\]</div>
-</div>
+\[\sin(u)\sin(v) = \frac{1}{2}\left(\cos(u-v) - \cos(u+v)\right)
+
+\]</div>
 <p><strong>2.</strong></p>
-<div style="text-align: center;">
 <div class="math">
-\[\cos(u)\cos(v) = \frac{1}{2}\left(\cos(u-v) + \cos(u+v)\right)\]</div>
-</div>
+\[\cos(u)\cos(v) = \frac{1}{2}\left(\cos(u-v) + \cos(u+v)\right)
+
+\]</div>
 <p><strong>3.</strong></p>
-<div style="text-align: center;">
 <div class="math">
-\[\sin(u)\cos(v) = \frac{1}{2}\left(\sin(u+v) + \sin(u-v)\right)\]</div>
-</div>
+\[\sin(u)\cos(v) = \frac{1}{2}\left(\sin(u+v) + \sin(u-v)\right)
+
+\]</div>
 <p><strong>4.</strong></p>
-<div style="text-align: center;">
 <div class="math">
-\[\cos(u)\sin(v) = \frac{1}{2}\left(\sin(u+v) - \sin(u-v)\right)\]</div>
-</div>
+\[\cos(u)\sin(v) = \frac{1}{2}\left(\sin(u+v) - \sin(u-v)\right)
+
+\]</div>
 </div></blockquote>
 <p><strong>Summuritháttur í margfeldisrithátt</strong></p>
 <blockquote>
 <div><p><strong>1.</strong></p>
-<div style="text-align: center;">
 <div class="math">
-\[\sin(u) + \sin(v) = 2\sin\left(\frac{u+v}{2}\right)\cos\left(\frac{u-v}{2}\right)\]</div>
-</div>
+\[\sin(u) + \sin(v) = 2\sin\left(\frac{u+v}{2}\right)\cos\left(\frac{u-v}{2}\right)
+
+\]</div>
 <p><strong>2.</strong></p>
-<div style="text-align: center;">
 <div class="math">
-\[\sin(u) - \sin(v) = 2\cos\left(\frac{u+v}{2}\right)\sin\left(\frac{u-v}{2}\right)\]</div>
-</div>
+\[\sin(u) - \sin(v) = 2\cos\left(\frac{u+v}{2}\right)\sin\left(\frac{u-v}{2}\right)
+
+\]</div>
 <p><strong>3.</strong></p>
-<div style="text-align: center;">
 <div class="math">
-\[\cos(u) + \cos(v) = 2\cos\left(\frac{u+v}{2}\right)\cos\left(\frac{u-v}{2}\right)\]</div>
-</div>
+\[\cos(u) + \cos(v) = 2\cos\left(\frac{u+v}{2}\right)\cos\left(\frac{u-v}{2}\right)
+
+\]</div>
 <p><strong>4.</strong></p>
-<div style="text-align: center;">
 <div class="math">
-\[\cos(u) - \cos(v) = -2\sin\left(\frac{u+v}{2}\right)\sin\left(\frac{u-v}{2}\right)\]</div>
-</div>
+\[\cos(u) - \cos(v) = -2\sin\left(\frac{u+v}{2}\right)\sin\left(\frac{u-v}{2}\right)
+
+\]</div>
 </div></blockquote>
 </div>
 <div class="section" id="kosinusreglan">
 <h4><span class="section-number">12.3.5.9. </span>Kósínusreglan<a class="headerlink" href="#kosinusreglan" title="Varanlegur hlekkur á titilinn">¶</a></h4>
 <p>Í <span class="math">\(\triangle ABC\)</span> gildir</p>
-<div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-a^2 &amp;= b^2+c^2-2\cdot b \cdot c \cdot \cos(A) \\
-b^2 &amp;= a^2+c^2-2\cdot a \cdot c \cdot \cos(B) \\
-c^2 &amp;= b^2+a^2-2\cdot b \cdot a \cdot \cos(C) \\
-\end{aligned}\]</div>
-</div>
+a^2 &= b^2+c^2-2\cdot b \cdot c \cdot \cos(A) \\
+b^2 &= a^2+c^2-2\cdot a \cdot c \cdot \cos(B) \\
+c^2 &= b^2+a^2-2\cdot b \cdot a \cdot \cos(C) \\
+\end{aligned}
+
+\]</div>
 </div>
 <div class="section" id="sinusreglan">
 <h4><span class="section-number">12.3.5.10. </span>Sínusreglan<a class="headerlink" href="#sinusreglan" title="Varanlegur hlekkur á titilinn">¶</a></h4>
 <p>Í <span class="math">\(\triangle ABC\)</span> gildir</p>
-<div style="text-align: center;">
 <div class="math">
-\[\frac{a}{\sin(A)} = \frac{b}{\sin(B)} = \frac{c}{\sin(C)}\]</div>
-</div>
+\[\frac{a}{\sin(A)} = \frac{b}{\sin(B)} = \frac{c}{\sin(C)}
+
+\]</div>
 <p>Þar sem <span class="math">\(A\)</span>, <span class="math">\(B\)</span> og <span class="math">\(C\)</span> eru horn þríhyrningsins og <span class="math">\(a\)</span>, <span class="math">\(b\)</span> og <span class="math">\(c\)</span> eru lengdir hliðanna</p>
 </div>
 </div>
@@ -1293,22 +1291,22 @@ c^2 &amp;= b^2+a^2-2\cdot b \cdot a \cdot \cos(C) \\
 <h3><span class="section-number">12.3.6. </span>Vigrar<a class="headerlink" href="#vigrar" title="Varanlegur hlekkur á titilinn">¶</a></h3>
 <div class="section" id="reiknireglur">
 <h4><span class="section-number">12.3.6.1. </span>Reiknireglur<a class="headerlink" href="#reiknireglur" title="Varanlegur hlekkur á titilinn">¶</a></h4>
-<div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-&amp; |\bar{a}| = a = \sqrt{a_x^2 + a_y^2 + a_z^2} \\
+& |\bar{a}| = a = \sqrt{a_x^2 + a_y^2 + a_z^2} \\
 \qquad \\
-&amp; \bar{a} + \bar{b} = (a_x+b_x, a_y+b_y, a_z+b_z) \\
+& \bar{a} + \bar{b} = (a_x+b_x, a_y+b_y, a_z+b_z) \\
 \qquad \\
-&amp; c \cdot \bar{v} = (c \cdot v_x, c \cdot v_y, c \cdot v_z) \\
+& c \cdot \bar{v} = (c \cdot v_x, c \cdot v_y, c \cdot v_z) \\
 \qquad \\
-&amp; \bar{a} \cdot \bar{b} = a b \cos{\phi} \\
+& \bar{a} \cdot \bar{b} = a b \cos{\phi} \\
 \qquad \\
-&amp; \bar{a} \times \bar{b} = (a_y b_z - a_z b_y)\hat{\imath} + (a_z b_x - a_x b_z)\hat{\jmath} + (a_x b_y - a_y b_x)\hat{k} \\
+& \bar{a} \times \bar{b} = (a_y b_z - a_z b_y)\hat{\imath} + (a_z b_x - a_x b_z)\hat{\jmath} + (a_x b_y - a_y b_x)\hat{k} \\
 \qquad \\
-&amp; \bar{a} \times \bar{b} = - \bar{b} \times \bar{a}
-\end{aligned}\]</div>
-</div>
+& \bar{a} \times \bar{b} = - \bar{b} \times \bar{a}
+\end{aligned}
+
+\]</div>
 </div>
 </div>
 <div class="section" id="markgildi">
@@ -1317,17 +1315,25 @@ c^2 &amp;= b^2+a^2-2\cdot b \cdot a \cdot \cos(C) \\
 <h4><span class="section-number">12.3.7.1. </span>Reiknireglur fyrir markgildi<a class="headerlink" href="#reiknireglur-fyrir-markgildi" title="Varanlegur hlekkur á titilinn">¶</a></h4>
 <p>Gerum ráð fyrir að <span class="math">\(f\)</span> og <span class="math">\(g\)</span> séu föll og að <span class="math">\(c\in \mathbb{R} \cup\{-\infty,\infty\}\)</span>
 Gerum ráð fyrir að bæði markgildin</p>
-<div style="text-align: center;">
 <div class="math">
-\[\lim_{x\to c}f(x)\qquad \text{og}\qquad \lim_{x\to c}g(x)\]</div>
-</div>
+\[\lim_{x\to c}f(x)\qquad \text{og}\qquad \lim_{x\to c}g(x)
+
+\]</div>
 <p>séu skilgreind og að hvorugt þeirra sé jafnt plús eða mínus óendanlegu.
 Gerum ráð fyrir að <span class="math">\(k\in\mathbb{R}\)</span> sé fasti.
 Þá gildir:</p>
-<div style="text-align: center;">
 <div class="math">
-\[ \begin{aligned}1. &amp; \qquad \lim_{x\to c}k=k\\2. &amp; \qquad \lim_{x\to c} \left(kf(x) \right)=k \cdot \left(\lim_{x\to c}f(x)\right)\\3. &amp; \qquad \lim_{x\to c} \left(f(x)+g(x)\right)=\lim_{x\to c}f(x)+\lim_{x\to c}g(x)\\4. &amp; \qquad \lim_{x\to c} \left(f(x)-g(x)\right)=\lim_{x\to c}f(x)-\lim_{x\to c}g(x)\\5. &amp; \qquad \lim_{x\to c} \left(f(x)\cdot g(x)\right)= \left( \lim_{x\to c}f(x) \right)\cdot \left(\lim_{x\to c}g(x) \right)\\6. &amp; \qquad \lim_{x\to c} \left( \frac{f(x)}{g(x)} \right)=\frac{\lim_{x\to c}f(x)}{\lim_{x\to c}g(x)} \qquad \text{ef} \qquad \lim_{x\to c}g(x)\not=0\end{aligned} \]</div>
-</div>
+\[1. & \qquad \lim_{x\to c}k=k
+
+2. & \qquad \lim_{x\to c} \left(kf(x) \right)=k \cdot \left(\lim_{x\to c}f(x)\right)
+
+3. & \qquad \lim_{x\to c} \left(f(x)+g(x)\right)=\lim_{x\to c}f(x)+\lim_{x\to c}g(x)
+
+4. & \qquad \lim_{x\to c} \left(f(x)-g(x)\right)=\lim_{x\to c}f(x)-\lim_{x\to c}g(x)
+
+5. & \qquad \lim_{x\to c} \left(f(x)\cdot g(x)\right)= \left( \lim_{x\to c}f(x) \right)\cdot \left(\lim_{x\to c}g(x) \right)
+
+6. & \qquad \lim_{x\to c} \left( \frac{f(x)}{g(x)} \right)=\frac{\lim_{x\to c}f(x)}{\lim_{x\to c}g(x)} \qquad \text{ef} \qquad \lim_{x\to c}g(x)\not=0\]</div>
 </div>
 </div>
 <div class="section" id="diffrun">
@@ -1359,59 +1365,59 @@ Gerum ráð fyrir að <span class="math">\(k\in\mathbb{R}\)</span> sé fasti.
 <ol class="arabic simple">
 <li><p>Ef <span class="math">\(a\)</span> er fasti og <span class="math">\(f(x)=a\)</span> þá er</p></li>
 </ol>
-<div style="text-align: center;">
 <div class="math">
-\[f'(x)=0\]</div>
-</div>
+\[f'(x)=0
+
+\]</div>
 <ol class="arabic simple" start="2">
 <li><p>Ef <span class="math">\(n\in \mathbb{R}\setminus\{0\}\)</span> og <span class="math">\(f(x)=x^n\)</span> þá er</p></li>
 </ol>
-<div style="text-align: center;">
 <div class="math">
-\[f'(x)=nx^{n-1}\]</div>
-</div>
+\[f'(x)=nx^{n-1}
+
+\]</div>
 <ol class="arabic simple" start="3">
 <li><p>Ef <span class="math">\(a\in \mathbb{R}_+\)</span> og <span class="math">\(f(x)=a^x\)</span> þá er</p></li>
 </ol>
-<div style="text-align: center;">
 <div class="math">
-\[f'(x)=\ln(a)a^x\]</div>
-</div>
+\[f'(x)=\ln(a)a^x
+
+\]</div>
 <ol class="arabic simple" start="4">
 <li><p>Ef <span class="math">\(a\in \mathbb{R}_+\)</span> og <span class="math">\(f(x)=\log_a(x)\)</span> þá er</p></li>
 </ol>
-<div style="text-align: center;">
 <div class="math">
-\[f'(x)=\frac{1}{\ln(a)x}\]</div>
-</div>
+\[f'(x)=\frac{1}{\ln(a)x}
+
+\]</div>
 <ol class="arabic simple" start="5">
 <li><p>Ef <span class="math">\(f(x) = \ln(x)\)</span> þá er</p></li>
 </ol>
-<div style="text-align: center;">
 <div class="math">
-\[f'(x) = \frac{1}{x}\]</div>
-</div>
+\[f'(x) = \frac{1}{x}
+
+\]</div>
 <ol class="arabic simple" start="6">
 <li><p>Ef <span class="math">\(f(x) = e^x\)</span> þá er</p></li>
 </ol>
-<div style="text-align: center;">
 <div class="math">
-\[f'(x) = e^x\]</div>
-</div>
+\[f'(x) = e^x
+
+\]</div>
 <ol class="arabic simple" start="7">
 <li><p>Ef <span class="math">\(f(x)=\cos(x)\)</span> þá er</p></li>
 </ol>
-<div style="text-align: center;">
 <div class="math">
-\[f'(x)=-\sin(x)\]</div>
-</div>
+\[f'(x)=-\sin(x)
+
+\]</div>
 <ol class="arabic simple" start="8">
 <li><p>Ef <span class="math">\(f(x)=\sin(x)\)</span> þá er</p></li>
 </ol>
-<div style="text-align: center;">
 <div class="math">
-\[f'(x)=\cos(x)\]</div>
-</div>
+\[f'(x)=\cos(x)
+
+\]</div>
 </div>
 </div>
 </div>
@@ -1466,9 +1472,9 @@ Gerum ráð fyrir að <span class="math">\(k\in\mathbb{R}\)</span> sé fasti.
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
       <script type="text/javascript" src="_static/language_data.js"></script>
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/katex.min.js"></script>
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/contrib/auto-render.min.js"></script>
-      <script type="text/javascript" src="_static/rendermath.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script>
+      <script type="text/javascript" src="_static/katex_autorenderer.js"></script>
 
   
 

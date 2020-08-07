@@ -30,7 +30,9 @@
   
 
   
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/katex.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" type="text/css" />
+  
+    <link rel="stylesheet" href="_static/katex-math.css" type="text/css" />
   
     <link rel="stylesheet" href="_static/button.css" type="text/css" />
   
@@ -593,30 +595,30 @@ Með öðrum orðum þá varpar fallið stakinu <span class="math">\(2 \in X\)</
 <p>Það er, <span class="math">\(f(2)=4\)</span> og <span class="math">\(f(9)=81\)</span>.</p>
 <p>Við viljum oftast skrifa þessa reglu með því að nota táknmál, því það er fljótlegra en að skrifa allan textann að ofan. Við getum skilgreint þetta fall með því að skrifa:</p>
 </div></blockquote>
-<div style="text-align: center;">
 <div class="math">
-\[f: \mathbb{R} \to \mathbb{R}, \qquad f(x)=x^2\]</div>
-</div>
+\[f: \mathbb{R} \to \mathbb{R}, \qquad f(x)=x^2
+
+\]</div>
 <p><strong>2.</strong> Skilgreinum fall</p>
 <blockquote>
-<div><div style="text-align: center;">
-<div class="math">
-\[g: \mathbb{R} \to \mathbb{R}, \qquad g(x)=3x+2\]</div>
-</div>
+<div><div class="math">
+\[g: \mathbb{R} \to \mathbb{R}, \qquad g(x)=3x+2
+
+\]</div>
 <p>Þetta táknmál er nóg til að skilgreina fallið því við getum lesið úr því hvað fallið gerir. Það tekur hvert stak <span class="math">\(x\)</span> í <span class="math">\(\mathbb{R}\)</span> og úthlutar því staki með því að margfalda <span class="math">\(x\)</span> fyrst með <span class="math">\(3\)</span> og bæta svo <span class="math">\(2\)</span> við.</p>
 <p>Við getum t.d. reiknað út að</p>
-<div style="text-align: center;">
 <div class="math">
-\[\begin{aligned} f(3)&amp;=3 \cdot 3 +2 = 11 \\ f\left(\frac{17}{18}\right)&amp;=3 \cdot \frac{17}{18}+2=\frac{29}{6}\\ \end{aligned}\]</div>
-</div>
+\[\begin{aligned} f(3)&=3 \cdot 3 +2 = 11 \\ f\left(\frac{17}{18}\right)&=3 \cdot \frac{17}{18}+2=\frac{29}{6}\\ \end{aligned}
+
+\]</div>
 <p>Þetta getum við gert við hvert einasta stak í <span class="math">\(\mathbb{R}\)</span>, það er, hverja einustu rauntölu. Þessi regla varpar hverri rauntölu í einhverja aðra rauntölu.</p>
 </div></blockquote>
 <p><strong>3.</strong> Við getum líka skilgreint fall frá rauntalnabili. Skoðum vörpunina í fyrri lið, en látum núna</p>
 <blockquote>
-<div><div style="text-align: center;">
-<div class="math">
-\[g: [1,7] \to \mathbb{R}, \qquad g(x)=3x+2\]</div>
-</div>
+<div><div class="math">
+\[g: [1,7] \to \mathbb{R}, \qquad g(x)=3x+2
+
+\]</div>
 <p>Hér er skilgreiningarmengið bil. Fallið varpar nú einungis hverju staki á bilinu <span class="math">\([1,7]\)</span> í eitthvert stak <span class="math">\(g(x)\)</span>, sem er rauntala. Til dæmis er <span class="math">\(g(1)=3 \cdot 1 + 2=5\)</span>, en til dæmis er talan <span class="math">\(8\)</span> ekki í skilgreiningarmenginu svo hún fær ekkert gildi.</p>
 </div></blockquote>
 </div>
@@ -632,32 +634,32 @@ Með öðrum orðum þá varpar fallið stakinu <span class="math">\(2 \in X\)</
 <div class="section" id="graf-vorpunnar">
 <h2><span class="section-number">5.2. </span>Graf vörpunnar<a class="headerlink" href="#graf-vorpunnar" title="Varanlegur hlekkur á titilinn">¶</a></h2>
 <p><a href="http://www.stae.is/os/leita/graph" class="tooltip" target="_blank">Graf<span>en: <i>graph</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> vörpunnar er mengið</p>
-<div style="text-align: center;">
 <div class="math">
-\[\{(x,y) \in X \times Y;y=f(x)\}\]</div>
-</div>
-<p>Það er mengi allra <a href="http://www.stae.is/os/leita/couple" class="tooltip" target="_blank">tvennda<span>en: <i>couple</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> <span class="math">\((x,y)\)</span> þannig að <span class="math">\(x \in X\)</span> og <span class="math">\(y \in Y\)</span> uppfyllir jöfnuna <span class="math">\(y=f(x)\)</span>.</p>
+\[\{(x,y) \in X \times Y;y=f(x)\}
+
+\]</div>
+<p>Það er mengi allra <a href="http://www.stae.is/os/leita/ordered_pair" class="tooltip" target="_blank">tvennda<span>en: <i>ordered pair</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> <span class="math">\((x,y)\)</span> þannig að <span class="math">\(x \in X\)</span> og <span class="math">\(y \in Y\)</span> uppfyllir jöfnuna <span class="math">\(y=f(x)\)</span>.</p>
 <p>Það getur verið gagnlegt að teikna upp mynd af grafinu í hnitakerfi. Skoðum dæmi um það að teikna myndir af gröfum falla.</p>
 <div class="admonition tip">
 <p class="admonition-title">Dæmi</p>
 <p><strong>1.</strong> Skoðum aftur fallið</p>
 <blockquote>
-<div><div style="text-align: center;">
-<div class="math">
-\[g: \mathbb{R} \to \mathbb{R}, \qquad g(x)=3x+2\]</div>
-</div>
+<div><div class="math">
+\[g: \mathbb{R} \to \mathbb{R}, \qquad g(x)=3x+2
+
+\]</div>
 <p>Til að teikna graf þess getum við reiknað út nokkra punkta sem tilheyra því.</p>
 <p>Ef <span class="math">\(x=0\)</span> þá er <span class="math">\(y=g(0)=3 \cdot 0+2=2\)</span>. Við merkjum punktinn <span class="math">\((0,2)\)</span> á myndina.</p>
 <p>Ef <span class="math">\(x=2\)</span> þá er <span class="math">\(y=g(2)=3 \cdot 2 +2=8\)</span>. Við merkjum punktinn <span class="math">\((2,8)\)</span> á myndina.</p>
 <p>Ef <span class="math">\(x=-3\)</span> þá er <span class="math">\(y=g(-3)= 3 \cdot (-3)+2=-7\)</span>. Við merkjum punktinn <span class="math">\((-3,-7)\)</span> á myndina.</p>
-<p>Næst teiknum við feril sem fer í gegnum punktana, en þeir liggja allir á beinni línu. Við höfum áður séð að allir punktar í hnitakerfi sem uppfylla jöfnu á forminu <span class="math">\(y=hx+s\)</span> liggja á línu í plani. Grafið er því <a href="http://www.stae.is/os/leita/row" class="tooltip" target="_blank">lína<span>en: <i>row</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> og teygir sig óendanlega langt í báðar áttir.</p>
+<p>Næst teiknum við feril sem fer í gegnum punktana, en þeir liggja allir á beinni línu. Við höfum áður séð að allir punktar í hnitakerfi sem uppfylla jöfnu á forminu <span class="math">\(y=hx+s\)</span> liggja á línu í plani. Grafið er því <a href="http://www.stae.is/os/leita/straight_line" class="tooltip" target="_blank">lína<span>en: <i>straight line</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> og teygir sig óendanlega langt í báðar áttir.</p>
 <img alt="_images/graf1.svg" class="align-center" src="_images/graf1.svg" /></div></blockquote>
 <p><strong>2.</strong> Skoðum fallið</p>
 <blockquote>
-<div><div style="text-align: center;">
-<div class="math">
-\[f: \mathbb{R} \to \mathbb{R}, \qquad f(x)=x^2\]</div>
-</div>
+<div><div class="math">
+\[f: \mathbb{R} \to \mathbb{R}, \qquad f(x)=x^2
+
+\]</div>
 <p>Reiknum út nokkra punkta sem tilheyra grafinu.</p>
 <p>Ef <span class="math">\(x=0\)</span> þá er <span class="math">\(y=f(0)=0^2=0\)</span>. Við merkjum punktinn <span class="math">\((0,0)\)</span> á myndina.</p>
 <p>Ef <span class="math">\(x=1\)</span> þá er <span class="math">\(y=f(1)= 1^2=1\)</span>. Við merkjum punktinn <span class="math">\((1,1)\)</span> á myndina.</p>
@@ -713,17 +715,17 @@ Við sjáum þá að <span class="math">\(h(-2)\not=h(2)\)</span> og <span class
 <h3><span class="section-number">5.4.1. </span>Skilgreining<a class="headerlink" href="#id1" title="Varanlegur hlekkur á titilinn">¶</a></h3>
 <p>Látum <span class="math">\(X\)</span> vera hlutmengi í rauntölunum og  <span class="math">\(\ f: X \to \mathbb{R}\)</span> vera fall.</p>
 <p>Ef um sérhver <span class="math">\(x_1,x_2 \in X\)</span> sem eru þannig að <span class="math">\(x_1&lt;x_2\)</span> gildir</p>
-<div style="text-align: center;">
 <div class="math">
-\[f(x_1) \leq f(x_2)\]</div>
-</div>
-<p>þá er <span class="math">\(f\)</span> sagt vera <a href="http://www.stae.is/os/leita/ascending" class="tooltip" target="_blank">vaxandi<span>en: <i>ascending</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> fall.</p>
+\[f(x_1) \leq f(x_2)
+
+\]</div>
+<p>þá er <span class="math">\(f\)</span> sagt vera <a href="http://www.stae.is/os/leita/increasing" class="tooltip" target="_blank">vaxandi<span>en: <i>increasing</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> fall.</p>
 <p>Ef um sérhver <span class="math">\(x_1,x_2 \in X\)</span> sem eru þannig að <span class="math">\(x_1&lt;x_2\)</span> gildir</p>
-<div style="text-align: center;">
 <div class="math">
-\[g(x_1) \geq g(x_2)\]</div>
-</div>
-<p>þá er <span class="math">\(g\)</span> sagt vera <a href="http://www.stae.is/os/leita/antitone" class="tooltip" target="_blank">minnkandi<span>en: <i>antitone</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> fall.</p>
+\[g(x_1) \geq g(x_2)
+
+\]</div>
+<p>þá er <span class="math">\(g\)</span> sagt vera <a href="http://www.stae.is/os/leita/decreasing" class="tooltip" target="_blank">minnkandi<span>en: <i>decreasing</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> fall.</p>
 <a class="reference internal image-reference" href="_images/vaxmin.svg"><img alt="_images/vaxmin.svg" class="align-center" src="_images/vaxmin.svg" width="45%" /></a>
 <p>Hér sjáum við dæmi um fall <span class="math">\(f\)</span> sem er vaxandi og fall <span class="math">\(g\)</span> sem er minnkandi.</p>
 <p>Ef ójöfnurnar fyrir fallgildin í skilgreiningunum væru strangar væri <span class="math">\(f\)</span> sagt vera <a href="http://www.stae.is/os/leita/strictly_increasing" class="tooltip" target="_blank">stranglega vaxandi<span>en: <i>strictly increasing</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> og <span class="math">\(g\)</span> sagt vera <a href="http://www.stae.is/os/leita/strictly_decreasing" class="tooltip" target="_blank">stranglega minnkandi<span>en: <i>strictly decreasing</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> fall.</p>
@@ -761,14 +763,14 @@ Samkvæmt skilgreiningunni er vaxandi fall þannig að <span class="math">\(h(x_
 <div class="section" id="gaffalforskrift">
 <h2><span class="section-number">5.5. </span>Gaffalforskrift<a class="headerlink" href="#gaffalforskrift" title="Varanlegur hlekkur á titilinn">¶</a></h2>
 <p>Sumum föllum er ekki endilega hægt að lýsa með einni jöfnu, t.d. þegar lýsa þarf lotubundnum föllum. Þá er fallinu oft lýst með mismunandi formúlum á mismunandi bilum. Skoðum fallið</p>
-<div style="text-align: center;">
 <div class="math">
-\[\begin{aligned}f(x) =
+\[f(x) =
 \begin{cases}
 x^2 \qquad x \geq 0\\
--2x+1 \quad x &lt; 0
-\end{cases}\end{aligned}\]</div>
-</div>
+-2x+1 \quad x < 0
+\end{cases}
+
+\]</div>
 <p>Þetta fall tekur því gildið <span class="math">\(-2x+1\)</span> fyrir öll neikvæð gildi á <span class="math">\(x\)</span> en jákvæð gildi eru sett í annað veldi.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/gaffal.svg"><img alt="_images/gaffal.svg" src="_images/gaffal.svg" width="60%" /></a>
@@ -787,15 +789,15 @@ x^2 \qquad x \geq 0\\
 <div class="admonition tip">
 <p class="admonition-title">Dæmi</p>
 <p>Látum <span class="math">\(f: \mathbb{R} \to \mathbb{R}\)</span> vera fallið sem er með lotu <span class="math">\(2\)</span> og er skilgreint með:</p>
-<div style="text-align: center;">
 <div class="math">
-\[f(x)=|x| \qquad \text{ef} \qquad x \in [-1,1[\]</div>
-</div>
+\[f(x)=|x| \qquad \text{ef} \qquad x \in [-1,1[
+
+\]</div>
 <p>Tökum eftir að formúlan er aðeins tekin fram fyrir bilið <span class="math">\([-1,1[\)</span> en hún nægir samt til að skilgreina fallið á öllu <span class="math">\(\mathbb{R}\)</span>, því ef <span class="math">\(x\)</span> er tala sem er ekki á þessu bili þá getum við fundið fallgildið með því að notfæra okkur lotu fallsins. Til dæmis ef við ætlum að reikna <span class="math">\(f(5)\)</span> þá athugum við að</p>
-<div style="text-align: center;">
 <div class="math">
-\[f(5)=f(-1+3 \cdot 2)=f(-1)=|-1|=1\]</div>
-</div>
+\[f(5)=f(-1+3 \cdot 2)=f(-1)=|-1|=1
+
+\]</div>
 <p>þar sem lota fallsins er <span class="math">\(2\)</span> fæst þetta út frá skilgreiningu.</p>
 <p>Hér að neðan er mynd af fallinu. Upphaflega lotan sem gefin er með formúlu er mörkuð innan við punktalínur.</p>
 <div class="figure align-center">
@@ -808,26 +810,26 @@ x^2 \qquad x \geq 0\\
 <div class="section" id="id3">
 <h3><span class="section-number">5.7.1. </span>Skilgreining<a class="headerlink" href="#id3" title="Varanlegur hlekkur á titilinn">¶</a></h3>
 <p>Látum <span class="math">\(A\)</span> og <span class="math">\(B\)</span> vera mengi og <span class="math">\(f: A \to B\)</span> vera <a href="http://www.stae.is/os/leita/mapping" class="tooltip" target="_blank">vörpun<span>en: <i>mapping</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a>. Ef til er vörpun <span class="math">\(g: B \to A\)</span> þannig að</p>
-<div style="text-align: center;">
 <div class="math">
-\[f(g(b))=b \qquad \text{fyrir öll } b \in B\]</div>
-</div>
+\[f(g(b))=b \qquad \text{fyrir öll } b \in B
+
+\]</div>
 <p>og</p>
-<div style="text-align: center;">
 <div class="math">
-\[g(f(a))=a \qquad \text{fyrir öll } a \in A\]</div>
-</div>
+\[g(f(a))=a \qquad \text{fyrir öll } a \in A
+
+\]</div>
 <p>þá kallast fallið <span class="math">\(g\)</span> <a href="http://www.stae.is/os/leita/inverse_mapping" class="tooltip" target="_blank">andhverfa vörpunarinnar<span>en: <i>inverse mapping</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> <span class="math">\(f\)</span>. Andhverfa vörpunarinnar <span class="math">\(f\)</span> er oft táknuð með <span class="math">\(f^{-1}\)</span>.</p>
 <p>Þá er <span class="math">\(f: A \to B\)</span> og <span class="math">\(f^{-1}: B \to A\)</span></p>
-<div style="text-align: center;">
 <div class="math">
-\[f(f^{-1}(b))=b \qquad \text{fyrir öll } b \in B\]</div>
-</div>
+\[f(f^{-1}(b))=b \qquad \text{fyrir öll } b \in B
+
+\]</div>
 <p>og</p>
-<div style="text-align: center;">
 <div class="math">
-\[f^{-1}(f(a))=a \qquad \text{fyrir öll } a \in A\]</div>
-</div>
+\[f^{-1}(f(a))=a \qquad \text{fyrir öll } a \in A
+
+\]</div>
 <a class="reference internal image-reference" href="_images/andhverfa.svg"><img alt="_images/andhverfa.svg" class="align-center" src="_images/andhverfa.svg" width="70%" /></a>
 <p>Hér sjáum við einfalt dæmi um andhverfa vörpun, þar sem <span class="math">\(f\)</span> hefur <a href="http://www.stae.is/os/leita/argument_domain" class="tooltip" target="_blank">skilgreiningarmengi<span>en: <i>argument domain</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> <span class="math">\(A\)</span> og <a href="http://www.stae.is/os/leita/codomain" class="tooltip" target="_blank">bakmengi<span>en: <i>codomain</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> <span class="math">\(B\)</span>.</p>
 <div class="admonition note">
@@ -865,65 +867,65 @@ Staðfestum það:</p>
 <p class="admonition-title">Dæmi</p>
 <p><strong>1.</strong> Látum <span class="math">\(f:\;\mathbb{R}\to\mathbb{R}\)</span> vera fall gefið með formúlunni</p>
 <blockquote>
-<div><div style="text-align: center;">
-<div class="math">
-\[f(x)=x+4\]</div>
-</div>
+<div><div class="math">
+\[f(x)=x+4
+
+\]</div>
 <p>Finnum andhverfu fallsins. Við leitum að vörpun sem gerir ,,öfugt‘‘ við það sem <span class="math">\(f\)</span> gerir.</p>
 <p>Skrifum <span class="math">\(y\)</span> í staðinn fyrir <span class="math">\(f(x)\)</span> í formúlu fallsins.</p>
-<div style="text-align: center;">
 <div class="math">
-\[y=x+4\]</div>
-</div>
+\[y=x+4
+
+\]</div>
 <p>Einangrum <span class="math">\(x\)</span> úr þessari jöfnu</p>
-<div style="text-align: center;">
 <div class="math">
-\[x=y-4\]</div>
-</div>
+\[x=y-4
+
+\]</div>
 <p>Þetta gefur okkur að andhverfa <span class="math">\(f\)</span> er (skiptum um nafn á breytunni)</p>
-<div style="text-align: center;">
 <div class="math">
-\[f^{-1}(x)=x-4.\]</div>
-</div>
+\[f^{-1}(x)=x-4.
+
+\]</div>
 </div></blockquote>
 <p><strong>2.</strong> Látum <span class="math">\(f\)</span> vera fall gefið með formúlunni</p>
 <blockquote>
-<div><div style="text-align: center;">
-<div class="math">
-\[f(x)=\frac{x+5}{x-2}\]</div>
-</div>
+<div><div class="math">
+\[f(x)=\frac{x+5}{x-2}
+
+\]</div>
 <p>Finnum andhverfu fallsins.</p>
 <p>Skrifum <span class="math">\(y\)</span> í staðinn fyrir <span class="math">\(f(x)\)</span> í formúlu fallsins</p>
-<div style="text-align: center;">
 <div class="math">
-\[y=\frac{x+5}{x-2}\]</div>
-</div>
+\[y=\frac{x+5}{x-2}
+
+\]</div>
 <p>Einangrum nú <span class="math">\(x\)</span> í þessari jöfnu:
 Fáum</p>
-<div style="text-align: center;">
 <div class="math">
-\[y(x-2)=x+5\]</div>
-</div>
+\[y(x-2)=x+5
+
+\]</div>
 <p>Margföldum upp úr sviganum og færum yfir jafnaðarmerkið til að fá</p>
-<div style="text-align: center;">
 <div class="math">
-\[yx-x=5+2y\]</div>
-</div>
+\[yx-x=5+2y
+
+\]</div>
 <p>Tökum <span class="math">\(x\)</span> út fyrir sviga vinstra megin</p>
-<div style="text-align: center;">
 <div class="math">
-\[x(y-1)=5+2y\]</div>
-</div>
+\[x(y-1)=5+2y
+
+\]</div>
 <p>Deilum í gegn með <span class="math">\((y-1)\)</span> til að fá</p>
-<div style="text-align: center;">
 <div class="math">
-\[x=\frac{5+2y}{y-1}\]</div>
-</div>
+\[x=\frac{5+2y}{y-1}
+
+\]</div>
 <p>Nú höfum við einangrað <span class="math">\(x\)</span> úr upphaflegu jöfnunni. Andhverfufallið okkar er þá (skiptum um breytu)</p>
-<div style="text-align: center;">
 <div class="math">
-\[f^{-1}(x)=\frac{5+2x}{x-1}\]</div>
-</div>
+\[f^{-1}(x)=\frac{5+2x}{x-1}
+
+\]</div>
 <div class="admonition note">
 <p class="admonition-title">Athugasemd</p>
 <p>Athugum að þegar skilgreiningarmengi falls er ekki tilgreint má gera ráð fyrir að það sé stærsta mögulega skilgreiningarmengið. Skilgreiningarmengi <span class="math">\(f\)</span> yrði þess vegna hér <span class="math">\(\mathbb{R}\setminus\{2\}\)</span>. Tveir eru dregnir frá menginu því annars yrði deilt með núlli. Skilgreiningarmengi andhverfufallsins <span class="math">\(f^{-1}\)</span> yrði <span class="math">\(\mathbb{R}\setminus\{1\}\)</span> út af sömu ástæðu.</p>
@@ -987,9 +989,9 @@ Fáum</p>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
       <script type="text/javascript" src="_static/language_data.js"></script>
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/katex.min.js"></script>
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/contrib/auto-render.min.js"></script>
-      <script type="text/javascript" src="_static/rendermath.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script>
+      <script type="text/javascript" src="_static/katex_autorenderer.js"></script>
 
   
 

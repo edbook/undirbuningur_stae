@@ -488,7 +488,7 @@ Svo er önnur jafnan dregin frá hinni og útkoman er jafna án stærðarinnar s
 
   **Lausn:**
 
-  Stefnum á að eyða :math:`x` . Það gerum við með því að marfalda efri jöfnuna með 2 (beggja vegna jafnaðarmerkis):
+  Stefnum á að eyða :math:`x` . Það gerum við með því að margfalda efri jöfnuna með 2 (beggja vegna jafnaðarmerkis):
 
   .. math::
     \begin{aligned}

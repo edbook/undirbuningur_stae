@@ -30,7 +30,9 @@
   
 
   
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/katex.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" type="text/css" />
+  
+    <link rel="stylesheet" href="_static/katex-math.css" type="text/css" />
   
     <link rel="stylesheet" href="_static/button.css" type="text/css" />
   
@@ -561,7 +563,7 @@
 <h1><span class="section-number">3. </span>Rúmfræði<a class="headerlink" href="#rumfraei" title="Varanlegur hlekkur á titilinn">¶</a></h1>
 <div class="section" id="hnitakerfi">
 <h2><span class="section-number">3.1. </span>Hnitakerfi<a class="headerlink" href="#hnitakerfi" title="Varanlegur hlekkur á titilinn">¶</a></h2>
-<p>Kartesíska <a href="http://www.stae.is/os/leita/coordinate_system" class="tooltip" target="_blank">hnitakerfið<span>en: <i>coordinate system</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> er búið til með því að leggja tvær <a href="http://www.stae.is/os/leita/numerical_axis" class="tooltip" target="_blank">talnalínur<span>en: <i>numerical axis</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> í kross þannig að þær standi <a href="http://www.stae.is/os/leita/normal" class="tooltip" target="_blank">hornréttar<span>en: <i>normal</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> hvor á aðra og skerist í núllpunktum sínum.
+<p>Kartesíska <a href="http://www.stae.is/os/leita/coordinate_system" class="tooltip" target="_blank">hnitakerfið<span>en: <i>coordinate system</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> er búið til með því að leggja tvær <a href="http://www.stae.is/os/leita/numerical_axis" class="tooltip" target="_blank">talnalínur<span>en: <i>numerical axis</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> í kross þannig að þær standi <a href="http://www.stae.is/os/leita/perpendicular" class="tooltip" target="_blank">hornréttar<span>en: <i>perpendicular</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> hvor á aðra og skerist í núllpunktum sínum.
 Lárétta talnalínan er oftast kölluð <span class="math">\(x\)</span>-ásinn og sú lóðrétta <span class="math">\(y\)</span>-ásinn.</p>
 <p>Til að marka punkt <span class="math">\((a,b)\)</span> inn á svona hnitakerfi þá teiknum við lóðrétta línu í gegnum punktinn <span class="math">\(a\)</span> á <span class="math">\(x\)</span>-ásnum og lárétta línu í gegnum punktinn <span class="math">\(b\)</span> á <span class="math">\(y\)</span>-ásnum.
 Þar sem línurnar skerast mörkum við punktinn <span class="math">\((a,b)\)</span>.</p>
@@ -575,20 +577,20 @@ Lárétta talnalínan er oftast kölluð <span class="math">\(x\)</span>-ásinn 
 <p>Fjarlægðin milli punktanna <span class="math">\(P_1\)</span> og <span class="math">\(P_3\)</span> er <span class="math">\(|x_2-x_1|\)</span>.</p>
 <p>Fjarlægðin milli punktanna <span class="math">\(P_2\)</span> og <span class="math">\(P_3\)</span> er <span class="math">\(|y_2-y_1|\)</span>.</p>
 <p>Við vitum því skammhliðarnar í þessum þríhyrningi og notum reglu Pýþagórasar til að finna <a href="http://www.stae.is/os/leita/hypotenuse" class="tooltip" target="_blank">langhliðina<span>en: <i>hypotenuse</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a>. Munum að regla Pýþagórasar segir að fyrir rétthyrndan þríhyrning gildir</p>
-<div style="text-align: center;">
 <div class="math">
-\[a^2+b^2=c^2\]</div>
-</div>
+\[a^2+b^2=c^2
+
+\]</div>
 <p>þar sem <span class="math">\(a, b\)</span> eru skammhliðarnar og <span class="math">\(c\)</span> er langhliðin. Því vitum við að lengd langhliðarinnar er <span class="math">\(c=\sqrt{a^2+b^2}\)</span>.</p>
 <p>Með því að nota þessa reglu getum við því fundið fjarlægðina á milli <span class="math">\(P_1\)</span> og <span class="math">\(P_2\)</span>:</p>
 </div>
 <div class="section" id="regla">
 <h3><span class="section-number">3.1.2. </span>Regla<a class="headerlink" href="#regla" title="Varanlegur hlekkur á titilinn">¶</a></h3>
 <p>Fjarlægðin milli punktanna <span class="math">\(P_1=(x_1,y_1)\)</span> og <span class="math">\(P_2=(x_2,y_2)\)</span> í hnitakerfinu er</p>
-<div style="text-align: center;">
 <div class="math">
-\[\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}\]</div>
-</div>
+\[\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}
+
+\]</div>
 <div class="admonition note">
 <p class="admonition-title">Athugasemd</p>
 <p>Hér er <span class="math">\(a = |x_2-x_1|\)</span> og <span class="math">\(b = |y_2-y_1|\)</span> miðað við reglu Pýþagórasar.</p>
@@ -597,10 +599,10 @@ Lárétta talnalínan er oftast kölluð <span class="math">\(x\)</span>-ásinn 
 <p class="admonition-title">Dæmi</p>
 <p>Finnum fjarlægðina milli punktanna <span class="math">\((1,2)\)</span> og <span class="math">\((5,7)\)</span> í hnitakerfinu.</p>
 <p>Hér er <span class="math">\(x_1=1\)</span>, <span class="math">\(x_2=5\)</span>, <span class="math">\(y_1=2\)</span> og <span class="math">\(y_2=7\)</span>. Setjum þetta inn í jöfnuna að ofan og fáum að fjarlægðin milli punktanna er</p>
-<div style="text-align: center;">
 <div class="math">
-\[\sqrt{(5-1)^2+(7-2)^2}=\sqrt{16+25}=\sqrt{41}\]</div>
-</div>
+\[\sqrt{(5-1)^2+(7-2)^2}=\sqrt{16+25}=\sqrt{41}
+
+\]</div>
 </div>
 </div>
 </div>
@@ -608,40 +610,40 @@ Lárétta talnalínan er oftast kölluð <span class="math">\(x\)</span>-ásinn 
 <h2><span class="section-number">3.2. </span>Jafna línu í hnitakerfinu<a class="headerlink" href="#jafna-linu-i-hnitakerfinu" title="Varanlegur hlekkur á titilinn">¶</a></h2>
 <p>Til að tákna línur í hnitakerfinu er algengt að nota jöfnur.</p>
 <p>Almennt form jöfnu línu er</p>
-<div style="text-align: center;">
 <div class="math">
-\[ax+by+c=0\]</div>
-</div>
+\[ax+by+c=0
+
+\]</div>
 <p>þar sem <span class="math">\(a,b\)</span> og <span class="math">\(c\)</span> eru rauntölur. Það er, fyrsta stigs jafna er jafna línu.</p>
 <div class="admonition note">
 <p class="admonition-title">Athugasemd</p>
 <p>Oft er jafna línu rituð á eftirfarandi hátt:</p>
-<div style="text-align: center;">
 <div class="math">
-\[y=hx+s\]</div>
-</div>
+\[y=hx+s
+
+\]</div>
 <p>sjá nánar í kafla 3.3</p>
 <p>eða</p>
-<div style="text-align: center;">
 <div class="math">
-\[y - y_1 = h(x - x_1)\]</div>
-</div>
+\[y - y_1 = h(x - x_1)
+
+\]</div>
 <p>þar sem <span class="math">\((x_1,y_1)\)</span> er punktur á línunni og <span class="math">\(h\)</span> er hallatalan.</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Dæmi</p>
 <p>Skoðum jöfnuna</p>
-<div style="text-align: center;">
 <div class="math">
-\[-\frac12 x +y +1=0\]</div>
-</div>
+\[-\frac12 x +y +1=0
+
+\]</div>
 <p>Hér er <span class="math">\(a=-1/2\)</span>, <span class="math">\(b=1\)</span> og <span class="math">\(c=1\)</span> miðað við almennu framsetninguna.
 Finnum nú nokkur gildi á <span class="math">\(x\)</span> og <span class="math">\(y\)</span> sem uppfylla þessa jöfnu og mörkum samsvarandi punkta <span class="math">\((x,y)\)</span> í hnitakerfið.</p>
 <p>Ef <span class="math">\(x=0\)</span> og <span class="math">\(y=-1\)</span> þá stenst jafnan. Það sést með prófun:</p>
-<div style="text-align: center;">
 <div class="math">
-\[-\frac{1}{2} (0) +(-1) +1= -1+1 = 0\]</div>
-</div>
+\[-\frac{1}{2} (0) +(-1) +1= -1+1 = 0
+
+\]</div>
 <p>Við mörkum því punktinn <span class="math">\((0,-1)\)</span> í hnitakerfið.</p>
 <p>Ef <span class="math">\(x=2\)</span> og <span class="math">\(y=0\)</span> þá stenst jafnan. Við mörkum því punktinn <span class="math">\((2,0)\)</span> í hnitakerfið.
 Á sama hátt getum við markað punktana <span class="math">\((-6,-4)\)</span>, <span class="math">\((-4,-3)\)</span>, <span class="math">\((-2,-2)\)</span>, <span class="math">\((4,1)\)</span> og <span class="math">\((6,2)\)</span> í hnitakerfið því að ef þessum hnitum er stungið inn í jöfnuna þá stenst hún.
@@ -655,16 +657,16 @@ Finnum nú nokkur gildi á <span class="math">\(x\)</span> og <span class="math"
 <h2><span class="section-number">3.3. </span>Hallatala og skurðpunktur við ása<a class="headerlink" href="#hallatala-og-skurpunktur-vi-asa" title="Varanlegur hlekkur á titilinn">¶</a></h2>
 <p>Jafnan <span class="math">\(ax+by+c=0\)</span> kallast almenn jafna línu. Þó getur verið hentugra að koma henni yfir á annað form.</p>
 <p>Við getum einangrað <span class="math">\(y\)</span> úr þessari jöfnu með reikniaðgerðum. Þá fæst jafna</p>
-<div style="text-align: center;">
 <div class="math">
-\[y=hx+s\]</div>
-</div>
+\[y=hx+s
+
+\]</div>
 <p>þar sem <span class="math">\(h = -\frac{a}{b}\)</span> og <span class="math">\(s = -\frac{c}{b}\)</span>.
 Fastinn <span class="math">\(h\)</span> kallast <a href="http://www.stae.is/os/leita/slope" class="tooltip" target="_blank">hallatala<span>en: <i>slope</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> línunnar og fastinn <span class="math">\(s\)</span> kallast <a href="http://www.stae.is/os/leita/point_of_intersection" class="tooltip" target="_blank">skurðpunktur<span>en: <i>point of intersection</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> línunnar við <span class="math">\(y\)</span>-ás.</p>
 <hr class="docutils" />
-<div id="2G8ANI5lPPL" style="display: inline-block;"></div>
+<div id="ZN_09J2bK7e" style="display: inline-block;"></div>
 <script>
-var ggbApp_2G8ANI5lPPL = new GGBApplet({
+var ggbApp_ZN_09J2bK7e = new GGBApplet({
 "appName": "graphing", 
 "width": 700, 
 "height": 500, 
@@ -673,7 +675,7 @@ var ggbApp_2G8ANI5lPPL = new GGBApplet({
 "showResetIcon": true, 
 "enableShiftDragZoom": false 
 }, true);
-ggbAppletId["2G8ANI5lPPL"] = ggbApp_2G8ANI5lPPL;
+ggbAppletId["ZN_09J2bK7e"] = ggbApp_ZN_09J2bK7e;
 </script><hr class="docutils" />
 <p>Hallatala línunnar, <span class="math">\(h\)</span>, táknar hversu mikið línan hallar. Ef við vitum einn punkt á línunni þá getum við fundið annan með því að færa okkur fyrst einn til hægri eða vinstri í hnitakerfinu og svo <span class="math">\(h\)</span> upp eða niður.</p>
 <p>Skurðpunktur línu við <span class="math">\(y\)</span>-ásinn er tala <span class="math">\(s\)</span> sem segir okkur hvar línan sker <span class="math">\(y\)</span>-ásinn. Línan mun skera ásinn í punktinum <span class="math">\((0,s)\)</span>.</p>
@@ -685,16 +687,16 @@ ggbAppletId["2G8ANI5lPPL"] = ggbApp_2G8ANI5lPPL;
 <div class="admonition tip">
 <p class="admonition-title">Dæmi</p>
 <p>Finnum hallatölu og skurðpunkta línunnar</p>
-<div style="text-align: center;">
 <div class="math">
-\[2x-y-3=0\]</div>
-</div>
+\[2x-y-3=0
+
+\]</div>
 <p>við <span class="math">\(x\)</span>-ás og <span class="math">\(y\)</span>-ás. Teiknum svo línuna inn í hnitakerfi.</p>
 <p>Byrjum á að koma línunni yfir á formið <span class="math">\(y=hx+s\)</span>. Einangrum <span class="math">\(y\)</span> og fáum</p>
-<div style="text-align: center;">
 <div class="math">
-\[y=2x-3\]</div>
-</div>
+\[y=2x-3
+
+\]</div>
 <p>Nú getum við fundið skurðpunkt við <span class="math">\(y\)</span>-ás út frá jöfnu línunnar. Hér er <span class="math">\(s=-3\)</span> svo skurðpunktur við <span class="math">\(y\)</span>-ás hefur hnit <span class="math">\((0,-3)\)</span>.</p>
 <p>Við sjáum líka út frá jöfnu línunnar að <span class="math">\(h=2\)</span> svo hallatala línunnar er <span class="math">\(2\)</span>.</p>
 <p>Við finnum skurðpunkt línunnar við <span class="math">\(x\)</span>-ás með því að setja <span class="math">\(y=0\)</span> í jöfnu hennar og leysa fyrir <span class="math">\(x\)</span>. Fáum <span class="math">\(2x-3=0\)</span>, það er, <span class="math">\(x=\frac{3}{2}\)</span>. Skurðpunkturinn við <span class="math">\(x\)</span>-ás er því punkturinn <span class="math">\((\frac{3}{2},0)\)</span>.</p>
@@ -711,16 +713,16 @@ Færum okkur því einn til hægri og tvo upp frá skurðpunkti línunnar við <
 <div class="admonition tip">
 <p class="admonition-title">Dæmi</p>
 <p>Finnum hallatölu og skurðpunkta línunnar</p>
-<div style="text-align: center;">
 <div class="math">
-\[3x + 2y -2 = 0\]</div>
-</div>
+\[3x + 2y -2 = 0
+
+\]</div>
 <p>við <span class="math">\(x\)</span>-ás og <span class="math">\(y\)</span>-ás.</p>
 <p>Komum jöfnunni yfir á formið <span class="math">\(y=hx+s\)</span></p>
-<div style="text-align: center;">
 <div class="math">
-\[y = -\frac{3}{2} x + 1\]</div>
-</div>
+\[y = -\frac{3}{2} x + 1
+
+\]</div>
 <p>Þá fáum við skurðpunktinn við <span class="math">\(y\)</span>-ás <span class="math">\(s = 1\)</span> og hallatölu <span class="math">\(h= -\frac{3}{2}\)</span>.</p>
 <p>Skurðpunkturinn við <span class="math">\(x\)</span> -ás fæst með að setja <span class="math">\(y=0\)</span> í jöfnuna og leysa fyrir <span class="math">\(x\)</span> . Fáum <span class="math">\(3x + 2(0) -2 = 0\)</span> sem gefur okkur <span class="math">\(x = \frac{2}{3}\)</span></p>
 <p>Þá eru skurðpunktarnir tveir <span class="math">\((0, 1)\)</span> og <span class="math">\((\frac{2}{3}, 0)\)</span></p>
@@ -734,44 +736,44 @@ Færum okkur því einn til hægri og tvo upp frá skurðpunkti línunnar við <
 <div class="section" id="id1">
 <h3><span class="section-number">3.4.1. </span>Regla<a class="headerlink" href="#id1" title="Varanlegur hlekkur á titilinn">¶</a></h3>
 <p>Hallatala línunnar, <span class="math">\(h\)</span>, sem gengur í gegnum punkta <span class="math">\((x_1,y_1)\)</span> og <span class="math">\((x_2,y_2)\)</span> fæst með formúlunni</p>
-<div style="text-align: center;">
 <div class="math">
-\[h=\frac{y_2-y_1}{x_2-x_1}\]</div>
-</div>
+\[h=\frac{y_2-y_1}{x_2-x_1}
+
+\]</div>
 <a class="reference internal image-reference" href="_images/almenn-lina.svg"><img alt="_images/almenn-lina.svg" class="align-center" src="_images/almenn-lina.svg" width="50%" /></a>
 </div>
 <div class="section" id="a-finna-jofnu-linu">
 <h3><span class="section-number">3.4.2. </span>Að finna jöfnu línu<a class="headerlink" href="#a-finna-jofnu-linu" title="Varanlegur hlekkur á titilinn">¶</a></h3>
 <p>Þegar við höfum fundið hallatölu línunnar þá þurfum við líka að reikna út fastann <span class="math">\(s\)</span>, skurðpunkt við <span class="math">\(y\)</span>-ás. Við vitum að línan gengur í gegnum punktana <span class="math">\((x_1,y_1)\)</span> og <span class="math">\((x_2,y_2)\)</span>. Því þarf jafnan <span class="math">\(y_1=hx_1+s\)</span> að ganga upp (sömuleiðis jafnan <span class="math">\(y_2=hx_2+s\)</span> en það er nóg að notast við aðra hvora af þessum jöfnum). Við einangrum þá <span class="math">\(s\)</span> út úr þessari jöfnu. Þá getum við ritað jöfnu línunnar</p>
-<div style="text-align: center;">
 <div class="math">
-\[y=hx+s\]</div>
-</div>
+\[y=hx+s
+
+\]</div>
 <p>þar sem við þekkjum fastana <span class="math">\(h\)</span> og <span class="math">\(s\)</span>.</p>
 <div class="admonition tip">
 <p class="admonition-title">Dæmi</p>
 <p>Finnum jöfnu línunnar sem gengur í gegnum punktana <span class="math">\((1,2)\)</span> og <span class="math">\((13,17)\)</span>.</p>
 <p>Byrjum á að finna hallatölu hennar. Samkvæmt reglu að ofan fæst</p>
-<div style="text-align: center;">
 <div class="math">
-\[h=\frac{17-2}{13-1}=\frac{15}{12}=\frac54\]</div>
-</div>
+\[h=\frac{17-2}{13-1}=\frac{15}{12}=\frac54
+
+\]</div>
 <p>Jafna línunnar er því af gerðinni</p>
-<div style="text-align: center;">
 <div class="math">
-\[y=\frac54 x +s\]</div>
-</div>
+\[y=\frac54 x +s
+
+\]</div>
 <p>Til að finna skurðpunkt við <span class="math">\(y\)</span>-ás athugum við að þar sem línan gengur í gegnum punktinn <span class="math">\((1,2)\)</span> þá þarf jafnan að standast þegar þessum punkti er stungið inn í hana. Því fæst</p>
-<div style="text-align: center;">
 <div class="math">
-\[(2)=\frac54 \cdot (1) +s\]</div>
-</div>
+\[(2)=\frac54 \cdot (1) +s
+
+\]</div>
 <p>Einangrum nú <span class="math">\(s\)</span> og fáum <span class="math">\(s=\frac34\)</span>.</p>
 <p>Nú höfum við fundið <span class="math">\(h\)</span> og <span class="math">\(s\)</span> og jafna línunnar er því</p>
-<div style="text-align: center;">
 <div class="math">
-\[y=\frac54 x + \frac34\]</div>
-</div>
+\[y=\frac54 x + \frac34
+
+\]</div>
 <a class="reference internal image-reference" href="_images/mynd-linudaemi.svg"><img alt="_images/mynd-linudaemi.svg" class="align-center" src="_images/mynd-linudaemi.svg" width="70%" /></a>
 </div>
 </div>
@@ -780,10 +782,10 @@ Færum okkur því einn til hægri og tvo upp frá skurðpunkti línunnar við <
 <div class="section" id="samsia-linur">
 <h4><span class="section-number">3.4.3.1. </span>Samsíða línur<a class="headerlink" href="#samsia-linur" title="Varanlegur hlekkur á titilinn">¶</a></h4>
 <p id="s-samsia">Ef línur <span class="math">\(m_1\)</span> og <span class="math">\(m_2\)</span> eru með hallatölu <span class="math">\(h_1\)</span> og <span class="math">\(h_2\)</span> þá gildir</p>
-<div style="text-align: center;">
 <div class="math">
-\[m_1 \parallel m_2 \; \Longleftrightarrow \; h_1 = h_2\]</div>
-</div>
+\[m_1 \parallel m_2 \; \Longleftrightarrow \; h_1 = h_2
+
+\]</div>
 <p>Það er, ef hallatalan er sú sama þá segjum við að línurnar séu <a href="http://www.stae.is/os/leita/parallel" class="tooltip" target="_blank">samsíða<span>en: <i>parallel</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a>.
 Hér er dæmi um tvær samsíða línur með hallatöluna <span class="math">\(h_1=h_2=1\)</span></p>
 <a class="reference internal image-reference" href="_images/samsid.svg"><img alt="_images/samsid.svg" class="align-center" src="_images/samsid.svg" width="70%" /></a>
@@ -791,11 +793,11 @@ Hér er dæmi um tvær samsíða línur með hallatöluna <span class="math">\(h
 <div class="section" id="verstaear-linur">
 <h4><span class="section-number">3.4.3.2. </span>Þverstæðar línur<a class="headerlink" href="#verstaear-linur" title="Varanlegur hlekkur á titilinn">¶</a></h4>
 <p id="s-verstae">Ef línur <span class="math">\(m_1\)</span> og <span class="math">\(m_2\)</span> eru með hallatölu <span class="math">\(h_1\)</span> og <span class="math">\(h_2\)</span> og um þær gildir</p>
-<div style="text-align: center;">
 <div class="math">
-\[m_1 \perp m_2 \; \Longleftrightarrow \; h_1 = -\frac{1}{h_2}\]</div>
-</div>
-<p>þá eru línurnar <a href="http://www.stae.is/os/leita/normal" class="tooltip" target="_blank">þverstæðar<span>en: <i>normal</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> eða hornréttar.
+\[m_1 \perp m_2 \; \Longleftrightarrow \; h_1 = -\frac{1}{h_2}
+
+\]</div>
+<p>þá eru línurnar <a href="http://www.stae.is/os/leita/perpendicular" class="tooltip" target="_blank">þverstæðar<span>en: <i>perpendicular</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> eða hornréttar.
 Hér er dæmi um tvær hornréttar línur, með hallatölurnar <span class="math">\(h_1=3\)</span> og <span class="math">\(h_2=-\frac{1}{3}\)</span></p>
 <a class="reference internal image-reference" href="_images/prepd.svg"><img alt="_images/prepd.svg" class="align-center" src="_images/prepd.svg" width="70%" /></a>
 <div class="admonition tip">
@@ -804,21 +806,21 @@ Hér er dæmi um tvær hornréttar línur, með hallatölurnar <span class="math
 Finnum jöfnu línu sem gengur í gegnum punktinn <span class="math">\((1,1)\)</span> og er <a href="http://www.stae.is/os/leita/parallel" class="tooltip" target="_blank">samsíða<span>en: <i>parallel</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> línunni <span class="math">\(l\)</span>.</p>
 <p>Köllum línuna sem við erum að leita að <span class="math">\(m\)</span>. Það að línurnar <span class="math">\(l\)</span> og <span class="math">\(m\)</span> séu samsíða þýðir að þær hafa sömu hallatölu. Til að finna hallatölu línunnar <span class="math">\(m\)</span> nægir því að finna hallatölu línunnar <span class="math">\(l\)</span>.
 Hallatalan er:</p>
-<div style="text-align: center;">
 <div class="math">
-\[h=\dfrac{(-2)-6}{1-(-3)}=\dfrac{-8}{4}=-2\]</div>
-</div>
+\[h=\dfrac{(-2)-6}{1-(-3)}=\dfrac{-8}{4}=-2
+
+\]</div>
 <p>Jafna línunnar <span class="math">\(m\)</span> er því af gerðinni</p>
-<div style="text-align: center;">
 <div class="math">
-\[y=-2x+s\]</div>
-</div>
+\[y=-2x+s
+
+\]</div>
 <p>en við eigum eftir að finna <span class="math">\(s\)</span>.
 Gefið er að punkturinn <span class="math">\((1,1)\)</span> er á línunni svo jafnan þarf að standast þegar <span class="math">\((x,y)=(1,1)\)</span> er stungið inn í hana. Með öðrum orðum er</p>
-<div style="text-align: center;">
 <div class="math">
-\[1=-2\cdot 1+s \quad \rightarrow \quad s=1+2=3\]</div>
-</div>
+\[1=-2\cdot 1+s \quad \rightarrow \quad s=1+2=3
+
+\]</div>
 <p>Jafna línunnar <span class="math">\(m\)</span> er því <span class="math">\(y=-2x+3\)</span>.</p>
 <a class="reference internal image-reference" href="_images/mynd-linudaemi2.svg"><img alt="_images/mynd-linudaemi2.svg" class="align-center" src="_images/mynd-linudaemi2.svg" width="40%" /></a>
 </div>
@@ -827,10 +829,10 @@ Gefið er að punkturinn <span class="math">\((1,1)\)</span> er á línunni svo 
 <div class="section" id="mipunktsregla">
 <h3><span class="section-number">3.4.4. </span>Miðpunktsregla<a class="headerlink" href="#mipunktsregla" title="Varanlegur hlekkur á titilinn">¶</a></h3>
 <p>Reikna má miðpunkt striksins á milli <span class="math">\(A(x_1, y_1)\)</span> og <span class="math">\(B(x_2,y_2)\)</span> með:</p>
-<div style="text-align: center;">
 <div class="math">
-\[M = \left( \frac{x_1+x_2}{2} , \frac{y_1+y_2}{2} \right)\]</div>
-</div>
+\[M = \left( \frac{x_1+x_2}{2} , \frac{y_1+y_2}{2} \right)
+
+\]</div>
 <a class="reference internal image-reference" href="_images/midpkt.svg"><img alt="_images/midpkt.svg" class="align-center" src="_images/midpkt.svg" width="50%" /></a>
 </div>
 </div>
@@ -844,15 +846,15 @@ Nafnið kemur frá því að <a href="http://www.stae.is/os/leita/curve" class="
 <p>Á myndinni má sjá nokkrar tegundir keilusniða. Ferlarnir eru grænir á ljósbláu blaðinu.</p>
 <ul class="simple">
 <li><p>Mynd 1 er af <a href="http://www.stae.is/os/leita/parabola" class="tooltip" target="_blank">fleygboga<span>en: <i>parabola</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a>, sem kemur fram þegar blaðið er samsíða brún keilanna.</p></li>
-<li><p>Mynd 2 er af <a class="tooltip" target="_blank">sporöskju<span><staelink style="line-height:4px; font-size:80%;">Ekki fannst þýðing á hugtakinu: <i>sporaskja</i></staelink></span></a>, sem kemur fram þegar blaðið hallar minna en brún keilanna.</p></li>
-<li><p>Á mynd 2 er líka <a href="http://www.stae.is/os/leita/circuit" class="tooltip" target="_blank">hringur<span>en: <i>circuit</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a>, sem kemur fram þegar blaðið er lárétt.</p></li>
+<li><p>Mynd 2 er af <a href="http://www.stae.is/os/leita/ellipse" class="tooltip" target="_blank">sporöskju<span>en: <i>ellipse</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a>, sem kemur fram þegar blaðið hallar minna en brún keilanna.</p></li>
+<li><p>Á mynd 2 er líka <a href="http://www.stae.is/os/leita/circle" class="tooltip" target="_blank">hringur<span>en: <i>circle</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a>, sem kemur fram þegar blaðið er lárétt.</p></li>
 <li><p>Mynd 3 er af <a href="http://www.stae.is/os/leita/hyperbola" class="tooltip" target="_blank">breiðboga<span>en: <i>hyperbola</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a>, sem kemur fram þegar blaðið hallar meira en brún keilanna.</p></li>
 <li><p>Línur eru líka keilusnið, en þær koma fram þegar blaðið leggst einmitt á brún keilanna.</p></li>
 <li><p>Stakur punktur kemur fram þegar blaðið leggst einmitt þar sem keilurnar mætast.</p></li>
 </ul>
-<div id="dbdJuYQbEH9" style="display: inline-block;"></div>
+<div id="64cFeLzzs7o" style="display: inline-block;"></div>
 <script>
-var ggbApp_dbdJuYQbEH9 = new GGBApplet({
+var ggbApp_64cFeLzzs7o = new GGBApplet({
 "appName": "graphing", 
 "width": 600, 
 "height": 400, 
@@ -861,15 +863,15 @@ var ggbApp_dbdJuYQbEH9 = new GGBApplet({
 "showResetIcon": true, 
 "enableShiftDragZoom": false 
 }, true);
-ggbAppletId["dbdJuYQbEH9"] = ggbApp_dbdJuYQbEH9;
+ggbAppletId["64cFeLzzs7o"] = ggbApp_64cFeLzzs7o;
 </script><div class="section" id="fleygbogar">
 <h3><span class="section-number">3.5.1. </span>Fleygbogar<a class="headerlink" href="#fleygbogar" title="Varanlegur hlekkur á titilinn">¶</a></h3>
 <p><a href="http://www.stae.is/os/leita/parabola" class="tooltip" target="_blank">Fleygbogi<span>en: <i>parabola</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> hefur jöfnu á forminu <span class="math">\(y=ax^2+bx+c\)</span> (<a class="reference internal" href="Kafli06.html#s-annarsstigs"><span class="std std-ref">annars stigs margliða</span></a>).</p>
 <p><em>Topppunktur</em> fleygboga er í punktinum:</p>
-<div style="text-align: center;">
 <div class="math">
-\[T=\left(\frac{-b}{2a},\frac{4ac-b^2}{4a} \right)\]</div>
-</div>
+\[T=\left(\frac{-b}{2a},\frac{4ac-b^2}{4a} \right)
+
+\]</div>
 <p>Línan <span class="math">\(x=-\frac{b}{2a}\)</span> kallast <a href="http://www.stae.is/os/leita/axis_of_symmetry" class="tooltip" target="_blank">samhverfuás<span>en: <i>axis of symmetry</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> fleygbogans.
 Fleygboginn speglast um ásinn.</p>
 <p>Fleygboginn sker <span class="math">\(y\)</span> -ás hnitakerfisins í punkti <span class="math">\((0,c)\)</span> .</p>
@@ -895,29 +897,29 @@ Fleygboginn speglast um ásinn.</p>
 <p>Skoðum fleygbogann <span class="math">\(x^2-x-1=0\)</span> .
 Tökum fyrst eftir að fleygboginn er kúptur því <span class="math">\(a=1&gt;0\)</span> .
 Reiknum topppunktinn:</p>
-<div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-  T&amp;=\left(\frac{-b}{2a},\frac{4ac-b^2}{4a} \right) \\
-  &amp;= \left(\frac{-1}{2\cdot 1},\frac{4\cdot 1\cdot (-1)-(-1)^2}{4\cdot 1} \right) \\
-  &amp;= \left(\frac{1}{2},-\frac{5}{4} \right)
-\end{aligned}\]</div>
-</div>
+  T&=\left(\frac{-b}{2a},\frac{4ac-b^2}{4a} \right) \\
+  &= \left(\frac{-1}{2\cdot 1},\frac{4\cdot 1\cdot (-1)-(-1)^2}{4\cdot 1} \right) \\
+  &= \left(\frac{1}{2},-\frac{5}{4} \right)
+\end{aligned}
+
+\]</div>
 <p>Samhverfuásinn liggur lóðrétt í gegnum topppunktinn.</p>
 <p>Reiknum næst skurðpunkta fleygbogans við <span class="math">\(x\)</span> -ás.
 Sjáum að <span class="math">\(b^2-4ac=(-1)^2-4\cdot1\cdot(-1) = 5 &gt;0\)</span> og því eru skurðpunktarnir tveir:</p>
-<div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-            x_0 &amp;= \frac{-b+ \sqrt{b^2-4ac}}{2a} \\
-            &amp;= \frac{-(-1)+ \sqrt{(-1)^2-4\cdot 1\cdot(-1)}}{2\cdot 1} \\
-            &amp;= \frac{1+\sqrt{5}}{2}\\
+            x_0 &= \frac{-b+ \sqrt{b^2-4ac}}{2a} \\
+            &= \frac{-(-1)+ \sqrt{(-1)^2-4\cdot 1\cdot(-1)}}{2\cdot 1} \\
+            &= \frac{1+\sqrt{5}}{2}\\
             \\
-            x_1 &amp;= \frac{-b- \sqrt{b^2-4ac}}{2a} \\
-            &amp;= \frac{-(-1)- \sqrt{(-1)^2-4\cdot 1\cdot(-1)}}{2\cdot 1} \\
-            &amp;= \frac{1-\sqrt{5}}{2} \\
-\end{aligned}\]</div>
-</div>
+            x_1 &= \frac{-b- \sqrt{b^2-4ac}}{2a} \\
+            &= \frac{-(-1)- \sqrt{(-1)^2-4\cdot 1\cdot(-1)}}{2\cdot 1} \\
+            &= \frac{1-\sqrt{5}}{2} \\
+\end{aligned}
+
+\]</div>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/fleygb.svg"><img alt="_images/fleygb.svg" src="_images/fleygb.svg" width="60%" /></a>
 </div>
@@ -944,7 +946,7 @@ Með öðrum orðum er <em>innfallshornið</em> jafnt <em>útfallshorninu</em>, 
 <a class="reference internal image-reference" href="_images/speglun.svg"><img alt="_images/speglun.svg" src="_images/speglun.svg" width="50%" /></a>
 </div>
 <p>Ljósgeislar sem lenda á innra yfirborð fleygboga speglast líka, en þar sem yfirborðið er sveigt speglast þeir ekki allir á sama hátt.
-Það sem er merkilegast við fleygboga er að ljósið sem endurkastast fer allt einmitt í gegnum sama punkt! Sá punktur er kallaður <a href="http://www.stae.is/os/leita/focus" class="tooltip" target="_blank">brennipunktur<span>en: <i>focus</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> .</p>
+Það sem er merkilegast við fleygboga er að ljósið sem endurkastast fer allt einmitt í gegnum sama punkt! Sá punktur er kallaður <a href="http://www.stae.is/os/leita/focal_point" class="tooltip" target="_blank">brennipunktur<span>en: <i>focal point</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> .</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/parabolabrenni.svg"><img alt="_images/parabolabrenni.svg" src="_images/parabolabrenni.svg" width="50%" /></a>
 </div>
@@ -957,14 +959,14 @@ Merkið verður því skýrt og stöðugt.</p>
 </div></div></div>
 <div class="section" id="sporoskjur">
 <h3><span class="section-number">3.5.2. </span>Sporöskjur<a class="headerlink" href="#sporoskjur" title="Varanlegur hlekkur á titilinn">¶</a></h3>
-<p><a class="tooltip" target="_blank">Sporöskjur<span><staelink style="line-height:4px; font-size:80%;">Ekki fannst þýðing á hugtakinu: <i>sporaskja</i></staelink></span></a> eru myndir sem lýsa má með jöfnu á forminu:</p>
-<div style="text-align: center;">
+<p><a href="http://www.stae.is/os/leita/ellipse" class="tooltip" target="_blank">Sporöskjur<span>en: <i>ellipse</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> eru myndir sem lýsa má með jöfnu á forminu:</p>
 <div class="math">
-\[\frac{(x-x_0)^2}{a^2} + \frac{(y-y_0)^2}{b^2} =1\]</div>
-</div>
+\[\frac{(x-x_0)^2}{a^2} + \frac{(y-y_0)^2}{b^2} =1
+
+\]</div>
 <p>Miðja sporöskju er í punktinum <span class="math">\((x_0, y_0)\)</span> .
 Tölurnar <span class="math">\(a\)</span> og <span class="math">\(b\)</span> lýsa lengstu fjarlægð ferilsins frá miðju í <span class="math">\(x\)</span> - og <span class="math">\(y\)</span> -stefnu.</p>
-<p>Sporöskjur hafa tvo <a href="http://www.stae.is/os/leita/focus" class="tooltip" target="_blank">brennipunkta<span>en: <i>focus</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a>.</p>
+<p>Sporöskjur hafa tvo <a href="http://www.stae.is/os/leita/focal_point" class="tooltip" target="_blank">brennipunkta<span>en: <i>focal point</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a>.</p>
 <hr class="docutils" />
 <p>Ef <span class="math">\(a&gt;b\)</span> þá er brennipunktarnir á <span class="math">\(x\)</span> -ás sporöskjunnar, í fjarlægð <span class="math">\(c=\sqrt{a^2-b^2}\)</span> frá miðju.</p>
 <div class="figure align-center">
@@ -981,10 +983,10 @@ Tölurnar <span class="math">\(a\)</span> og <span class="math">\(b\)</span> lý
 <p><strong>1.</strong> Skoðum sporöskju með  <span class="math">\(a=3\)</span> og <span class="math">\(b=2\)</span>  og miðju í punktinum <span class="math">\((2,2)\)</span> og finnum graf hennar.
 Þar sem <span class="math">\(a&gt;b\)</span> þá eru brennipunktarnir hægra og vinsta megin við miðjuna, í fjarlægðinni <span class="math">\(c=\sqrt{a^2-b^2}=\sqrt{3^2-2^2}=\sqrt{5}\)</span> .</p>
 <p>Formúla sporöskjunnar er:</p>
-<div style="text-align: center;">
 <div class="math">
-\[\frac{(x-2)^2}{(3)^2} + \frac{(y-2)^2}{(2)^2} =1\]</div>
-</div>
+\[\frac{(x-2)^2}{(3)^2} + \frac{(y-2)^2}{(2)^2} =1
+
+\]</div>
 <p>Skoðum graf sporöskjunnar</p>
 <a class="reference internal image-reference" href="_images/sporaskja3.svg"><img alt="_images/sporaskja3.svg" class="align-center" src="_images/sporaskja3.svg" width="70%" /></a>
 <p><strong>2.</strong>  Skoðum graf sporöskju og finnum formúlu hennar.</p>
@@ -995,10 +997,10 @@ Lengsta fjarlægð ferilsins frá miðjunni í <span class="math">\(y\)</span> -
 <p>Þar sem <span class="math">\(b&gt;a\)</span> eru brennipunktarnir ofan og neðan við miðjuna, í fjarlægðinni <span class="math">\(c=\sqrt{3^2-2^2}=\sqrt{5}\)</span> .</p>
 <p>Formúla sporöskjunnar er því:</p>
 <blockquote>
-<div><div style="text-align: center;">
-<div class="math">
-\[\frac{(x-\frac{3}{2})^2}{(2)^2} + \frac{(y)^2}{(2)^2} =1\]</div>
-</div>
+<div><div class="math">
+\[\frac{(x-\frac{3}{2})^2}{(2)^2} + \frac{(y)^2}{(2)^2} =1
+
+\]</div>
 </div></blockquote>
 </div>
 <script type="text/javascript">
@@ -1027,7 +1029,7 @@ Pláneturnar eru því ekki alltaf í fastri fjarlægð frá sólinni og fara hr
 </div></div></div>
 <div class="section" id="hringir">
 <h3><span class="section-number">3.5.3. </span>Hringir<a class="headerlink" href="#hringir" title="Varanlegur hlekkur á titilinn">¶</a></h3>
-<p><a href="http://www.stae.is/os/leita/circuit" class="tooltip" target="_blank">Hringir<span>en: <i>circuit</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> eru sértilvik af sporöskjum þegar <span class="math">\(a=b\)</span> , það er, brennipunktarnir lenda saman í miðjunni.
+<p><a href="http://www.stae.is/os/leita/circle" class="tooltip" target="_blank">Hringir<span>en: <i>circle</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> eru sértilvik af sporöskjum þegar <span class="math">\(a=b\)</span> , það er, brennipunktarnir lenda saman í miðjunni.
 Algengur ritháttur fyrir jöfnu hrings er <span class="math">\((x-x_0)^2+(y-y_0)^2=r^2\)</span> .
 Þá er <em>miðja</em> hringsins í punktinum <span class="math">\((x_0,y_0)\)</span> og allir punktarnir eru í fjarlægðinni <span class="math">\(r\)</span> frá miðjunni.
 Hringur með miðju í <span class="math">\((0,0)\)</span> og radíus <span class="math">\(r=1\)</span> kallast <a href="http://www.stae.is/os/leita/unit_circle" class="tooltip" target="_blank">einingarhringur<span>en: <i>unit circle</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> .</p>
@@ -1038,14 +1040,14 @@ Hringur með miðju í <span class="math">\((0,0)\)</span> og radíus <span clas
 <div class="section" id="breibogar">
 <h3><span class="section-number">3.5.4. </span>Breiðbogar<a class="headerlink" href="#breibogar" title="Varanlegur hlekkur á titilinn">¶</a></h3>
 <p><a href="http://www.stae.is/os/leita/hyperbola" class="tooltip" target="_blank">Breiðbogar<span>en: <i>hyperbola</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> eru myndir sem lýsa má með jöfnu á forminu</p>
-<div style="text-align: center;">
 <div class="math">
-\[\frac{(x-x_0)^2}{a^2} - \frac{(y-y_0)^2}{b^2} =\pm 1\]</div>
-</div>
+\[\frac{(x-x_0)^2}{a^2} - \frac{(y-y_0)^2}{b^2} =\pm 1
+
+\]</div>
 <p>Ferillinn er tveir samhverfir bogar sem fara út í óendanleikann og fylgja að lokum aðfellunum <span class="math">\(y=\pm \frac{b}{a}(x-x_0)+y_0\)</span> .</p>
-<div id="E3jgxeYJnix" style="display: inline-block;"></div>
+<div id="AY16G9IWBFg" style="display: inline-block;"></div>
 <script>
-var ggbApp_E3jgxeYJnix = new GGBApplet({
+var ggbApp_AY16G9IWBFg = new GGBApplet({
 "appName": "graphing", 
 "width": 700, 
 "height": 400, 
@@ -1054,7 +1056,7 @@ var ggbApp_E3jgxeYJnix = new GGBApplet({
 "showResetIcon": true, 
 "enableShiftDragZoom": false 
 }, true);
-ggbAppletId["E3jgxeYJnix"] = ggbApp_E3jgxeYJnix;
+ggbAppletId["AY16G9IWBFg"] = ggbApp_AY16G9IWBFg;
 </script><p>Breiðbogar skera annað hvort <span class="math">\(x\)</span> eða <span class="math">\(y\)</span> -ásinn, eftir því hvort það er plús eða mínus 1 í lok jöfnunnar.</p>
 <p>Aðfellurnar skerast í <em>miðjunni</em> <span class="math">\((x_0,y_0)\)</span> og tölurnar <span class="math">\(a\)</span> og <span class="math">\(b\)</span> lýsa hallatölum þeirra.</p>
 <p>Ef það er plús í lokin á jöfnunni lýsir <span class="math">\(a\)</span> skurðpunkti ferlanna við <span class="math">\(x\)</span> - ás en ef það er mínus lýsir <span class="math">\(b\)</span> skurðpunkti ferlanna við <span class="math">\(y\)</span> - ás.</p>
@@ -1083,7 +1085,7 @@ ggbAppletId["E3jgxeYJnix"] = ggbApp_E3jgxeYJnix;
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/fl_sams.svg"><img alt="_images/fl_sams.svg" src="_images/fl_sams.svg" width="40%" /></a>
 </div>
-<p>Flatarmál hrings er <span class="math">\(F=r^2\cdot\pi\)</span> og <a href="http://www.stae.is/os/leita/perimeter" class="tooltip" target="_blank">ummálið<span>en: <i>perimeter</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> er <span class="math">\(U=2r\pi\)</span> þar sem <span class="math">\(r\)</span> er geislinn og <span class="math">\(\pi\)</span> fastinn <span class="math">\(3,14159...\)</span>, skilgreindur sem hlutfallið milli ummáls og þvermáls hrings.</p>
+<p>Flatarmál hrings er <span class="math">\(F=r^2\cdot\pi\)</span> og <a href="http://www.stae.is/os/leita/circumference" class="tooltip" target="_blank">ummálið<span>en: <i>circumference</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> er <span class="math">\(U=2r\pi\)</span> þar sem <span class="math">\(r\)</span> er geislinn og <span class="math">\(\pi\)</span> fastinn <span class="math">\(3,14159...\)</span>, skilgreindur sem hlutfallið milli ummáls og þvermáls hrings.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="_images/fl_hring.svg"><img alt="_images/fl_hring.svg" src="_images/fl_hring.svg" width="40%" /></a>
 </div>
@@ -1154,9 +1156,9 @@ ggbAppletId["E3jgxeYJnix"] = ggbApp_E3jgxeYJnix;
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
       <script type="text/javascript" src="_static/language_data.js"></script>
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/katex.min.js"></script>
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/contrib/auto-render.min.js"></script>
-      <script type="text/javascript" src="_static/rendermath.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script>
+      <script type="text/javascript" src="_static/katex_autorenderer.js"></script>
 
   
 

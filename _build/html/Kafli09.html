@@ -30,7 +30,9 @@
   
 
   
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/katex.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" type="text/css" />
+  
+    <link rel="stylesheet" href="_static/katex-math.css" type="text/css" />
   
     <link rel="stylesheet" href="_static/button.css" type="text/css" />
   
@@ -564,14 +566,14 @@
 <p>Þegar kemur að <a href="http://www.stae.is/os/leita/inverse" class="tooltip" target="_blank">andhverfum<span>en: <i>inverse</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> falla er gott að geta hugsað myndrænt.</p>
 <p>Skoðum fyrst fallið <span class="math">\(f: \mathbb{R}_+ \to \mathbb{R}_+, \quad  f(x)=x^2\)</span>.</p>
 <p>Við vitum að andhverfa <span class="math">\(f(x)=x^2\)</span> er <span class="math">\(f^{-1}(x)=\sqrt{x}\)</span> vegna þess að:</p>
-<div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-&amp;f(f^{-1}(x)) = (\sqrt{x})^2=x \\
-&amp;\text{ og } \\
-&amp;f^{-1}(f(x))=\sqrt{x^2} = x
-\end{aligned}\]</div>
-</div>
+&f(f^{-1}(x)) = (\sqrt{x})^2=x \\
+&\text{ og } \\
+&f^{-1}(f(x))=\sqrt{x^2} = x
+\end{aligned}
+
+\]</div>
 <p>Ef við teiknum gröf fallanna fáum við:</p>
 <a class="reference internal image-reference" href="_images/andhv_parabola.svg"><img alt="_images/andhv_parabola.svg" class="align-center" src="_images/andhv_parabola.svg" width="60%" /></a>
 <p>Hér sjáum við að rauða grafið, <span class="math">\(\sqrt{x}\)</span>, er spegilmynd svarta grafsins, <span class="math">\(x^2\)</span>, um punktalínuna.</p>
@@ -581,25 +583,25 @@
 </div>
 <p>Skoðum næst <span class="math">\(y=2x+1\)</span> eða <span class="math">\(f(x)=2x+1\)</span>.
 Reiknum andhverfuna:</p>
-<div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-    y &amp;= 2x+1 \\
-    y-1&amp;=2x\\
-    \frac{1}{2}\left(y-1\right) &amp;= x\\
-    x &amp;= \frac{1}{2} y - \frac{1}{2}
-\end{aligned}\]</div>
-</div>
+    y &= 2x+1 \\
+    y-1&=2x\\
+    \frac{1}{2}\left(y-1\right) &= x\\
+    x &= \frac{1}{2} y - \frac{1}{2}
+\end{aligned}
+
+\]</div>
 <p>þá er <span class="math">\(f^{-1}(x) = \frac{1}{2} x - \frac{1}{2}\)</span>.</p>
 <p>Teiknum nú línurnar:</p>
 <a class="reference internal image-reference" href="_images/anhv_lina.svg"><img alt="_images/anhv_lina.svg" class="align-center" src="_images/anhv_lina.svg" width="70%" /></a>
 <p>Hér er rauða línan andhverfa <span class="math">\(f(x)\)</span>, við sjáum að línan speglast nákvæmlega um <span class="math">\(y=x\)</span> eins og í fyrra dæminu <span class="math">\(x^2\)</span>.</p>
 <hr class="docutils" />
 <p>Hægt er að sannfæra sig á þessu með því að horfa á einfaldan feril sem fer í gengum 6 þekkta punkta,</p>
-<div style="text-align: center;">
 <div class="math">
-\[(0.5,1), (1.5,1), (2.5,2), (4,2.5), (3,2.5) \text{ og } (4,3.5)\]</div>
-</div>
+\[(0.5,1), (1.5,1), (2.5,2), (4,2.5), (3,2.5) \text{ og } (4,3.5)
+
+\]</div>
 <p>Séu þessir punktar tengdir saman með strikum fæst svarti ferilinn sem við sjáum hér að neðan.
 Rauði ferillinn myndast þegar við speglum svarta yfir <span class="math">\(y=x\)</span>.</p>
 <p>Speglum punktinum <span class="math">\((4, 2.5)\)</span> yfir <span class="math">\(y=x\)</span> , hann lendir í punktinum <span class="math">\((2.5,4)\)</span> og strikið á milli þeirra er hornrétt á <span class="math">\(y=x\)</span>.</p>
@@ -609,15 +611,15 @@ Andhverfi ferillinn fer því á milli punktana <span class="math">\((1, 0.5), (
 <hr class="docutils" />
 <p>Skoðum að lokum <span class="math">\(g(x) = \ln(x+2)\)</span>.
 Reiknum andhverfuna:</p>
-<div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-    y &amp;= \ln(x+2) \\
-    e^y&amp;=e^{\ln(x+2)} \\
-    e^y &amp;= x+2 \\
-    x &amp;= e^y -2\\
-\end{aligned}\]</div>
-</div>
+    y &= \ln(x+2) \\
+    e^y&=e^{\ln(x+2)} \\
+    e^y &= x+2 \\
+    x &= e^y -2\\
+\end{aligned}
+
+\]</div>
 <p>Þá er andhverfa fallið <span class="math">\(g^{-1}(x) = e^x -2\)</span>.
 Á þessari mynd má sjá gröf ferlanna, <span class="math">\(g(x)\)</span> er svart en <span class="math">\(g^{-1}(x)\)</span> rautt.</p>
 <a class="reference internal image-reference" href="_images/andhv2.svg"><img alt="_images/andhv2.svg" class="align-center" src="_images/andhv2.svg" width="70%" /></a>
@@ -632,12 +634,12 @@ Reiknum andhverfuna:</p>
 <p>Látum <span class="math">\(f: X \to Y\)</span> vera fall.</p>
 <p>Látum <span class="math">\(y_0 \in Y\)</span> vera stak í bakmenginu.
 Oft þurfum við að vita hvort hægt sé að finna einhverja lausn á jöfnunni</p>
-<div style="text-align: center;">
 <div class="math">
-\[f(x)=y_0,\]</div>
-</div>
+\[f(x)=y_0,
+
+\]</div>
 <p>það er að segja, hvort hægt sé að finna eitthvað <span class="math">\(x_0 \in X\)</span> þannig að <span class="math">\(f(x_0)=y_0\)</span>.
-Ef þessi jafna hefur lausn fyrir öll stökin í bakmenginu þá segjum við að fallið sé <a href="http://www.stae.is/os/leita/onto" class="tooltip" target="_blank">átækt<span>en: <i>onto</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a>.</p>
+Ef þessi jafna hefur lausn fyrir öll stökin í bakmenginu þá segjum við að fallið sé <a href="http://www.stae.is/os/leita/surjective" class="tooltip" target="_blank">átækt<span>en: <i>surjective</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a>.</p>
 </div>
 <div class="section" id="skilgreining">
 <h3><span class="section-number">9.2.2. </span>Skilgreining<a class="headerlink" href="#skilgreining" title="Varanlegur hlekkur á titilinn">¶</a></h3>
@@ -669,10 +671,10 @@ Hér er <span class="math">\(X\)</span> skilgreiningarmengið og <span class="ma
 <div class="section" id="eintaek-foll">
 <h3><span class="section-number">9.2.3. </span>Eintæk föll<a class="headerlink" href="#eintaek-foll" title="Varanlegur hlekkur á titilinn">¶</a></h3>
 <p>Skoðum aftur jöfnuna</p>
-<div style="text-align: center;">
 <div class="math">
-\[f(x)=y_0\]</div>
-</div>
+\[f(x)=y_0
+
+\]</div>
 <p>Oft getur verið gagnlegt að vita hvort þessi jafna hafi margar lausnir.
 Við segjum að fallið sé <a href="http://www.stae.is/os/leita/injective" class="tooltip" target="_blank">eintækt<span>en: <i>injective</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> ef þessi jafna hefur í mesta lagi eina lausn fyrir sérhvert stak í bakmenginu.
 Fall er ekki eintækt ef fleiri en eitt stak í formenginu vísar á sama stakið í bakmenginu.</p>
@@ -738,10 +740,10 @@ Andhverfan getur því ekki verið fall, því samkvæmt skilgreiningu á falli 
 <div class="section" id="id3">
 <h3><span class="section-number">9.3.1. </span>Skilgreining<a class="headerlink" href="#id3" title="Varanlegur hlekkur á titilinn">¶</a></h3>
 <p>Látum <span class="math">\(f: X \to Y\)</span> og <span class="math">\(g: Y \to Z\)</span> vera föll. Við skilgreinum þá vörpun <span class="math">\(g \circ f: X \to Z\)</span> með:</p>
-<div style="text-align: center;">
 <div class="math">
-\[g \circ f(x)=g(f(x))\]</div>
-</div>
+\[g \circ f(x)=g(f(x))
+
+\]</div>
 <p>fyrir öll <span class="math">\(x \in X\)</span>. Þetta kallast <a href="http://www.stae.is/os/leita/composite_function" class="tooltip" target="_blank">samskeytt fall<span>en: <i>composite function</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a>.</p>
 <a class="reference internal image-reference" href="_images/compvorpun.svg"><img alt="_images/compvorpun.svg" class="align-center" src="_images/compvorpun.svg" width="100%" /></a>
 <div class="admonition note">
@@ -753,26 +755,26 @@ Andhverfan getur því ekki verið fall, því samkvæmt skilgreiningu á falli 
 <p>Látum <span class="math">\(f:\mathbb{R} \to \mathbb{R}\)</span> vera gefið með <span class="math">\(f(x)=x^2+x\)</span>
 og <span class="math">\(g:\mathbb{R} \to \mathbb{R}\)</span> vera gefið með <span class="math">\(g(x)=x+3\)</span></p>
 <p>Finnum <span class="math">\(f\circ g\)</span> og <span class="math">\(g\circ f\)</span>. Höfum</p>
-<div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-f\circ g(x) &amp;=f(g(x))\\
-&amp;=f(x+3)\\
-&amp;=(x+3)^2+(x+3)\\
-&amp;=x^2+6x+9+x+3\\
-&amp;=x^2+7x+12
-\end{aligned}\]</div>
-</div>
+f\circ g(x) &=f(g(x))\\
+&=f(x+3)\\
+&=(x+3)^2+(x+3)\\
+&=x^2+6x+9+x+3\\
+&=x^2+7x+12
+\end{aligned}
+
+\]</div>
 <p>og</p>
-<div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-g\circ f(x)&amp;=g(f(x))\\
-&amp;=g(x^2+x)\\
-&amp;=(x^2+x)+3\\
-&amp;=x^2+x+3
-\end{aligned}\]</div>
-</div>
+g\circ f(x)&=g(f(x))\\
+&=g(x^2+x)\\
+&=(x^2+x)+3\\
+&=x^2+x+3
+\end{aligned}
+
+\]</div>
 </div>
 </div>
 </div>
@@ -781,10 +783,10 @@ g\circ f(x)&amp;=g(f(x))\\
 <div class="section" id="visisfoll">
 <h3><span class="section-number">9.4.1. </span>Vísisföll<a class="headerlink" href="#visisfoll" title="Varanlegur hlekkur á titilinn">¶</a></h3>
 <p><a href="http://www.stae.is/os/leita/power_function" class="tooltip" target="_blank">Vísisfall<span>en: <i>power function</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> er fall <span class="math">\(f : \mathbb{R} \to \mathbb{R}\)</span> sem skrifa má með formúlu af gerðinni</p>
-<div style="text-align: center;">
 <div class="math">
-\[f(x)=a^x\]</div>
-</div>
+\[f(x)=a^x
+
+\]</div>
 <p>þar sem <span class="math">\(a \geq 0\)</span> er rauntala.</p>
 <p>Dæmi um vísisfall er <span class="math">\(f(x)=2^x\)</span>. Þá er <span class="math">\(f(1)=2\)</span>, <span class="math">\(f(2)=4\)</span> og <span class="math">\(f(3)=8\)</span> og <span class="math">\(f(4)=16\)</span> o.s.fr.v.</p>
 <p>Graf þess má sjá hér að neðan.</p>
@@ -792,25 +794,25 @@ g\circ f(x)&amp;=g(f(x))\\
 <div class="section" id="lograr">
 <h3><span class="section-number">9.4.2. </span>Lograr<a class="headerlink" href="#lograr" title="Varanlegur hlekkur á titilinn">¶</a></h3>
 <p>Látum <span class="math">\(a\)</span> vera jákvæða rauntölu og <span class="math">\(f: \mathbb{R} \to \mathbb{R}_+\)</span> vera vísisfall gefið með</p>
-<div style="text-align: center;">
 <div class="math">
-\[f(x)=a^x.\]</div>
-</div>
+\[f(x)=a^x.
+
+\]</div>
 <p>Þetta fall á sér andhverfu sem við köllum <span class="math">\(a\)</span>- <a href="http://www.stae.is/os/leita/logarithm" class="tooltip" target="_blank">logrann<span>en: <i>logarithm</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> og er táknaður</p>
-<div style="text-align: center;">
 <div class="math">
-\[\log_a.\]</div>
-</div>
+\[\log_a.
+
+\]</div>
 <p>Samkvæmt skilgreiningu á andhverfu er því <span class="math">\(a\)</span>- <a href="http://www.stae.is/os/leita/logarithm" class="tooltip" target="_blank">logrinn<span>en: <i>logarithm</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a>  fallið sem uppfyllir:</p>
-<div style="text-align: center;">
 <div class="math">
-\[\log_a(a^x)=x \qquad \text{fyrir öll } x \in \mathbb{R},\]</div>
-</div>
+\[\log_a(a^x)=x \qquad \text{fyrir öll } x \in \mathbb{R},
+
+\]</div>
 <p>og</p>
-<div style="text-align: center;">
 <div class="math">
-\[a^{\log_a(x)}=x \qquad \text{fyrir öll } x \in \mathbb{R}_+.\]</div>
-</div>
+\[a^{\log_a(x)}=x \qquad \text{fyrir öll } x \in \mathbb{R}_+.
+
+\]</div>
 <div class="admonition note">
 <p class="admonition-title">Athugasemd</p>
 <p>Óformlega getum við hugsað um töluna <span class="math">\(\log_a(x)\)</span> þannig: „Í hvaða veldi þarf að setja <span class="math">\(a\)</span> svo að útkoman verði <span class="math">\(x\)</span>?“</p>
@@ -854,58 +856,58 @@ g\circ f(x)&amp;=g(f(x))\\
 <div><p><strong>1.</strong> Reiknum <span class="math">\(\log_5(50)+\log_5(\frac{1}{2})\)</span>.</p>
 <blockquote>
 <div><p>Við notum reiknireglur tvö, þrjú, og fjögur:</p>
-<div style="text-align: center;">
 <div class="math">
-\[\begin{aligned}\log_5(50)+\log_5(\frac{1}{2})&amp;=\log_5(5^2\cdot 2)-\log_5(2)\\&amp;=\log_5(5^2)+\log_5(2)-\log_5(2)\\&amp;=\log_5(5^2)=2\end{aligned}\]</div>
-</div>
+\[\begin{aligned}\log_5(50)+\log_5(\frac{1}{2})&=\log_5(5^2\cdot 2)-\log_5(2)\\&=\log_5(5^2)+\log_5(2)-\log_5(2)\\&=\log_5(5^2)=2\end{aligned}
+
+\]</div>
 </div></blockquote>
 <p><strong>2.</strong> Reiknum <span class="math">\(\log_2(49)\cdot \log_7(2)\)</span></p>
 <blockquote>
 <div><p>Notum reiknireglu sex:</p>
-<div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-               \log_2(49)\cdot \log_7(2)&amp;=\dfrac{\log_7(49)}{\log_7(2)}\cdot \log_7(2)\\
-               &amp;=\log_7(49)\\
-               &amp;=\log_7(7^2)=2
-       \end{aligned}\]</div>
-</div>
+               \log_2(49)\cdot \log_7(2)&=\dfrac{\log_7(49)}{\log_7(2)}\cdot \log_7(2)\\
+               &=\log_7(49)\\
+               &=\log_7(7^2)=2
+       \end{aligned}
+
+\]</div>
 </div></blockquote>
 <p><strong>3.</strong> Reiknum <span class="math">\((\log_{12}(1))^{12}\)</span></p>
 <blockquote>
 <div><p>Notum reiknireglu eitt:</p>
-<div style="text-align: center;">
 <div class="math">
-\[(\log_{12}(1))^{12}=0^{12}=0\]</div>
-</div>
+\[(\log_{12}(1))^{12}=0^{12}=0
+
+\]</div>
 </div></blockquote>
 <p><strong>4.</strong> Reiknum <span class="math">\(\log_7(22)\)</span></p>
 <blockquote>
 <div><p>Notum reiknireglu sex og setjum <span class="math">\(b=10\)</span>, stingum stærðinni <span class="math">\(\log(22)/\log(7)\)</span> inn í vasareikninn og fáum</p>
 </div></blockquote>
 </div></blockquote>
-<div style="text-align: center;">
 <div class="math">
-\[\log_7(22)=\frac{\log(22)}{\log(7)}\approx 0,629532003\]</div>
-</div>
+\[\log_7(22)=\frac{\log(22)}{\log(7)}\approx 0,629532003
+
+\]</div>
 </div>
 </div>
 </div>
 <div class="section" id="natturulega-veldisvisisfalli-og-natturulegi-logrinn">
 <h3><span class="section-number">9.4.3. </span>Náttúrulega veldisvísisfallið og nátturulegi logrinn<a class="headerlink" href="#natturulega-veldisvisisfalli-og-natturulegi-logrinn" title="Varanlegur hlekkur á titilinn">¶</a></h3>
 <p>Náttúrulega veldisvísisfallið er skilgreint sem</p>
-<div style="text-align: center;">
 <div class="math">
-\[f(x) = e^x,\]</div>
-</div>
+\[f(x) = e^x,
+
+\]</div>
 <p>þar sem <span class="math">\(e \approx 2.71828182846...\)</span> er óræð tala.</p>
 <p>Skoðum graf fallsins</p>
 <a class="reference internal image-reference" href="_images/e.svg"><img alt="_images/e.svg" class="align-center" src="_images/e.svg" width="70%" /></a>
 <p>Þá er andhverfa <span class="math">\(f(x) = e^x\)</span> skilgreind sem <span class="math">\(f^{-1}(x) = \log_e (x)\)</span> og yfirleitt skrifað</p>
-<div style="text-align: center;">
 <div class="math">
-\[f^{-1}(x) = \ln(x).\]</div>
-</div>
+\[f^{-1}(x) = \ln(x).
+
+\]</div>
 <p>Fallið <span class="math">\(\ln(x)\)</span> er kallað <a class="tooltip" target="_blank">náttúrulegi logrinn<span><staelink style="line-height:4px; font-size:80%;">Ekki fannst þýðing á hugtakinu: <i>náttúrulegi logrinn</i></staelink></span></a> .
 Skoðum graf hans:</p>
 <a class="reference internal image-reference" href="_images/ln.svg"><img alt="_images/ln.svg" class="align-center" src="_images/ln.svg" width="70%" /></a>
@@ -926,50 +928,50 @@ Skoðum graf hans:</p>
 <div class="section" id="rae-foll">
 <h3><span class="section-number">9.4.4. </span>Ræð föll<a class="headerlink" href="#rae-foll" title="Varanlegur hlekkur á titilinn">¶</a></h3>
 <p>Ef <span class="math">\(r\)</span> er fall sem tákna má með formúlu af gerðinni</p>
-<div style="text-align: center;">
 <div class="math">
-\[r(x)=\dfrac{a_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0}{b_mx^m+b_{m-1}x^{n-1}+...+b_1x+b_0}\]</div>
-</div>
+\[r(x)=\dfrac{a_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0}{b_mx^m+b_{m-1}x^{n-1}+...+b_1x+b_0}
+
+\]</div>
 <p>þá segjum við að <span class="math">\(r\)</span> sé <a href="http://www.stae.is/os/leita/rational_function" class="tooltip" target="_blank">rætt fall<span>en: <i>rational function</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a>.
 Í þessari formúlu er <span class="math">\(n,m\in\mathbb{N}\)</span>, <a href="http://www.stae.is/os/leita/coefficient" class="tooltip" target="_blank">stuðlarnir<span>en: <i>coefficient</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> <span class="math">\(a_i\)</span> og <span class="math">\(b_i\)</span> eru rauntölur fyrir öll <span class="math">\(i\)</span> og fremstu stuðlarnir mega ekki vera <span class="math">\(0\)</span>, það er <span class="math">\(a_n,b_m\not=0\)</span>.</p>
 <p>Þetta er bara önnur leið til að segja að fallið <span class="math">\(r\)</span> kallist rætt fall ef til eru margliður <span class="math">\(p\)</span> og <span class="math">\(q\)</span> þannig að <span class="math">\(r=\frac{p}{q}\)</span>.</p>
 <div class="section" id="myndraent">
 <h4><span class="section-number">9.4.4.1. </span>Myndrænt<a class="headerlink" href="#myndraent" title="Varanlegur hlekkur á titilinn">¶</a></h4>
 <p>Skoðum einföld ræð föll á forminu:</p>
-<div style="text-align: center;">
 <div class="math">
-\[\frac{ax+b}{cx+d}\]</div>
-</div>
+\[\frac{ax+b}{cx+d}
+
+\]</div>
 <p>Ef stuðlarnir <span class="math">\(a,b,c, \; \text{og} \; d\)</span> eru þekktir er fljótlegt að finna <a href="http://www.stae.is/os/leita/asymptote" class="tooltip" target="_blank">aðfellur<span>en: <i>asymptote</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> fallsins til þess að teikna grafið.</p>
 <p><strong>Lóðfellan</strong> verður í gegnum punktinn á <span class="math">\(x\)</span> - ásnum sem er ekki í skilgreiningarmenginu, það er að segja þar sem deilt væri með núlli.
 Lóðfella ræðs falls á þessu formi er því línan</p>
-<div style="text-align: center;">
 <div class="math">
-\[x=\frac{-d}{c}\]</div>
-</div>
+\[x=\frac{-d}{c}
+
+\]</div>
 <p><strong>Láfellan</strong> verður í gegnum punktinn á <span class="math">\(y\)</span> - ásnum sem er ekki í myndmenginu, það er að segja gildið sem fallið getur aldrei tekið.
 Láfella ræðs falls á þessu formi er því línan</p>
-<div style="text-align: center;">
 <div class="math">
-\[y=\frac{a}{c}\]</div>
-</div>
+\[y=\frac{a}{c}
+
+\]</div>
 <div class="admonition tip">
 <p class="admonition-title">Dæmi</p>
 <p>Skoðum ræða fallið</p>
-<div style="text-align: center;">
 <div class="math">
-\[f(x) = \frac{x-2}{x+3}\]</div>
-</div>
+\[f(x) = \frac{x-2}{x+3}
+
+\]</div>
 <p>Hér er <span class="math">\(a= 1, \; b =-2, \; c = 1\)</span> og <span class="math">\(d = 3\)</span>.</p>
 <p>Þá eru aðfellurnar:</p>
-<div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-&amp; x = \frac{-d}{c} \; = \; \frac{-3}{1} \; = \; -3 \\
-&amp; \quad \\
-&amp; y = \frac{a}{c} \; = \; \frac{1}{1} \; = \; 1 \\
-\end{aligned}\]</div>
-</div>
+& x = \frac{-d}{c} \; = \; \frac{-3}{1} \; = \; -3 \\
+& \quad \\
+& y = \frac{a}{c} \; = \; \frac{1}{1} \; = \; 1 \\
+\end{aligned}
+
+\]</div>
 <p>Nú er lítið mál að sjá fyrir sér fallið:</p>
 <a class="reference internal image-reference" href="_images/adfellur.svg"><img alt="_images/adfellur.svg" class="align-center" src="_images/adfellur.svg" width="100%" /></a>
 </div>
@@ -979,52 +981,52 @@ Láfella ræðs falls á þessu formi er því línan</p>
 <h3><span class="section-number">9.4.5. </span>Stofnbrotaliðun<a class="headerlink" href="#stofnbrotaliun" title="Varanlegur hlekkur á titilinn">¶</a></h3>
 <p>Þegar við erum að vinna með ræð föll getur verið þægilegra að liða þau niður áður en unnið er með þau.
 Þegar margliðan í teljaranum hefur stigið 1 og margliðan í nefnaranum hefur stigið 2 er hægt að gera það svona:</p>
-<div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-\frac{ax+b}{(x-\alpha)(x-\beta)} &amp;= \frac{A}{(x-\alpha)}+ \frac{B}{(x-\beta)} \\
+\frac{ax+b}{(x-\alpha)(x-\beta)} &= \frac{A}{(x-\alpha)}+ \frac{B}{(x-\beta)} \\
 \quad \\
-&amp;\text{þar sem} \\ \quad \\
-\alpha \neq \beta, \quad A= \frac{a\alpha + b}{\alpha - \beta} &amp; \quad \text{og} \quad B= \frac{a\beta + b}{\beta - \alpha} \\
-\end{aligned}\]</div>
-</div>
+&\text{þar sem} \\ \quad \\
+\alpha \neq \beta, \quad A= \frac{a\alpha + b}{\alpha - \beta} & \quad \text{og} \quad B= \frac{a\beta + b}{\beta - \alpha} \\
+\end{aligned}
+
+\]</div>
 <div class="admonition tip">
 <p class="admonition-title">Dæmi</p>
 <p>Liðum</p>
-<div style="text-align: center;">
 <div class="math">
-\[\frac{3x+2}{x^2+3x-4}\]</div>
-</div>
+\[\frac{3x+2}{x^2+3x-4}
+
+\]</div>
 <p>í stofnbrot.</p>
 <p><em>Lausn:</em></p>
 <p>Þáttum nefnarann <span class="math">\(x^2+3x-4\)</span> og fáum <span class="math">\((x+4)(x-1)\)</span>.
 Hér er <span class="math">\(a=3\)</span>, <span class="math">\(b=2\)</span>, <span class="math">\(\alpha = -4\)</span>  og <span class="math">\(\beta=1\)</span>.</p>
 <p>Reiknum fastana <span class="math">\(A\)</span> og <span class="math">\(B\)</span> :</p>
-<div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-  A&amp; = \frac{a\alpha+b}{\alpha-\beta} \\
-  &amp;= \frac{3\cdot(-4)+2}{-4-1} =\frac{-12+2}{-5} \\
-  A&amp;=2 \\
-  B&amp;= \frac{a\beta +b}{\beta-\alpha} \\
-  &amp;= \frac{3+2}{1+4} =\frac{5}{5} \\
-  B&amp;=1
-\end{aligned}\]</div>
-</div>
+  A& = \frac{a\alpha+b}{\alpha-\beta} \\
+  &= \frac{3\cdot(-4)+2}{-4-1} =\frac{-12+2}{-5} \\
+  A&=2 \\
+  B&= \frac{a\beta +b}{\beta-\alpha} \\
+  &= \frac{3+2}{1+4} =\frac{5}{5} \\
+  B&=1
+\end{aligned}
+
+\]</div>
 <p>Því er hægt að skrifa:</p>
-<div style="text-align: center;">
 <div class="math">
-\[\frac{3x+2}{x^2+3x-4} = \frac{2}{x+4} + \frac{1}{x-1}\]</div>
-</div>
+\[\frac{3x+2}{x^2+3x-4} = \frac{2}{x+4} + \frac{1}{x-1}
+
+\]</div>
 <p>Athugum hvort þetta sé rétt með því að leggja brotin saman:</p>
-<div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
-  \frac{2}{x+4} + \frac{1}{x-1} &amp;= \frac{2(x-1)}{(x+4)(x-1)}+\frac{1(x+4)}{(x-1)(x+4)} \\
-  &amp;=\frac{2x-2+x+4}{(x+4)(x-1)} \\
-  &amp;=\frac{3x+2}{x^2+3x-4}
-\end{aligned}\]</div>
-</div>
+  \frac{2}{x+4} + \frac{1}{x-1} &= \frac{2(x-1)}{(x+4)(x-1)}+\frac{1(x+4)}{(x-1)(x+4)} \\
+  &=\frac{2x-2+x+4}{(x+4)(x-1)} \\
+  &=\frac{3x+2}{x^2+3x-4}
+\end{aligned}
+
+\]</div>
 </div>
 <p>Látum <span class="math">\(p\)</span> og <span class="math">\(q\)</span> vera margliður og látum <span class="math">\(r=\frac{p}{q}\)</span> vera rætt fall. Ef margliðurnar <span class="math">\(p\)</span> og <span class="math">\(q\)</span> eru af háum stigum getur ræða fallið <span class="math">\(r\)</span> oft verið erfitt viðureignar. Þá er gagnlegt að geta skrifað <span class="math">\(r\)</span> sem summu af einfaldari ræðum föllum. Eftirfarandi regla getur þá stundum verið gagnleg:</p>
 <div class="section" id="id5">
@@ -1032,47 +1034,47 @@ Hér er <span class="math">\(a=3\)</span>, <span class="math">\(b=2\)</span>, <s
 <p>Látum <span class="math">\(p\)</span> og <span class="math">\(q\)</span> vera margliður af stigi <span class="math">\(n\)</span> og <span class="math">\(m\)</span>.</p>
 <p>Gerum ráð fyrir að margliðan <span class="math">\(q\)</span> hafi <span class="math">\(m\)</span> ólíkar rætur <span class="math">\(a_1,a_2,...,a_m\)</span>.</p>
 <p>Þá er til margliða <span class="math">\(s\)</span> og fastar <span class="math">\(b_1,b_2,...,b_m\)</span> þannig að</p>
-<div style="text-align: center;">
 <div class="math">
-\[\frac{p(x)}{q(x)}=s(x)+\frac{b_1}{x-a_1}+\frac{b_2}{x-a_2}+...+\frac{b_m}{x-a_m}.\]</div>
-</div>
+\[\frac{p(x)}{q(x)}=s(x)+\frac{b_1}{x-a_1}+\frac{b_2}{x-a_2}+...+\frac{b_m}{x-a_m}.
+
+\]</div>
 <p>Þegar þessari reglu er beitt þá segjumst við vera að <em>stofnbrotaliða</em> ræða fallið <span class="math">\(\frac{p}{q}\)</span>.</p>
 <hr class="docutils" />
 <p>Stofnbrotaliðum ræða fallið <span class="math">\(\frac{p}{q}\)</span> þar sem <span class="math">\(p\)</span> og <span class="math">\(q\)</span> eru margliður og</p>
-<div style="text-align: center;">
 <div class="math">
-\[q(x)=c_mx^m+...+c_1x+c_0\]</div>
-</div>
+\[q(x)=c_mx^m+...+c_1x+c_0
+
+\]</div>
 <p>er af stigi <span class="math">\(m\)</span>.</p>
 <ol class="arabic simple">
 <li><p>Finnum allar núllstöðvar margliðunnar <span class="math">\(q\)</span>. Ef margliðan hefur færri en <span class="math">\(m\)</span> núllstöðvar hættum við hér, því þá virkar þessi aðferð ekki. Ef <span class="math">\(m\)</span> ólíkar núllstöðvar finnast köllum við þær <span class="math">\(a_1,a_2,...,a_m\)</span>.</p></li>
 <li><p>Deilum margliðunni <span class="math">\(q\)</span> upp í margliðuna <span class="math">\(p\)</span> með afgangi til þess að finna margliður <span class="math">\(s\)</span> og <span class="math">\(p_1\)</span> sem eru þannig að stig <span class="math">\(p_1\)</span> er minna en stig <span class="math">\(q\)</span> og <span class="math">\(p=sq+p_1\)</span>. Þá má skrifa:</p></li>
 </ol>
-<div style="text-align: center;">
 <div class="math">
-\[\frac{p(x)}{q(x)}=s(x)+\frac{p_1(x)}{q(x)}\]</div>
-</div>
+\[\frac{p(x)}{q(x)}=s(x)+\frac{p_1(x)}{q(x)}
+
+\]</div>
 <ol class="arabic simple" start="3">
 <li><p>Skilgreinum nýja margliðu <span class="math">\(q'\)</span> með því að setja</p></li>
 </ol>
-<div style="text-align: center;">
 <div class="math">
-\[q'(x)=mc_mx^{m-1}+(m-1)c_{m-1}x^{m-2}+...+2\cdot c_2x+1\cdot c_1\]</div>
-</div>
+\[q'(x)=mc_mx^{m-1}+(m-1)c_{m-1}x^{m-2}+...+2\cdot c_2x+1\cdot c_1
+
+\]</div>
 <ol class="arabic simple" start="4">
 <li><p>Reiknum út stuðlana <span class="math">\(b_1,b_2,...,b_m\)</span> með formúlunni</p></li>
 </ol>
-<div style="text-align: center;">
 <div class="math">
-\[b_i=\frac{p_1(a_i)}{q'(a_i)} \qquad \text{fyrir öll i}\]</div>
-</div>
+\[b_i=\frac{p_1(a_i)}{q'(a_i)} \qquad \text{fyrir öll i}
+
+\]</div>
 <ol class="arabic simple" start="5">
 <li><p>Nú má skrifa</p></li>
 </ol>
-<div style="text-align: center;">
 <div class="math">
-\[\frac{p(x)}{q(x)}=s(x)+\frac{b_1}{x-a_1}+\frac{b_2}{x-a_2}+...+\frac{b_m}{x-a_m}\]</div>
-</div>
+\[\frac{p(x)}{q(x)}=s(x)+\frac{b_1}{x-a_1}+\frac{b_2}{x-a_2}+...+\frac{b_m}{x-a_m}
+
+\]</div>
 <div class="admonition note">
 <p class="admonition-title">Athugasemd</p>
 <p>Þeir sem eru komnir aðeins lengra í stærðfræði og þekkja diffrun munu taka eftir að í aðferðinni að ofan þá er nýja margliðan <span class="math">\(q'\)</span> afleiðan af margliðunni <span class="math">\(q\)</span>.</p>
@@ -1080,19 +1082,19 @@ Hér er <span class="math">\(a=3\)</span>, <span class="math">\(b=2\)</span>, <s
 <div class="admonition tip">
 <p class="admonition-title">Dæmi</p>
 <p>Stofnbrotaliðið ræða fallið</p>
-<div style="text-align: center;">
 <div class="math">
-\[\frac{x^4-2}{x^3+2x^2-x-2}.\]</div>
-</div>
+\[\frac{x^4-2}{x^3+2x^2-x-2}.
+
+\]</div>
 <p>Hér er <span class="math">\(p(x)=x^4-2\)</span> og <span class="math">\(q(x)=x^3+2x^2-x-2\)</span>.</p>
 <ol class="arabic simple">
 <li><p>Finnum núllstöðvar <span class="math">\(q\)</span>. <span class="math">\(p/q\)</span>-aðferðin sem lýst var í fyrri kafla segir okkur að við eigum að prófa hvort tölurnar <span class="math">\(-1,1,-2\)</span> eða <span class="math">\(2\)</span> séu núllstöðvar margliðunnar <span class="math">\(q\)</span>:</p></li>
 </ol>
 <blockquote>
-<div><div style="text-align: center;">
-<div class="math">
-\[q(-1)=0, \qquad q(1)=0, \qquad q(-2)=0, \qquad q(2)=12.\]</div>
-</div>
+<div><div class="math">
+\[q(-1)=0, \qquad q(1)=0, \qquad q(-2)=0, \qquad q(2)=12.
+
+\]</div>
 <p>Hér fundum við þrjár mismunandi núllstöðvar, <span class="math">\(q\)</span> hefur stig <span class="math">\(3\)</span> svo við getum haldið áfram. Við setjum <span class="math">\(a_1=-1, \; a_2=1 \; \text{og} \; a_3=-2\)</span>.</p>
 </div></blockquote>
 <ol class="arabic simple" start="2">
@@ -1101,43 +1103,43 @@ Hér er <span class="math">\(a=3\)</span>, <span class="math">\(b=2\)</span>, <s
 <blockquote>
 <div><a class="reference internal image-reference" href="_images/rflongdiv.svg"><img alt="_images/rflongdiv.svg" class="align-center" src="_images/rflongdiv.svg" width="80%" /></a>
 <p>Samkvæmt þessu getum við skrifað</p>
-<div style="text-align: center;">
 <div class="math">
-\[p(x)=(x-2)q(x)+(5x^2-6)\]</div>
-</div>
+\[p(x)=(x-2)q(x)+(5x^2-6)
+
+\]</div>
 <p>Við setjum <span class="math">\(p_1(x)=5x^2-6\)</span> og <span class="math">\(s(x)=x-2\)</span>.</p>
 </div></blockquote>
 <ol class="arabic simple" start="3">
 <li><p>Skilgreinum margliðuna</p></li>
 </ol>
 <blockquote>
-<div><div style="text-align: center;">
-<div class="math">
-\[q'(x)=3x^{3-1}+2\cdot 2x^{2-1} - 1x^{1-1}=3x^2+4x-1\]</div>
-</div>
+<div><div class="math">
+\[q'(x)=3x^{3-1}+2\cdot 2x^{2-1} - 1x^{1-1}=3x^2+4x-1
+
+\]</div>
 </div></blockquote>
 <ol class="arabic simple" start="4">
 <li><p>Reiknum út:</p></li>
 </ol>
 <blockquote>
-<div><div style="text-align: center;">
-<div class="math">
+<div><div class="math">
 \[\begin{aligned}
-b_1&amp;=\frac{p_1(a_1)}{q'(a_1)}\\&amp;=\frac{p_1(-1)}{q'(-1)}\\&amp;=\frac{5\cdot(-1)^2-6}{3\cdot(-1)^2+4\cdot(-1)-1}\\&amp;=\frac{-1}{-2}\\&amp;=\frac{1}{2}\\b_2&amp;=\frac{p_1(a_2)}{q'(a_2)}\\&amp;=\frac{-1}{6}\\b_3&amp;=\frac{p_1(a_3)}{q'(a_3)}\\&amp;=\frac{14}{3}\end{aligned}\]</div>
-</div>
+b_1&=\frac{p_1(a_1)}{q'(a_1)}\\&=\frac{p_1(-1)}{q'(-1)}\\&=\frac{5\cdot(-1)^2-6}{3\cdot(-1)^2+4\cdot(-1)-1}\\&=\frac{-1}{-2}\\&=\frac{1}{2}\\b_2&=\frac{p_1(a_2)}{q'(a_2)}\\&=\frac{-1}{6}\\b_3&=\frac{p_1(a_3)}{q'(a_3)}\\&=\frac{14}{3}\end{aligned}
+
+\]</div>
 <p>Þá er <span class="math">\(b_1 =\frac{1}{2}, \; b_2 =\frac{-1}{6} \; \text{og} \; b_3=\frac{14}{3}\)</span>.</p>
 </div></blockquote>
 <ol class="arabic simple" start="5">
 <li><p>Lausnin okkar er þess vegna:</p></li>
 </ol>
 <blockquote>
-<div><div style="text-align: center;">
-<div class="math">
+<div><div class="math">
 \[\begin{aligned}
-\frac{x^4-2}{x^3+2x^2-x-2}&amp;=x-2+\frac{1/2}{x+1}+\frac{-1/6}{x-1}+\frac{14/3}{x+2} \\
-&amp;=x-2+\frac{1}{2(x+1)}-\frac{1}{6(x-1)}+\frac{14}{3(x+2)}.\\
-\end{aligned}\]</div>
-</div>
+\frac{x^4-2}{x^3+2x^2-x-2}&=x-2+\frac{1/2}{x+1}+\frac{-1/6}{x-1}+\frac{14/3}{x+2} \\
+&=x-2+\frac{1}{2(x+1)}-\frac{1}{6(x-1)}+\frac{14}{3(x+2)}.\\
+\end{aligned}
+
+\]</div>
 </div></blockquote>
 </div>
 </div>
@@ -1145,27 +1147,27 @@ b_1&amp;=\frac{p_1(a_1)}{q'(a_1)}\\&amp;=\frac{p_1(-1)}{q'(-1)}\\&amp;=\frac{5\c
 </div>
 <div class="section" id="ummyndanir">
 <h2><span class="section-number">9.5. </span>Ummyndanir<a class="headerlink" href="#ummyndanir" title="Varanlegur hlekkur á titilinn">¶</a></h2>
-<p>Það er mjög mikilvægt að geta teiknað föll og séð þau fyrir sér, meðal annars að geta séð fyrir sér <a href="http://www.stae.is/os/leita/mapping" class="tooltip" target="_blank">ummyndanir<span>en: <i>mapping</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a>.</p>
+<p>Það er mjög mikilvægt að geta teiknað föll og séð þau fyrir sér, meðal annars að geta séð fyrir sér <a href="http://www.stae.is/os/leita/transformation" class="tooltip" target="_blank">ummyndanir<span>en: <i>transformation</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a>.</p>
 <div class="section" id="hlirun">
 <h3><span class="section-number">9.5.1. </span>Hliðrun<a class="headerlink" href="#hlirun" title="Varanlegur hlekkur á titilinn">¶</a></h3>
-<p>Færsla punktsins <span class="math">\((x,y)\)</span> yfir á punktinn <span class="math">\((x+a,y+b)\)</span> kalllast <a class="tooltip" target="_blank">hliðrun<span><staelink style="line-height:4px; font-size:80%;">Ekki fannst þýðing á hugtakinu: <i>hliðrun</i></staelink></span></a> um vigurinn <span class="math">\(\begin{pmatrix} a \\ b \end{pmatrix}\)</span>.</p>
+<p>Færsla punktsins <span class="math">\((x,y)\)</span> yfir á punktinn <span class="math">\((x+a,y+b)\)</span> kalllast <a href="http://www.stae.is/os/leita/translation" class="tooltip" target="_blank">hliðrun<span>en: <i>translation</i><staelink style="font-size:80%;"><br><strong>Smelltu</strong> fyrir ítarlegri þýðingu.</staelink></span></a> um vigurinn <span class="math">\(\begin{pmatrix} a \\ b \end{pmatrix}\)</span>.</p>
 <p>Hliðrunarvigurinn <span class="math">\(\begin{pmatrix} a \\ b \end{pmatrix}\)</span> færir feril fallsins <span class="math">\(f(x)\)</span> yfir í feril fallsins</p>
-<div style="text-align: center;">
 <div class="math">
-\[g(x) =f(x-a)+b.\]</div>
-</div>
+\[g(x) =f(x-a)+b.
+
+\]</div>
 <div class="admonition tip">
 <p class="admonition-title">Dæmi</p>
 <p>Hliðrum <span class="math">\(f(x) = x^2\)</span> um <span class="math">\(\begin{pmatrix} 2 \\ 1 \end{pmatrix}\)</span></p>
 <p>Þessi hliðrun þýðir að hver punktur ferilsins færist um <span class="math">\(2\)</span> til hægri á <span class="math">\(x\)</span>-ásnum og <span class="math">\(1\)</span> upp á <span class="math">\(y\)</span>-ásnum. Þá er nýja hliðraða fallið:</p>
-<div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
- g(x) &amp;= f(x-a)+b, \\
- &amp;= f(x-2)+1, \\
- &amp;= (x-2)^2 +1.
-\end{aligned}\]</div>
-</div>
+ g(x) &= f(x-a)+b, \\
+ &= f(x-2)+1, \\
+ &= (x-2)^2 +1.
+\end{aligned}
+
+\]</div>
 <a class="reference internal image-reference" href="_images/hlidrun1.svg"><img alt="_images/hlidrun1.svg" class="align-center" src="_images/hlidrun1.svg" width="70%" /></a>
 <p>Sjáum <span class="math">\(g(x)= (x-2)^2 +1\)</span> er í rauðu og hefur hliðrast upp til hægri.
 Punkturinn <span class="math">\((-2,4)\)</span> færist í <span class="math">\((-2+2,4+1)=(0,5)\)</span>.</p>
@@ -1173,15 +1175,15 @@ Punkturinn <span class="math">\((-2,4)\)</span> færist í <span class="math">\(
 <div class="admonition tip">
 <p class="admonition-title">Dæmi</p>
 <p>Hliðrum <span class="math">\(f(x) = \sin(x)\)</span> um <span class="math">\(\begin{pmatrix} -\frac{\pi}{2} \\ 0 \end{pmatrix}\)</span>. Fáum</p>
-<div style="text-align: center;">
 <div class="math">
 \[\begin{aligned}
- g(x) &amp;= f(x-a)+b, \\
- &amp;= f(x-(-\frac{\pi}{2}))+0, \\
- &amp;= \sin(x+\frac{\pi}{2}), \\
- &amp;= \cos(x).
-\end{aligned}\]</div>
-</div>
+ g(x) &= f(x-a)+b, \\
+ &= f(x-(-\frac{\pi}{2}))+0, \\
+ &= \sin(x+\frac{\pi}{2}), \\
+ &= \cos(x).
+\end{aligned}
+
+\]</div>
 <a class="reference internal image-reference" href="_images/hlidrun2.svg"><img alt="_images/hlidrun2.svg" class="align-center" src="_images/hlidrun2.svg" width="100%" /></a>
 <p>Hér erum við búin að hliðra sínus um <span class="math">\(\frac{\pi}{2}\)</span> eftir <span class="math">\(x\)</span>-ás og þá fáum við kósínus! Sjá kafla 7 um <a class="reference internal" href="Kafli07.html#s-hornafoll"><span class="std std-ref">hornaföll</span></a>.</p>
 </div>
@@ -1276,9 +1278,9 @@ Tökum sem dæmi <span class="math">\(f(x)=\frac{x-2}{x+3}+2\)</span>, þá er s
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
       <script type="text/javascript" src="_static/language_data.js"></script>
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/katex.min.js"></script>
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/contrib/auto-render.min.js"></script>
-      <script type="text/javascript" src="_static/rendermath.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script>
+      <script type="text/javascript" src="_static/katex_autorenderer.js"></script>
 
   
 

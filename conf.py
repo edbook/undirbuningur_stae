@@ -41,7 +41,8 @@ extensions = [
     # 'hieroglyph',
     #  hieroglyph is used to generate html slides, needs to be installed for use,
     #  see https://github.com/nyergler/hieroglyph
-    'katex.katex',
+    'sphinxcontrib.katex',
+#    'katex.katex',
     'ggbextension.ggb',
     #  Extension for embedding geogebra applets, see README.txt in ggbextension folder
     'toggleblock.toggleBlock',
@@ -75,10 +76,10 @@ numfig_format['section'] = '%s'
 # mathjax_path = "MathJax.js"
 
 
-katex_path = 'https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/katex.min.js'
-katex_render = 'https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/contrib/auto-render.min.js'
+katex_path = 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js'
+katex_render = 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js'
 render_math = 'rendermath.js'
-katex_css = 'https://cdn.jsdelivr.net/npm/katex@0.10.0-rc/dist/katex.min.css'
+katex_css = 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
