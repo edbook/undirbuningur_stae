@@ -201,7 +201,7 @@ Ef um sérhver :math:`x_1,x_2 \in X` sem eru þannig að :math:`x_1<x_2` gildir
 
 þá er :math:`f` sagt vera :hover:`vaxandi` fall.
 
-Ef um sérhver :math:`x_1,x_2 \in X` sem eru þannig að :math:`x_1<x_2` gildir
+Ef um sérhver :math:`x_1,x_2 \in X` sem eru þannig að :math:`x_1>x_2` gildir
 
 .. math::
 	g(x_1) \geq g(x_2)
