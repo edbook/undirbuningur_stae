@@ -14,7 +14,7 @@ class panopto(nodes.General, nodes.Element):
 
 def html_visit_panopto_node(self, node):
     self.body.append("<figure>")
-    self.body.append("<iframe src='https://rec.hi.is/Panopto/Pages/Embed.aspx?id="+node['id']+"' width="+node['width']+" height="+node['height']+" style=padding: 0px; border: 1px solid #464646; frameborder='0'>")
+    self.body.append("<iframe src='https://hi.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id="+node['id']+"' width="+node['width']+" height="+node['height']+" style=padding: 0px; border: 1px solid #464646; frameborder='0'>")
     self.body.append("</iframe>")
     self.body.append("</figure>")
 
@@ -44,15 +44,15 @@ class PANOPTO(Directive):
         "width": directives.unchanged,
         "height": directives.unchanged,
     }
-    
+
     def run(self):
         node = panopto()
-        node["id"] = self.arguments[0] 
+        node["id"] = self.arguments[0]
         node["width"] = self.options.get("width", "700")
         node["height"] = self.options.get("height", "400")
 
 
-        
+
         return [node]
 
 def setup(app):

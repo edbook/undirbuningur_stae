@@ -496,7 +496,7 @@ Svo er önnur jafnan dregin frá hinni og útkoman er jafna án stærðarinnar s
       2x-y &=11
     \end{aligned}
 
-  Drögum nú neðri jöfnuna frá þeirri efri, hægri hlið efri frá hægri hlið neðri og vinstri hlið efri frá vinstri hlið neðri:
+  Drögum nú efri jöfnuna frá þeirri neðri, hægri hlið efri frá hægri hlið neðri og vinstri hlið efri frá vinstri hlið neðri:
 
   .. math::
     \begin{aligned}
